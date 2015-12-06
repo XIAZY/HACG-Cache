@@ -1,0 +1,74 @@
+.fixed,.clear{
+clear:both;
+}
+#wp_rc_reply_widget ul,#wp_rc_reply_widget  li{
+margin:0;
+padding:0;
+list-style:none;
+}
+#wp-rc-reply{
+zoom:1;
+}
+#wp-rc-reply li.rc_comment{
+clear:both;
+margin-top:5px;
+display:inline-block;
+width:100%
+}
+#wp-rc-reply .rc_avatar{
+float:left;
+padding:3px;
+}
+#wp-rc-reply .rc_excerpt,#wp-rc-reply .rc_author{
+padding:0;
+}
+#rc_nav.rc_comment{
+font-size:10px;
+}
+#rc_nav .rc_newer,#rc_nav .rc_newest{
+float:left;
+margin-right:5px;
+}
+.rc_datetime,#rc_nav .rc_older{
+float:right;
+margin-right:5px;
+}
+.rc_content{
+clear:both;
+}
+.rc_content .rc_reply{
+text-align:right;
+}
+.cancle-reply{
+display:block;
+float:right;
+height:23px;
+line-height:23px;
+}
+#rc_loading{
+border:1px solid #555;
+padding:7px;
+width:90%;
+margin-top:10px;
+clear:both;
+}
+
+#rc_respond{
+margin-top:6px;
+clear:both;
+display:inline-block;
+width:100%;
+}
+#rc_comment{
+border:1px solid #999;
+margin-top:5px;
+width:auto;
+width:90%;
+}
+#rc_author,#rc_email,#rc_url {
+border:1px solid #999;
+width:70%;
+height:17px;
+margin:3px 0 0 0px;
+padding:2px 0 1px 2px;
+}

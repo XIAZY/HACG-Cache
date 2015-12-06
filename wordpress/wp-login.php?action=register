@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+	<!--[if IE 8]>
+		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="zh-CN">
+	<![endif]-->
+	<!--[if !(IE 8) ]><!-->
+		<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+	<!--<![endif]-->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>琉璃神社 ★ HACG.me &rsaquo; 注册表单</title>
+	<link rel='stylesheet' id='buttons-css'  href='http://www.hacg.me/wordpress/wp-includes/css/buttons.min.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://www.hacg.me/wordpress/wp-includes/css/dashicons.min.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='login-css'  href='http://www.hacg.me/wordpress/wp-admin/css/login.min.css?ver=3.9.1' type='text/css' media='all' />
+				<style>div#login { top: -200px; right: 0; bottom: 0; left:auto; padding: 0 40px 0 0; }</style>
+				
+		<style> .login h1 a { background:url(http://www.hacg.me/wordpress/wp-content/plugins/branded-login-screen/assets/i/logo_main/header.png) no-repeat scroll center top transparent; } </style>
+
+		<style> @media all and (max-width: 360px), (max-height: 465px){ .login h1 a { background:url(http://www.hacg.me/wordpress/wp-content/plugins/branded-login-screen/assets/i/logo_responsive/header-sm.png) no-repeat scroll center top transparent; width: 260px; height: 67px; } } </style>
+		<link rel="stylesheet" id="custom_button_css"  href="http://www.hacg.me/wordpress/wp-content/plugins/branded-login-screen/assets/c/custom-button.css" type="text/css" media="all" />
+		<link rel="stylesheet" id="branded_login_css"  href="http://www.hacg.me/wordpress/wp-content/plugins/branded-login-screen/assets/c/branded-login-screen.css" type="text/css" media="all" />
+		<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/toggle-box/js/toggle-box.js?ver=3.9.1'></script>
+<meta name='robots' content='noindex,follow' />
+	</head>
+	<body class="login login-action-register wp-core-ui  locale-zh-cn">
+	<div id="login">
+		<h1><a href="http://www.hacg.me/wordpress" title="Back to 琉璃神社 ★ HACG.me &gt;&gt; Home Page">琉璃神社 ★ HACG.me</a></h1>
+	<p class="message register">在这个站点注册</p>
+
+<form name="registerform" id="registerform" action="http://www.hacg.me/wordpress/wp-login.php?action=register" method="post">
+	<p>
+		<label for="user_login">用户名<br />
+		<input type="text" name="user_login" id="user_login" class="input" value="" size="20" /></label>
+	</p>
+	<p>
+		<label for="user_email">电子邮件<br />
+		<input type="text" name="user_email" id="user_email" class="input" value="" size="25" /></label>
+	</p>
+		<p>
+		<label><span title="Powered by Easy Invitation Codes : http://baw.li/eic">Invitation Code*</span><br />
+		<!--// Get this plugin : http://baw.li/eic "BAW Easy Invitation Codes" , thank you. //-->
+		<input name="invitation_code" tabindex="30" type="text" class="input" id="invitation_code" style="text-transform: uppercase" /></label>
+				<span style="font-style: italic; position: relative; top: 1px;">请输入邀请码注册（登入用户名英文数字不能修改，邮箱验证后，昵称可以修改中文）</span>
+			</p>
+ 	<p id="reg_passmail">密码将通过电子邮件发送给您。</p>
+	<br class="clear" />
+	<input type="hidden" name="redirect_to" value="" />
+	<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="注册" /></p>
+</form>
+
+<p id="nav">
+<a href="http://www.hacg.me/wordpress/wp-login.php">登录</a> |
+<a href="http://www.hacg.me/wordpress/wp-login.php?action=lostpassword" title="找回密码">忘记密码？</a>
+</p>
+
+	<p id="backtoblog"><a href="http://www.hacg.me/wordpress/" title="不知道自己在哪？">&larr; 回到琉璃神社 ★ HACG.me</a></p>
+	
+	</div>
+
+		<script type="text/javascript">
+	try{document.getElementById('user_login').focus();}catch(e){}
+	if(typeof wpOnload=='function')wpOnload();
+	</script>
+	
+			<script type="text/javascript">
+			try{document.getElementById('invitation_code').focus();}catch(e){}
+		</script>
+		
+			<style>
+			body.login { background:#fff url('http://www.hacg.me/wordpress/wp-content/plugins/branded-login-screen/assets/i/background_image/default-img.jpg') no-repeat fixed top center;
+
+			margin:                  0;
+			padding:                 0;
+
+			background-size:         cover;
+			-moz-background-size:    cover;
+			-webkit-background-size: cover;
+			}
+			</style>
+
+			
+<script type="text/javascript">
+	try{
+		document.getElementById('user_email').setAttribute('autocomplete','off');
+	} catch(e){}
+</script>
+<link rel='stylesheet' id='toggle-box-css'  href='http://www.hacg.me/wordpress/wp-content/plugins/toggle-box/toggle-box.css?ver=3.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/branded-login-screen/assets/j/branded-login-screen.js?ver=1.0'></script>
+	<div class="clear"></div>
+	</body>
+	</html>
+	

@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>投票系统 | 琉璃神社 ★ HACG.me</title>
+<script type='text/javascript'>window.mod_pagespeed_start = Number(new Date());</script><link rel="profile" href="http://gmpg.org/xfn/11"/>
+<style media="all">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0px;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0px;outline:0px;padding:0px;vertical-align:baseline}:focus{outline:0px}body{background-color:#fff;line-height:1;background-position:initial initial;background-repeat:initial initial}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0px}caption,th,td{font-weight:normal;text-align:left}blockquote::before,blockquote::after,q::before,q::after{content:''}a img{border:0px}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{padding:0px 2em}#page{margin:2em auto;max-width:1024px}#branding hgroup{margin:0px 7.6%}#access div{margin:0px 7.6%}#primary{float:left;margin:0px -26.4% 0px 0px;width:100%}#content{margin:0px 34% 0px 7.6%;width:58.4%}.singular #primary{margin:0px}.singular #content,.left-sidebar.singular #content{margin:0px 7.6%;position:relative;width:auto}.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title{margin:0px auto;width:80%}body,input,textarea{color:#373737;font-style:normal;font-variant:normal;font-size:15px;font-family:'Microsoft YaHei','Helvetica Neue,Helvetica',Arial,sans-serif;font-weight:300;line-height:1.625}body{background-color:#e2e2e2;background-position:initial initial;background-repeat:initial initial}#page{background-color:#fff;background-position:initial initial;background-repeat:initial initial}h1,h2,h3,h4,h5,h6{clear:both}p{margin-bottom:1.625em}ul,ol{margin:0px 0px 1.625em 2.5em}ul{list-style:square}ol{list-style-type:decimal}ul ul,ol ol,ul ol,ol ul{margin-bottom:0px}pre{background-color:#f4f4f4;font-style:normal;font-variant:normal;font-weight:normal;font-size:13px;font-family:'Courier 10 Pitch',Courier,monospace;line-height:1.5;margin-bottom:1.625em;overflow:auto;padding:.75em 1.625em;background-position:initial initial;background-repeat:initial initial}code,kbd{font-style:normal;font-variant:normal;font-weight:normal;font-size:13px;line-height:normal;font-family:'Microsoft YaHei',Monaco,Consolas,'Andale Mono','DejaVu Sans Mono',monospace}abbr,acronym,dfn{border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#666;cursor:help}input[type="text"],input[type="password"],textarea{background-color:#fafafa;-webkit-box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;border:1px solid #ddd;color:#888;background-position:initial initial;background-repeat:initial initial}input[type="text"]:focus,textarea:focus{color:#373737}textarea{padding-left:3px;width:98%}input[type="text"]{padding:3px}input#s{background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/search.png.pagespeed.ce._NOXi6gf0_.png);border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;font-size:14px;height:22px;line-height:1.2em;padding:4px 10px 4px 28px;background-position:5px 6px;background-repeat:no-repeat no-repeat}input#searchsubmit{display:none}a{color:#1982d1;text-decoration:none}a:focus,a:active,a:hover{text-decoration:underline}.assistive-text{clip:rect(1px 1px 1px 1px);position:absolute!important}#access a.assistive-text:active,#access a.assistive-text:focus{background-color:#eee;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;color:#1982d1;font-size:12px;position:absolute;text-decoration:underline;top:0px;left:7.6%;clip:auto!important;background-position:initial initial;background-repeat:initial initial}#branding{border-top-width:2px;border-top-style:solid;border-top-color:#bbb;padding-bottom:10px;position:relative;z-index:9999}#site-title{margin-right:270px;padding:3.65625em 0px 0px}#site-title a{color:#111;font-size:30px;font-weight:bold;line-height:36px;text-decoration:none}#site-title a:hover,#site-title a:focus,#site-title a:active{color:#1982d1}#site-description{color:#7a7a7a;font-size:14px;margin:0px 270px 3.65625em 0px}#branding img{height:auto;margin-bottom:-7px;width:100%}#access{background-image:-webkit-linear-gradient(top,#252525,#0a0a0a);-webkit-box-shadow:rgba(0,0,0,.4) 0px 1px 2px;box-shadow:rgba(0,0,0,.4) 0px 1px 2px;clear:both;display:block;float:left;margin:0px auto 6px;width:100%;background-position:initial initial;background-repeat:initial initial}#access ul{font-size:13px;list-style:none;margin:0px 0px 0px -.8125em;padding-left:0px}#access li{float:left;position:relative}#access a{color:#eee;display:block;line-height:3.333em;padding:0px 1.2125em;text-decoration:none}#access li:hover>a,#access ul ul:hover>a,#access a:focus{background-color:#efefef;background-position:initial initial;background-repeat:initial initial}#access li:hover>a,#access a:focus{background-image:-webkit-linear-gradient(top,#f9f9f9,#e5e5e5);color:#373737;background-position:initial initial;background-repeat:initial initial}#access ul li:hover>ul{display:block}#branding #searchform{position:absolute;top:3.8em;right:7.6%;text-align:right}#branding #s{float:right;-webkit-transition: width 400ms ease, background;width:72px}#branding #s:focus{background-color:#f9f9f9;width:196px}#branding #searchsubmit{display:none}#branding .only-search #s,#branding .only-search #s:focus{width:85%}#branding .only-search #s:focus{background-color:#bbb}#main{clear:both;padding:1.625em 0px 0px}.hentry,.no-results{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;margin:0px 0px 1.625em;padding:0px 0px 1.625em;position:relative}.hentry:last-child,.no-results{border-bottom-style:none}.entry-title,.entry-header .entry-meta{padding-right:76px}.entry-title{clear:both;color:#222;font-size:26px;font-weight:bold;line-height:1.5em;padding-bottom:.3em;padding-top:15px}.entry-title,.entry-title a{color:#222;text-decoration:none}.entry-title a:hover,.entry-title a:focus,.entry-title a:active{color:#1982d1}.entry-meta{color:#666;clear:both;font-size:12px;line-height:18px}.entry-meta a{font-weight:bold}.entry-content,.entry-summary{padding:1.625em 0px 0px}.page-link a:hover{background-color:#888;color:#fff;font-weight:bold;background-position:initial initial;background-repeat:initial initial}.entry-meta .edit-link a:hover,.commentlist .edit-link a:hover{background-color:#888;color:#fff;background-position:initial initial;background-repeat:initial initial}.entry-content img,.comment-content img,.widget img{max-width:97.5%}p img,.wp-caption{margin-top:.4em}.wp-caption .wp-caption-text::before{color:#666;content:—;font-size:14px;font-style:normal;font-weight:bold;margin-right:5px;position:absolute;left:10px;top:7px}a:focus img[class*="align"],a:hover img[class*="align"],a:active img[class*="align"],a:focus img[class*="wp-image-"],a:hover img[class*="wp-image-"],a:active img[class*="wp-image-"],#content .gallery .gallery-icon a:focus img,#content .gallery .gallery-icon a:hover img,#content .gallery .gallery-icon a:active img{background-color:#000;border-color:#bbb;background-position:initial initial;background-repeat:initial initial}.wp-caption a:focus img,.wp-caption a:active img,.wp-caption a:hover img{background-color:#fff;border-color:#ddd;background-position:initial initial;background-repeat:initial initial}.post-password-required input[type="password"]:focus{background-color:#f7f7f7;background-position:initial initial;background-repeat:initial initial}#author-info{font-size:12px;overflow:hidden}.singular #author-info{background-color:#f9f9f9;border-top-width:1px;border-top-style:solid;border-top-color:#ddd;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;margin:2.2em -35.6% 0px -35.4%;padding:20px 35.4%;background-position:initial initial;background-repeat:initial initial}#author-avatar{float:left;margin-right:-78px}#author-avatar img{background-color:#fff;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-box-shadow:#bbb 0px 1px 2px;box-shadow:#bbb 0px 1px 2px;padding:3px;background-position:initial initial;background-repeat:initial initial}#author-description{float:left;margin-left:108px}#author-description h2{color:#000;font-size:15px;font-weight:bold;margin:5px 0px 10px}.entry-header .comments-link a:hover,.entry-header .comments-link a:focus,.entry-header .comments-link a:active{background-color:#1982d1;color:rgba(255,255,255,.8)}.singular .hentry{border-bottom-style:none;padding:4.875em 0px 0px;position:relative}.singular .entry-title{color:#000;font-size:36px;font-weight:bold;line-height:48px}.singular .entry-title,.singular .entry-header .entry-meta{padding-right:0px}.singular .entry-header .entry-meta{position:absolute;top:0px;left:0px}.indexed.format-image footer.entry-meta a:hover{color:#fff}.indexed.format-image .wp-caption .wp-caption-text::before{color:#444}.indexed.format-image a:hover img{opacity:.8}article.intro .edit-link a:hover,article.intro .edit-link a:focus,article.intro .edit-link a:active{background-color:#777;background-position:initial initial;background-repeat:initial initial}section.featured-post .attachment-small-feature:hover,section.featured-post .attachment-small-feature:focus,section.featured-post .attachment-small-feature:active{opacity:.8}article.feature-image.small .entry-summary p a:hover{background-color:#1982d1;color:rgba(255,255,255,.8);background-position:initial initial;background-repeat:initial initial}section.feature-image.large:hover .entry-title a,section.feature-image.large .entry-title:hover a{background-color:rgba(255,255,255,.8);color:#222;background-position:initial initial;background-repeat:initial initial}.featured-post .feature-text::after,.featured-post .feature-image.small::after{content:' ';background-image:-webkit-linear-gradient(top,rgba(255,255,255,0) 0%,#fff 100%);width:100%;height:45px;position:absolute;top:230px;background-position:initial initial;background-repeat:initial initial}.featured-post .feature-image.small::after{top:253px}section.recent-posts .other-recent-posts a[rel="bookmark"]::after{content:'-';color:transparent;font-size:11px}section.recent-posts .other-recent-posts a[rel="bookmark"]:hover{}section.recent-posts .other-recent-posts .comments-link a:hover{color:#1982d1;border-color:#1982d1}section.recent-posts .other-recent-posts li::after{clear:both;content:'.';display:block;height:0px;visibility:hidden}.image-attachment div.attachment a:focus img,.image-attachment div.attachment a:hover img,.image-attachment div.attachment a:active img{border-color:#ddd;background-color:#fff;background-position:initial initial;background-repeat:initial initial}#content nav{clear:both;overflow:hidden;padding:0px 0px 1.625em}#nav-single{float:right;position:relative;top:-.3em;text-align:right;z-index:1}.widget-area{font-size:12px}.widget{clear:both;margin:0px 0px 2.2em}.widget a:hover,.widget a:focus,.widget a:active{text-decoration:underline}.widget_search #searchsubmit:active{background-color:#1982d1;border-color:#0861a5;-webkit-box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;color:#bfddf3;background-position:initial initial;background-repeat:initial initial}section.ephemera .entry-title .comments-link a:hover,.widget_twentyeleven_ephemera .entry-title .comments-link a:hover{}#comments-title{color:#666;font-size:10px;font-weight:500;line-height:2.6em;padding:0px 0px 2.6em;text-transform:uppercase}.commentlist{list-style:none;margin:0px auto;width:68.9%}.commentlist>li.comment{background-color:#f6f6f6;border:1px solid #ddd;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;margin:0px 0px 1.625em;padding:1.625em;position:relative;background-position:initial initial;background-repeat:initial initial}.commentlist .children{list-style:none;margin:0px}.commentlist .children li.comment{background-color:#fff;border-left-width:1px;border-left-style:solid;border-left-color:#ddd;border-top-left-radius:0px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:0px;margin:1.625em 0px 0px;padding:1.625em;position:relative;background-position:initial initial;background-repeat:initial initial}.commentlist .children li.comment .fn{display:block}.comment-meta .fn{font-style:normal}.comment-meta{color:#666;font-size:12px;line-height:2.2em}.commentlist .children li.comment .comment-meta{line-height:1.625em;margin-left:50px}.commentlist .children li.comment .comment-content{margin:1.625em 0px 0px}.comment-meta a{font-weight:bold}.comment-meta a:focus,.comment-meta a:active,.comment-meta a:hover{}.commentlist .avatar{border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-box-shadow:#ccc 0px 1px 2px;box-shadow:#ccc 0px 1px 2px;left:-102px;padding:0px;position:absolute;top:0px}.commentlist>li::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow.png.pagespeed.ce.GYiRbvEAeQ.png);left:-21px;position:absolute}.commentlist>li.pingback::before{content:''}.commentlist .children .avatar{background-image:none;-webkit-box-shadow:none;box-shadow:none;left:2.2em;padding:0px;top:2.2em;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link{background-color:#eee;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;color:#666;display:inline-block;font-size:12px;padding:0px 8px;text-decoration:none;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link:hover,a.comment-reply-link:focus,a.comment-reply-link:active{background-color:#888;color:#fff;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link>span{display:inline-block;position:relative;top:-1px}.commentlist>li.bypostauthor .comment-meta a:focus,.commentlist>li.bypostauthor .comment-meta a:active,.commentlist>li.bypostauthor .comment-meta a:hover{}.commentlist>li.bypostauthor::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-bypostauthor.png.pagespeed.ce.fAqRS5INfI.png)}.commentlist .children>li.bypostauthor{background-color:#ddd;border-color:#d3d3d3;background-position:initial initial;background-repeat:initial initial}#respond{background-color:#ddd;border:1px solid #d3d3d3;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;margin:0px auto 1.625em;padding:1.625em;position:relative;width:68.9%;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"],#respond textarea{background-color:#fff;border:4px solid #eee;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;-webkit-box-shadow:rgba(204,204,204,.952941) 0px 1px 3px inset;box-shadow:rgba(204,204,204,.952941) 0px 1px 3px inset;position:relative;padding:10px;text-indent:80px;background-position:initial initial;background-repeat:initial initial}#respond .comment-form-author,#respond .comment-form-email,#respond .comment-form-url,#respond .comment-form-comment{position:relative}#respond .comment-form-author label,#respond .comment-form-email label,#respond .comment-form-url label,#respond .comment-form-comment label{background-color:#eee;-webkit-box-shadow:rgba(204,204,204,.8) 1px 2px 2px;box-shadow:rgba(204,204,204,.8) 1px 2px 2px;color:#555;display:inline-block;font-size:13px;left:4px;min-width:60px;padding:4px 10px;position:relative;top:40px;z-index:1;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"]:focus,#respond textarea:focus{text-indent:0px;z-index:1}#respond textarea{resize:vertical;width:95%}#respond .comment-form-author .required,#respond .comment-form-email .required{color:#bd3500;font-size:22px;font-weight:bold;left:75%;position:absolute;top:45px;z-index:1}#respond .comment-notes,#respond .logged-in-as{font-size:13px}#respond p{margin:10px 0px}#respond .form-submit{float:right;margin:-20px 0px 10px}#respond input#submit{background-color:#222;border:none;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;color:#eee;cursor:pointer;font-size:15px;margin:20px 0px;padding:5px 42px 5px 22px;position:relative;left:30px;text-shadow:rgba(0,0,0,.298039) 0px -1px 0px;background-position:initial initial;background-repeat:initial initial}#respond input#submit:active{background-color:#1982d1;color:#bfddf3;background-position:initial initial;background-repeat:initial initial}#respond #cancel-comment-reply-link{color:#666;margin-left:10px;text-decoration:none}#respond .logged-in-as a:hover,#respond #cancel-comment-reply-link:hover{text-decoration:underline}#reply-title{color:#373737;font-size:24px;font-weight:bold;line-height:30px}#cancel-comment-reply-link{color:#888;display:block;font-size:10px;font-weight:normal;line-height:2.2em;letter-spacing:.05em;position:absolute;right:1.625em;text-decoration:none;text-transform:uppercase;top:1.1em}#cancel-comment-reply-link:focus,#cancel-comment-reply-link:active,#cancel-comment-reply-link:hover{color:#ff4b33}#respond label{line-height:2.2em}#respond input[type="text"]{display:block;height:24px;width:75%}#respond p{font-size:12px}p.comment-form-comment{margin:0px}.form-allowed-tags{display:none}#colophon{clear:both}#supplementary{border-top-width:1px;border-top-style:solid;border-top-color:#ddd;padding:1.625em 7.6%;overflow:hidden}#supplementary.two .widget-area{float:left;margin-right:3.7%;width:48.1%}#supplementary.two .widget-area+.widget-area{margin-right:0px}#site-generator{background-color:#f9f9f9;border-top-width:1px;border-top-style:solid;border-top-color:#ddd;color:#666;font-size:12px;line-height:2.2em;padding:2.2em .5em;text-align:center;background-position:initial initial;background-repeat:initial initial}#site-generator a{color:#555;font-weight:bold}@media (max-width:800px){#main #content{margin:0px 7.6%;width:auto}.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title{width:100%}.singular #author-info{margin:2.2em -8.8% 0px;padding:20px 8.8%}.commentlist{width:100%}.commentlist>li.comment,.commentlist .pingback{margin-left:102px;width:auto}#respond{width:auto}#colophon #supplementary .widget-area{float:none;margin-right:0px;width:auto}}@media (max-width:650px){body,input,textarea{font-size:13px}#site-title a{font-size:24px}#site-description{font-size:12px}#access ul{font-size:12px}.entry-title{font-size:21px}.singular .entry-title{font-size:28px}.entry-meta{font-size:12px}#site-title{padding:5.30625em 0px 0px}#site-title,#site-description{margin-right:0px}#branding #searchform{top:1.625em!important}#nav-single{display:block;position:static}.singular .hentry{padding:1.625em 0px 0px}.commentlist>li.comment,.commentlist>li.pingback{margin-left:0px!important}.commentlist .avatar{background-color:transparent;display:block;padding:0px;position:static;background-position:initial initial;background-repeat:initial initial}.commentlist .children .avatar{background-image:none;left:2.2em;padding:0px;position:absolute;top:2.2em;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"]{width:95%}#respond .comment-form-author .required,#respond .comment-form-email .required{left:95%}}@media only screen and (max-device-width:480px) and (min-device-width:320px){body{padding:0px}#page{margin-top:0px}#branding{border-top-style:none}}*::-moz-selection{background-color:#ff7283;color:#fff;background-position:initial initial;background-repeat:initial initial}::selection{background-color:#ff7283;color:#fff;background-position:initial initial;background-repeat:initial initial}</style>
+<link rel="pingback" href="http://www.hacg.me/wordpress/xmlrpc.php"/>
+<!--[if lt IE 9]>
+<script src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; Feed" href="http://www.hacg.me/wordpress/feed"/>
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; 评论Feed" href="http://www.hacg.me/wordpress/comments/feed"/>
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; 投票系统评论Feed" href="http://www.hacg.me/wordpress/polls/feed"/>
+<style media="all"></style>
+<style media="all"></style>
+<style media="all"></style>
+<style media="all">.wp-polls ul li::before,.wp-polls-ans ul li::before,#sidebar ul ul li::before{content:''}.wp-polls-paging a,.wp-polls-paging a:link{padding:2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:visited{padding:2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:hover{border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging a:active{padding:2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}</style>
+<style media="all">body{background-color:#1d1d1d;color:#bbb;background-position:initial initial;background-repeat:initial initial}#page{background-color:#0f0f0f;background-position:initial initial;background-repeat:initial initial}pre{background-color:#0b0b0b;background-position:initial initial;background-repeat:initial initial}code,kbd{font-style:normal;font-variant:normal;font-weight:normal;font-size:13px;line-height:normal;font-family:Monaco,Consolas,'Andale Mono','DejaVu Sans Mono',monospace}abbr,acronym,dfn{border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#999}input[type="text"],.post-password-required input[type="password"],textarea{border:1px solid #222}input[type="text"]:focus,textarea:focus{}input#s{background-color:#ddd}a{}#branding{border-top-width:2px;border-top-style:solid;border-top-color:#0a0a0a}#site-title a{color:#eee}#site-title a:hover,#site-title a:focus,#site-title a:active{}#site-description{color:#858585}#branding #s{background-color:#ddd}#access{background-image:-webkit-linear-gradient(top,#383838,#272727);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#222;background-position:initial initial;background-repeat:initial initial}.hentry{border-color:#222}.entry-title{color:#ddd}.entry-title,.entry-title a{color:#ddd}.entry-title a:hover,.entry-title a:focus,.entry-title a:active{}.entry-meta{color:#999}.page-link a:hover{background-color:#999;color:#000;background-position:initial initial;background-repeat:initial initial}.entry-meta .edit-link a:hover,.entry-meta .edit-link a:focus,.entry-meta .edit-link a:active{background-color:#999;color:#000;background-position:initial initial;background-repeat:initial initial}.wp-caption .wp-caption-text::before{color:#999}a:focus img[class*="wp-image-"],a:hover img[class*="wp-image-"],a:active img[class*="wp-image-"]{background-color:#2c2c2c;border-color:#444;background-position:initial initial;background-repeat:initial initial}.wp-caption a:focus img,.wp-caption a:active img,.wp-caption a:hover img{background-color:#0f0f0f;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}.post-password-required input[type="password"]:focus{background-color:#fff;background-position:initial initial;background-repeat:initial initial}.singular #author-info{background-color:#060606;border-color:#222;background-position:initial initial;background-repeat:initial initial}#author-avatar img{background-color:#000;-webkit-box-shadow:#444 0px 1px 2px;box-shadow:#444 0px 1px 2px;background-position:initial initial;background-repeat:initial initial}#author-description h2{color:#fff}.singular .entry-title{color:#fff}.indexed.format-image .entry-meta .edit-link a:hover{color:#fff}article.intro .edit-link a:hover{background-color:#888;background-position:initial initial;background-repeat:initial initial}section.featured-post .attachment-small-feature:hover{border-color:#777}article.feature-image.small .entry-summary p a:hover{color:#40220c}section.feature-image.large:hover .entry-title a,section.feature-image.large .entry-title:hover a{background-color:rgba(255,255,255,.8);color:#000;background-position:initial initial;background-repeat:initial initial}.featured-post .feature-text::after,.featured-post .feature-image.small::after{background-image:-webkit-linear-gradient(top,rgba(0,0,0,0) 0%,#000 100%);background-position:initial initial;background-repeat:initial initial}section.recent-posts .other-recent-posts a[rel="bookmark"]:hover{}section.recent-posts .other-recent-posts .comments-link a:hover{}.image-attachment div.attachment a:focus img,.image-attachment div.attachment a:hover img,.image-attachment div.attachment a:active img{border-color:#2c2c2c;background-color:#0f0f0f;background-position:initial initial;background-repeat:initial initial}.widget_search #searchsubmit:active{-webkit-box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;color:#40220c}#comments-title{color:#bbb}.commentlist>li.comment{background-color:#090909;border-color:#222;background-position:initial initial;background-repeat:initial initial}.commentlist .children li.comment{background-color:#000;border-color:#222;background-position:initial initial;background-repeat:initial initial}.comment-meta{color:#999}.commentlist .avatar{-webkit-box-shadow:#222 0px 1px 2px;box-shadow:#222 0px 1px 2px}a.comment-reply-link{background-color:#242424;color:#bbb;background-position:initial initial;background-repeat:initial initial}li.bypostauthor a.comment-reply-link{background-color:#111;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link:hover,a.comment-reply-link:focus,a.comment-reply-link:active,li.bypostauthor a.comment-reply-link:hover,li.bypostauthor a.comment-reply-link:focus,li.bypostauthor a.comment-reply-link:active{background-color:#999;color:#000;background-position:initial initial;background-repeat:initial initial}.commentlist>li::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-dark.png.pagespeed.ce.2UrxEL26I8.png)}.rtl .commentlist>li::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-dark-rtl.png.pagespeed.ce.XBTRMpLuQ3.png)}.commentlist>li.bypostauthor::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-bypostauthor-dark.png.pagespeed.ce.rdnKOjTI1O.png)}.rtl .commentlist>li.bypostauthor::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-bypostauthor-dark-rtl.png.pagespeed.ce.4xfhenD-4k.png)}.commentlist .children>li.bypostauthor{background-color:#222;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}#respond{background-color:#222;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"],#respond textarea{background-color:#000;border:4px solid #111;-webkit-box-shadow:rgba(51,51,51,.952941) 0px 1px 3px inset;box-shadow:rgba(51,51,51,.952941) 0px 1px 3px inset;color:#bbb;background-position:initial initial;background-repeat:initial initial}#respond .comment-form-author label,#respond .comment-form-email label,#respond .comment-form-url label,#respond .comment-form-comment label{background-color:#111;-webkit-box-shadow:rgba(51,51,51,.8) 1px 2px 2px;box-shadow:rgba(51,51,51,.8) 1px 1px 2px;color:#aaa;background-position:initial initial;background-repeat:initial initial}#respond .comment-form-author .required,#respond .comment-form-email .required{color:#42caff}#respond input#submit{background-color:#ddd;-webkit-box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;color:#111;text-shadow:rgba(0,0,0,.298039) 0px -1px 0px;background-position:initial initial;background-repeat:initial initial}#respond input#submit:active{color:#40220c}#respond #cancel-comment-reply-link{color:#999}#reply-title{color:#ccc}#cancel-comment-reply-link{color:#777}#cancel-comment-reply-link:focus,#cancel-comment-reply-link:active,#cancel-comment-reply-link:hover{color:#00b4cc}#supplementary{border-color:#222}#site-generator{background-color:#060606;border-color:#000;background-position:initial initial;background-repeat:initial initial}</style>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-includes/js/jquery/jquery.js,qver=1.10.2.pagespeed.jm.IA0LeBJnom.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-includes/js/jquery/jquery-migrate.min.js,qver=1.2.1.pagespeed.jm.LVTOO3Z2GS.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/toggle-box/js/toggle-box.js,qver=3.6.pagespeed.jm.FgQZyX_VQa.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-includes/js/comment-reply.min.js,qver=3.6.pagespeed.ce.YYW5hq-CGg.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/js/blockui.min.js,qver=2.57.pagespeed.jm._hOHYs2wN2.js'></script>
+<script type='text/javascript'>var sidebar_login_params={"ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","force_ssl_login":"0","force_ssl_admin":"0","is_ssl":"0","i18n_username_required":"\u8bf7\u8f93\u5165\u60a8\u7684\u7528\u6237\u540d","i18n_password_required":"\u8bf7\u8f93\u5165\u60a8\u7684\u5bc6\u7801","error_class":"sidebar_login_error"};</script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/js/sidebar-login.min.js,qver=2.5.3.pagespeed.ce.StZ6hyqvWs.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.hacg.me/wordpress/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.hacg.me/wordpress/wp-includes/wlwmanifest.xml"/> 
+<meta name="generator" content="WordPress 3.6"/>
+<link rel='canonical' href='http://www.hacg.me/wordpress/polls'/>
+
+<style>.highslide-wrapper a:hover{text-decoration:underline}.highslide-loading{display:block;color:#000;font-size:8pt;font-family:sans-serif;font-weight:bold;text-decoration:none;padding:2px 2px 2px 22px;border:1px solid #000;background-color:#fff;background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/loader.white.gif.pagespeed.ce.8q8GDxytvJ.gif);background-position:3px 1px;background-repeat:no-repeat no-repeat}a.highslide-credits:hover,a.highslide-credits:hover i{color:#fff;background-color:gray}.highslide-loading{display:block;color:#000;font-size:8pt;font-family:sans-serif;font-weight:bold;text-decoration:none;padding:2px 2px 2px 22px;border:1px solid #000;background-color:#fff;background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/loader.white.gif.pagespeed.ce.8q8GDxytvJ.gif);background-position:3px 1px;background-repeat:no-repeat no-repeat}a.highslide-credits:hover,a.highslide-credits:hover i{color:#fff;background-color:gray}.highslide-wrapper .highslide-header a:hover{color:#000}.highslide-container div{font-family:微软雅黑,Verdana,Helvetica}.highslide-wrapper a:hover{text-decoration:underline}.highslide-loading{display:block;color:#000;font-size:12px;font-weight:700;text-decoration:none;border:1px solid #000;background-color:#fff;background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/loader.white.gif.pagespeed.ce.8q8GDxytvJ.gif);padding:2px 2px 2px 22px;background-position:3px 1px;background-repeat:no-repeat no-repeat}a.highslide-credits:hover,a.highslide-credits:hover i{color:#fff;background-color:gray}.highslide-wrapper .highslide-header a:hover{color:#000}.highslide-controls .highslide-previous a:hover{background-position:0px -30px}.highslide-controls .highslide-play a:hover{background-position:-30px -30px}.highslide-controls .highslide-pause a:hover{background-position:-60px -30px}.highslide-controls .highslide-next a:hover{background-position:-90px -30px}.highslide-controls .highslide-move a:hover{background-position:-120px -30px}.highslide-controls .highslide-full-expand a:hover{background-position:-150px -30px}.highslide-controls .highslide-close a:hover{background-position:-180px -30px}</style>
+<script type="text/javascript" src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/highslide-with-html.packed.js.pagespeed.jm.QyPti4DuC7.js"></script>
+<script type="text/javascript">jQuery(document).ready(function($){hs.graphicsDir="http://www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/";hs.outlineType="rounded-white";hs.dimmingOpacity=0.8;hs.outlineWhileAnimating=true;hs.showCredits=false;hs.captionEval="this.thumb.alt";hs.numberPosition="caption";hs.align="center";hs.transitions=["expand","crossfade"];hs.addSlideshow({interval:5000,repeat:true,useControls:true,fixedControls:"fit",overlayOptions:{opacity:0.75,position:"bottom center",hideOnMouseOut:true}});});</script>
+	<style type='text/css'>.playerHolder{width:860px;height:450px;position:absolute;z-index:0}.placeHolder{width:860px;height:450px;visibility:hidden;border:0 none}</style><script type="text/javascript" src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/mukioplayer-for-wordpress/static/mukio-sect.js.pagespeed.jm.h1gFUQ7Tum.js"></script><script type="text/javascript" src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/mukioplayer-for-wordpress/static/mukio-prompt.js.pagespeed.jm.UvvjQru4hs.js"></script><style media="screen">#wp_page_numbers li a:hover{text-decoration:underline}#wp_page_numbers li.active_page a:hover{color:#fff}</style><style type="text/css">.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background:#1c2949;border:1px solid #696565}</style>
+	<style>a,#site-title a:focus,#site-title a:hover,#site-title a:active,.entry-title a:hover,.entry-title a:focus,.entry-title a:active,.widget_twentyeleven_ephemera .comments-link a:hover,section.recent-posts .other-recent-posts a[rel="bookmark"]:hover,section.recent-posts .other-recent-posts .comments-link a:hover,.format-image footer.entry-meta a:hover,#site-generator a:hover{color:#4399ee}section.recent-posts .other-recent-posts .comments-link a:hover{border-color:#4399ee}article.feature-image.small .entry-summary p a:hover,.entry-header .comments-link a:hover,.entry-header .comments-link a:focus,.entry-header .comments-link a:active,.feature-slider a.active{background-color:#4399ee}</style>
+<style type="text/css" id="custom-background-css">body.custom-background{background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2012/01/xcamouflage.png.pagespeed.ic.TUZkU2GHBT.png);background-repeat:repeat;background-position:top left;background-attachment:scroll}</style>
+
+
+
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-22787990-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+</head>
+
+<body class="page page-id-35058 page-template page-template-sidebar-page-php custom-background two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="http://www.hacg.me/wordpress/" title="琉璃神社 ★ HACG.me" rel="home">琉璃神社 ★ HACG.me</a></span></h1>
+				<h2 id="site-description">分享同人动漫的快乐 ★ http://www.HACG.me</h2>
+			</hgroup>
+
+						<a href="http://www.hacg.me/wordpress/">
+									<img src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2013/08/1024x350xlogo130803-2.jpg.pagespeed.ic.h1cqU4uXJ3.jpg" width="1024" height="350" alt=""/>
+							</a>
+			
+								<form method="get" id="searchform" action="http://www.hacg.me/wordpress/">
+		<label for="s" class="assistive-text">搜索</label>
+		<input type="text" class="field" name="s" id="s" placeholder="搜索"/>
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="搜索"/>
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">主菜单</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="跳至主内容区域">跳至主内容区域</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="跳至副内容区域">跳至副内容区域</a></div>
+								<div class="menu-%e5%b8%b8%e8%a7%84%e8%8f%9c%e5%8d%95-container"><ul id="menu-%e5%b8%b8%e8%a7%84%e8%8f%9c%e5%8d%95" class="menu"><li id="menu-item-3652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3652"><a href="http://www.hacg.me/wordpress/">最新投稿</a></li>
+<li id="menu-item-3647" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3647"><a href="http://www.hacg.me/wordpress/category/age">文章</a></li>
+<li id="menu-item-3648" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3648"><a href="http://www.hacg.me/wordpress/category/anime">动画</a></li>
+<li id="menu-item-3649" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3649"><a href="http://www.hacg.me/wordpress/category/comic">漫画</a></li>
+<li id="menu-item-3650" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3650"><a href="http://www.hacg.me/wordpress/category/erogame">游戏</a></li>
+<li id="menu-item-3651" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3651"><a href="http://www.hacg.me/wordpress/category/op">音乐</a></li>
+<li id="menu-item-31007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31007"><a href="http://www.hacg.me/wordpress/category/rou">在线</a></li>
+<li id="menu-item-3654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3654"><a href="http://www.hacg.me/wordpress/sm">使用说明</a></li>
+<li id="menu-item-4541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4541"><a href="http://www.hacg.me/bb">讨论区</a></li>
+</ul></div>			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-35058" class="post-35058 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">投票系统</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="wp-polls wp-polls-archive">
+<p style="text-align: center;"><strong>网站访问的问题</strong></p><div id="polls-5-ans" class="wp-polls-ans"><ul class="wp-polls-ul"><li>完全没有问题，打开速度简直是秒开！ <small>(95%, 747 票)</small><div class="pollbar" style="width: 86%;" title="完全没有问题，打开速度简直是秒开！ (95% | 747 票)"></div></li><li>移动网络，可打开网站，但是不显示图片 <small>(2%, 14 票)</small><div class="pollbar" style="width: 2%;" title="移动网络，可打开网站，但是不显示图片 (2% | 14 票)"></div></li><li>联通网络，可打开网站，但是不显示图片 <small>(1%, 11 票)</small><div class="pollbar" style="width: 1%;" title="联通网络，可打开网站，但是不显示图片 (1% | 11 票)"></div></li><li>其他网络故障问题，请在下面留言。帮助神社改进。 <small>(1%, 9 票)</small><div class="pollbar" style="width: 1%;" title="其他网络故障问题，请在下面留言。帮助神社改进。 (1% | 9 票)"></div></li><li>网站完全打不开，用代理访问的 <small>(1%, 5 票)</small><div class="pollbar" style="width: 1%;" title="网站完全打不开，用代理访问的 (1% | 5 票)"></div></li></ul><p style="text-align: center;">投票人数: <strong>786</strong></p></div><p>开始日期: 2013 年 9 月 21 日 @ 22:48<br/>截止日期: 永远有效</p><p style="text-align: center;"><strong>7月值得推荐的新番动画</strong></p><div id="polls-4-ans" class="wp-polls-ans"><ul class="wp-polls-ul"><li>★进击的巨人 （4月） <small>(59%, 1,795 票)</small><div class="pollbar" style="width: 53%;" title="★进击的巨人 （4月） (59% | 1,795 票)"></div></li><li>★某科学的超电磁炮S （4月） <small>(52%, 1,561 票)</small><div class="pollbar" style="width: 47%;" title="★某科学的超电磁炮S （4月） (52% | 1,561 票)"></div></li><li>★只有神知道的世界 女神篇 <small>(46%, 1,392 票)</small><div class="pollbar" style="width: 41%;" title="★只有神知道的世界 女神篇 (46% | 1,392 票)"></div></li><li>★弹丸论破 （死亡游戏） <small>(38%, 1,156 票)</small><div class="pollbar" style="width: 34%;" title="★弹丸论破 （死亡游戏） (38% | 1,156 票)"></div></li><li>★High School DXD 第二季 <small>(34%, 1,017 票)</small><div class="pollbar" style="width: 31%;" title="★High School DXD 第二季 (34% | 1,017 票)"></div></li><li>★猫物语（白） <small>(32%, 976 票)</small><div class="pollbar" style="width: 29%;" title="★猫物语（白） (32% | 976 票)"></div></li><li>★丧女 我不受欢迎....你的错 （屌丝女） <small>(28%, 833 票)</small><div class="pollbar" style="width: 25%;" title="★丧女 我不受欢迎....你的错 （屌丝女） (28% | 833 票)"></div></li><li>☆狗和剪刀的正确用法 （人X兽） <small>(26%, 799 票)</small><div class="pollbar" style="width: 23%;" title="☆狗和剪刀的正确用法 （人X兽） (26% | 799 票)"></div></li><li>神不在的星期天 （萝莉片） <small>(25%, 743 票)</small><div class="pollbar" style="width: 23%;" title="神不在的星期天 （萝莉片） (25% | 743 票)"></div></li><li>★血意少年 （吸血鬼复活妹子） <small>(22%, 677 票)</small><div class="pollbar" style="width: 20%;" title="★血意少年 （吸血鬼复活妹子） (22% | 677 票)"></div></li><li>★蔷薇少女 2013 （画风更新） <small>(21%, 639 票)</small><div class="pollbar" style="width: 19%;" title="★蔷薇少女 2013 （画风更新） (21% | 639 票)"></div></li><li>魔法少女☆伊莉雅 （各种乱来的卡牌类） <small>(20%, 589 票)</small><div class="pollbar" style="width: 18%;" title="魔法少女☆伊莉雅 （各种乱来的卡牌类） (20% | 589 票)"></div></li><li>★银之匙 （个人推荐还不错） <small>(19%, 571 票)</small><div class="pollbar" style="width: 17%;" title="★银之匙 （个人推荐还不错） (19% | 571 票)"></div></li><li>萝球社SS 第二季 <small>(16%, 495 票)</small><div class="pollbar" style="width: 14%;" title="萝球社SS 第二季 (16% | 495 票)"></div></li><li>★恋爱研究所 （这个走路姿势还不错） <small>(16%, 482 票)</small><div class="pollbar" style="width: 14%;" title="★恋爱研究所 （这个走路姿势还不错） (16% | 482 票)"></div></li><li>☆Free （游泳馆の基情片） <small>(12%, 350 票)</small><div class="pollbar" style="width: 11%;" title="☆Free （游泳馆の基情片） (12% | 350 票)"></div></li><li>★跟班X服务 （公务员的日常,有点意思） <small>(11%, 343 票)</small><div class="pollbar" style="width: 10%;" title="★跟班X服务 （公务员的日常,有点意思） (11% | 343 票)"></div></li><li>有顶天家族 （妖怪变伪娘） <small>(10%, 296 票)</small><div class="pollbar" style="width: 9%;" title="有顶天家族 （妖怪变伪娘） (10% | 296 票)"></div></li><li>☆现视研 二代目 （伪娘动画） <small>(9%, 270 票)</small><div class="pollbar" style="width: 8%;" title="☆现视研 二代目 （伪娘动画） (9% | 270 票)"></div></li><li>★黄金拼图 （汤音 梓喵） <small>(8%, 244 票)</small><div class="pollbar" style="width: 7%;" title="★黄金拼图 （汤音 梓喵） (8% | 244 票)"></div></li><li>战姬绝唱 第二季 <small>(7%, 205 票)</small><div class="pollbar" style="width: 6%;" title="战姬绝唱 第二季 (7% | 205 票)"></div></li><li>穿透幻影的太阳 （卡牌类） <small>(6%, 196 票)</small><div class="pollbar" style="width: 5%;" title="穿透幻影的太阳 （卡牌类） (6% | 196 票)"></div></li><li>☆斯特拉女子学院C3部（打枪少女） <small>(6%, 178 票)</small><div class="pollbar" style="width: 5%;" title="☆斯特拉女子学院C3部（打枪少女） (6% | 178 票)"></div></li><li>归宅部（无聊的日常） <small>(6%, 176 票)</small><div class="pollbar" style="width: 5%;" title="归宅部（无聊的日常） (6% | 176 票)"></div></li><li>玉响 第二季 <small>(5%, 136 票)</small><div class="pollbar" style="width: 5%;" title="玉响 第二季 (5% | 136 票)"></div></li><li>★暗芝居 （泡面鬼故事） <small>(4%, 109 票)</small><div class="pollbar" style="width: 4%;" title="★暗芝居 （泡面鬼故事） (4% | 109 票)"></div></li><li>Fantasisita Doll （卡牌类） <small>(3%, 92 票)</small><div class="pollbar" style="width: 3%;" title="Fantasisita Doll （卡牌类） (3% | 92 票)"></div></li></ul><p style="text-align: center;">投票人数: <strong>3,019</strong></p></div><p>开始日期: 2013 年 8 月 3 日 @ 11:20<br/>截止日期: 2013 年 12 月 31 日 @ 23:59</p><p style="text-align: center;"><strong>你是妹控吗？</strong></p><div id="polls-3-ans" class="wp-polls-ans"><ul class="wp-polls-ul"><li>我是萝莉控！ <small>(56%, 6,242 票)</small><div class="pollbar" style="width: 50%;" title="我是萝莉控！ (56% | 6,242 票)"></div></li><li>我是妹控！ <small>(52%, 5,837 票)</small><div class="pollbar" style="width: 47%;" title="我是妹控！ (52% | 5,837 票)"></div></li><li>我是御姐控！ <small>(32%, 3,587 票)</small><div class="pollbar" style="width: 29%;" title="我是御姐控！ (32% | 3,587 票)"></div></li><li>人妻控！ <small>(11%, 1,238 票)</small><div class="pollbar" style="width: 10%;" title="人妻控！ (11% | 1,238 票)"></div></li><li>我是伪娘控！ <small>(8%, 836 票)</small><div class="pollbar" style="width: 7%;" title="我是伪娘控！ (8% | 836 票)"></div></li><li>欧巴桑控！ <small>(1%, 118 票)</small><div class="pollbar" style="width: 1%;" title="欧巴桑控！ (1% | 118 票)"></div></li></ul><p style="text-align: center;">投票人数: <strong>11,136</strong></p></div><p>开始日期: 2013 年 7 月 1 日 @ 00:00<br/>截止日期: 永远有效</p><p style="text-align: center;"><strong>神社人口调查，请问你的性别是什么？请实话实说，谢谢！</strong></p><div id="polls-2-ans" class="wp-polls-ans"><ul class="wp-polls-ul"><li>男生 <small>(81%, 8,664 票)</small><div class="pollbar" style="width: 73%;" title="男生 (81% | 8,664 票)"></div></li><li>其他 <small>(9%, 1,013 票)</small><div class="pollbar" style="width: 8%;" title="其他 (9% | 1,013 票)"></div></li><li>女生 <small>(10%, 1,006 票)</small><div class="pollbar" style="width: 8%;" title="女生 (10% | 1,006 票)"></div></li></ul><p style="text-align: center;">投票人数: <strong>10,683</strong></p></div><p>开始日期: 2013 年 5 月 22 日 @ 10:33<br/>截止日期: 永远有效</p><p style="text-align: center;"><strong>你觉得神社怎么样?</strong></p><div id="polls-1-ans" class="wp-polls-ans"><ul class="wp-polls-ul"><li>★★★★★ <small>(78%, 153 票)</small><div class="pollbar" style="width: 70%;" title="★★★★★ (78% | 153 票)"></div></li><li>★★★★ <small>(19%, 37 票)</small><div class="pollbar" style="width: 17%;" title="★★★★ (19% | 37 票)"></div></li><li>★★★ <small>(2%, 3 票)</small><div class="pollbar" style="width: 2%;" title="★★★ (2% | 3 票)"></div></li><li>★ <small>(2%, 3 票)</small><div class="pollbar" style="width: 2%;" title="★ (2% | 3 票)"></div></li><li>★★ <small>(0%, 0 票)</small><div class="pollbar" style="width: 1%;" title="★★ (0% | 0 票)"></div></li></ul><p style="text-align: center;">投票人数: <strong>196</strong></p></div><p>开始日期: 2013 年 5 月 22 日 @ 10:32<br/>截止日期: 永远有效</p></div>
+
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-35058 -->
+
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			《<span>投票系统</span>》上有 5 条评论		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment byuser comment-author-clgx even thread-even depth-1" id="li-comment-58028">
+		<article id="comment-58028" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/1.gravatar.com/avatar/68x68x713cb492ec23b41f8b96d9656ebc487f,qs=68,ad=wavatar,ar=G.pagespeed.ic.uf4Nv0x7HQ.jpg' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">PAD长</span> 在 <a href="http://www.hacg.me/wordpress/polls/comment-page-1#comment-58028"><time pubdate datetime="2013-05-25T13:59:16+00:00">2013 年 5 月 25 日13:59</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>喵~~~~~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/polls?replytocom=58028#respond' onclick='return addComment.moveForm("comment-58028", "58028", "respond", "35058")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-rainboy odd alt thread-odd thread-alt depth-1" id="li-comment-58032">
+		<article id="comment-58032" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/2ce2c0a7d4a5008a33d99469aabd44cc?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">Rainboy</span> 在 <a href="http://www.hacg.me/wordpress/polls/comment-page-1#comment-58032"><time pubdate datetime="2013-05-25T14:14:19+00:00">2013 年 5 月 25 日14:14</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>唔~~~~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/polls?replytocom=58032#respond' onclick='return addComment.moveForm("comment-58032", "58032", "respond", "35058")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-gg-ice even thread-even depth-1" id="li-comment-58086">
+		<article id="comment-58086" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/6ba1417dad65c4c8e81ffbd4cb1f42ce?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">GG-ice</span> 在 <a href="http://www.hacg.me/wordpress/polls/comment-page-1#comment-58086"><time pubdate datetime="2013-05-25T21:39:33+00:00">2013 年 5 月 25 日21:39</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>12个女生出来。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/polls?replytocom=58086#respond' onclick='return addComment.moveForm("comment-58086", "58086", "respond", "35058")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-shwxr odd alt thread-odd thread-alt depth-1" id="li-comment-58116">
+		<article id="comment-58116" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/46ee81559f7d6c3a7aa31bd7c488a948?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">叶之秋痕</span> 在 <a href="http://www.hacg.me/wordpress/polls/comment-page-1#comment-58116"><time pubdate datetime="2013-05-26T01:15:57+00:00">2013 年 5 月 26 日01:15</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>居然有15个女生…有敢自爆的吗？</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/polls?replytocom=58116#respond' onclick='return addComment.moveForm("comment-58116", "58116", "respond", "35058")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-wenke even thread-even depth-1" id="li-comment-59541">
+		<article id="comment-59541" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/69c41167e3d5154e55397e6c11136d48?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">wenke</span> 在 <a href="http://www.hacg.me/wordpress/polls/comment-page-1#comment-59541"><time pubdate datetime="2013-06-05T22:53:07+00:00">2013 年 6 月 5 日22:53</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>求妹子</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/polls?replytocom=59541#respond' onclick='return addComment.moveForm("comment-59541", "59541", "respond", "35058")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">发表评论 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/polls#respond" style="display:none;">取消回复</a></small></h3>
+									<form action="http://www.hacg.me/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">电子邮件地址不会被公开。 必填项已用<span class="required">*</span>标注</p>							<p class="comment-form-author"><label for="author">姓名 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true'/></p>
+<p class="comment-form-email"><label for="email">电子邮件 <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required='true'/></p>
+												<p class="comment-form-comment"><label for="comment">评论</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">您可以使用这些<abbr title="HyperText Markup Language">HTML</abbr>标签和属性： <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="发表评论"/>
+							<input type='hidden' name='comment_post_ID' value='35058' id='comment_post_ID'/>
+<input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0ccb06c191"/></p>					</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="wp_sidebarlogin-2" class="widget widget_wp_sidebarlogin"><h3 class="widget-title">登入</h3>
+		<form name="loginform" id="loginform" action="http://www.hacg.me/wordpress/wp-login.php" method="post">
+			
+			<p class="login-username">
+				<label for="user_login">用户名</label>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20"/>
+			</p>
+			<p class="login-password">
+				<label for="user_pass">密码</label>
+				<input type="password" name="pwd" id="user_pass" class="input" value="" size="20"/>
+			</p>
+			
+			<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" checked="checked"/> 记住我</label></p>
+			<p class="login-submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="登入"/>
+				<input type="hidden" name="redirect_to" value="http://www.hacg.me/wordpress/polls"/>
+			</p>
+			
+		</form><ul class="pagenav sidebar_login_links"><li class="%e7%99%bb%e5%85%a5%e9%a1%b5-link"><a href="http://www.hacg.me/wordpress/wp-login.php">登入页</a></li><li class="lost_password-link"><a href="http://www.hacg.me/wordpress/wp-login.php?action=lostpassword">丢失密码？</a></li></ul></aside><aside id="text-20" class="widget widget_text">			<div class="textwidget"><p><a href="http://www.hacg.me/wordpress/wp-admin/post-new.php" title="点击分享文章">分享新文章</a><br/>
+<a href="http://t.hacg.me/" title="照相馆">琉璃神社の社员馆</a></p>
+<p>小撸怡情，大撸伤身，强撸灰飞烟灭</p>
+<p><img alt="rss" src="http://1-ps.googleusercontent.com/x/www.hacg.me/i.imgur.com/x1W1W.png.pagespeed.ce.YfNuPdGs7w.png" width="16"/>&nbsp;&nbsp;<a href="http://feed.feedsky.com/HACGme" target="_blank" title="使用 RSS2.0 订阅 每天推送资源 推荐使用Google Reader">订阅RSS</a></p>
+</div>
+		</aside><aside id="wkc_recent_comments-2" class="widget widget_wkc_recent_comments"><h3 class="widget-title">最新评论</h3><ul>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40364#comment-85908"><img alt='' src='http://0.gravatar.com/avatar/27b6f4aa3236bd8ed08d90577db44807?s=45&amp;d=wavatar&amp;r=G' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40364#comment-85908">月小炎</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40364#comment-85908">[COSRLAY] (C82) とあるキバシの神裂火织 - final dearest</a> 
+我剧场版一直放着没看就这样被H萌剧透了··</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40389#comment-85900"><img alt='' src='http://0.gravatar.com/avatar/aa6e54f8d3cc9b9c17e5648c3593d711?s=45&amp;d=wavatar&amp;r=G' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85900">虚无信徒</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85900">【2013年⑨月里番散装】额，合集什么的木有</a> 
+真是辛苦了
+不过话说如此宣战没问题吗</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40389#comment-85899"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/1.gravatar.com/avatar/45x45x7682745e79d42657a677e0c48d62c5c2,qs=45,ad=wavatar,ar=G.pagespeed.ic.xOOrblgLK1.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85899">悠云之月</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85899">【2013年⑨月里番散装】额，合集什么的木有</a> 
+10月看了下，就等着开发三味撸了</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40389#comment-85898"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/1.gravatar.com/avatar/45x45x7682745e79d42657a677e0c48d62c5c2,qs=45,ad=wavatar,ar=G.pagespeed.ic.xOOrblgLK1.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85898">悠云之月</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85898">【2013年⑨月里番散装】额，合集什么的木有</a> 
+P长辛苦了</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40292#comment-85895"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/0.gravatar.com/avatar/45x45xe670835f05e5a8a4d04114d16e25283a,qs=45,ad=wavatar,ar=G.pagespeed.ic.APChV1rqd7.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40292#comment-85895">逆风</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40292#comment-85895">[スタッフィング] 催眠演舞 本体+特典CD+全CG包</a> 
+从文件名上看那个特典只是drama CD而已</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40366#comment-85894"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/0.gravatar.com/avatar/45x45x6baa0d58954ac059ec44103e2b861006,qs=45,ad=wavatar,ar=G.pagespeed.ic.11doKpwyfT.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40366#comment-85894">神一样的孩纸</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40366#comment-85894">【琉璃神社汉化】(C84) [しもやけ堂 (逢魔刻壱)] 文学少女と蠱惑の午後 (偶像大师)</a> 
+TAT不科学</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40364#comment-85893"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/0.gravatar.com/avatar/45x45x6baa0d58954ac059ec44103e2b861006,qs=45,ad=wavatar,ar=G.pagespeed.ic.11doKpwyfT.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40364#comment-85893">神一样的孩纸</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40364#comment-85893">[COSRLAY] (C82) とあるキバシの神裂火织 - final dearest</a> 
+麻麻，这里有个变态叔叔</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40389#comment-85892"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/1.gravatar.com/avatar/45x45xdb8412ad190a83593f339fb9ba5cb165,qs=45,ad=wavatar,ar=G.pagespeed.ic.eO0j0_ghxE.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85892">艾路猫</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85892">【2013年⑨月里番散装】额，合集什么的木有</a> 
+纯情少女、女子高生。</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40325#comment-85872"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/0.gravatar.com/avatar/45x45xe6d1dce992ffd0edc5b2ec8110137279,qs=45,ad=wavatar,ar=G.pagespeed.ic.YJvxS8OnEk.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40325#comment-85872">cookie</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40325#comment-85872">[戯画] Baldr Sky Zero バルドスカイ ゼロ 初回版 本体+特典+破解补丁</a> 
+下載完DISC1.2等等之後
+解壓縮MDF檔
+然後點了其中的EXE檔也沒反應
+請問要怎麼開啟...</li>
+<li><a class="alignright" href="http://www.hacg.me/wordpress/40389#comment-85871"><img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/0.gravatar.com/avatar/45x45xe6d1dce992ffd0edc5b2ec8110137279,qs=45,ad=wavatar,ar=G.pagespeed.ic.YJvxS8OnEk.jpg' class='avatar avatar-45 photo' height='45' width='45'/></a><a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85871">cookie</a>
+<a class="commentor" href="http://www.hacg.me/wordpress/40389#comment-85871">【2013年⑨月里番散装】额，合集什么的木有</a> 
+可惡
+發現自己全部都看過的我好糟糕</li>
+</ul>
+</aside><aside id="text-25" class="widget widget_text">			<div class="textwidget"><a href="http://item.taobao.com/item.htm?id=18394986966" target="_blank"><img src="http://1-ps.googleusercontent.com/x/www.hacg.me/img01.taobaocdn.com/bao/uploaded/i1/13247025328514867/xT1oExIFodcXXXXXXXX_,21,210-item_pic.jpg_180x180.jpg.pagespeed.ic.vzBu-Iw00O.jpg" alt="忍野忍"/></a>
+<a href="http://item.taobao.com/item.htm?id=18394986966" target="_blank"><p style="text-align: center;">化物语 小忍 忍野忍 甜甜圈 手办</p></a></div>
+		</aside><!-- Wordpress Popular Posts Plugin v2.3.5 [W] [monthly] [comments] [regular] -->
+<aside id="wpp-4" class="widget popular-posts">
+<h3 class="widget-title">热评文章</h3><ul>
+<li><a href="http://www.hacg.me/wordpress/39602" title="[私立さくらんぼ小学校] 子作り練習授業 Love&#8217;s Right セックスしないと即死刑" class="wpp-post-title">[私立さくらんぼ小学校] 子作り練習授業 Love&#8217;s Right セックスしないと即死刑</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40033" title="[LION HEART] 天壌のテンペスト 天壤大乱斗 C84东方同人游戏" class="wpp-post-title">[LION HEART] 天壌のテンペスト 天壤大乱斗 C84东方同人游戏</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/36763" title="【TMA/AKB EXpotion】HITMA合集 AKB-001到050 [持续更新] CosPlay系列" class="wpp-post-title">【TMA/AKB EXpotion】HITMA合集 AKB-001到050 [持续更新] CosPlay系列</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/32350" title="【TMA/CMP】合集 COSQ-001到029 [持续更新]" class="wpp-post-title">【TMA/CMP】合集 COSQ-001到029 [持续更新]</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40292" title="[スタッフィング] 催眠演舞 本体+特典CD+全CG包" class="wpp-post-title">[スタッフィング] 催眠演舞 本体+特典CD+全CG包</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40285" title="[@OZ] とある美琴の痴漢電車 陵辱急行" class="wpp-post-title">[@OZ] とある美琴の痴漢電車 陵辱急行</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40021" title="关于神社的访问故障问题的一些调查和解决方案" class="wpp-post-title">关于神社的访问故障问题的一些调查和解决方案</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39618" title="[CINEMATOGRAPH] イノセントバレット -the false world- 本体+全CG" class="wpp-post-title">[CINEMATOGRAPH] イノセントバレット -the false world- 本体+全CG</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40062" title="[ニトロプラス] Phantom PHANTOM OF INFERNO PC版 + 破解补丁" class="wpp-post-title">[ニトロプラス] Phantom PHANTOM OF INFERNO PC版 + 破解补丁</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39821" title="(C84)[ZENITH BLUE] 巫剣神威控 完整版" class="wpp-post-title">(C84)[ZENITH BLUE] 巫剣神威控 完整版</a> <span class="post-stats"></span></li>
+
+</ul>
+</aside>
+<!-- End Wordpress Popular Posts Plugin v2.3.5 -->
+<aside id="wkc_random_posts" class="widget widget_wkc_random_posts"><h3 class="widget-title">随机推荐</h3><ul>
+<li>   <a href="http://www.hacg.me/wordpress/11573" rel="bookmark" title="Permanent Link: [ぴたふぇち！] ちゅぴちゅぴ男の娘 ～家庭教師と双子のひみつの授業～...   2012.03.27">[ぴたふぇち！] ちゅぴちゅぴ男の娘 ～家庭教師と双子のひみつの授業～</a>:  大学生的主人公，被父亲的朋友所拜托，让他做一对双胞胎姐妹的家庭教师。然后他在被介绍房屋的时候，遇......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/14288" rel="bookmark" title="Permanent Link: [酉川宇宙]暴想少女/女子防身术大全...   2012.05.19">[酉川宇宙]暴想少女/女子防身术大全</a>:  作品简介:美少女弥生是一个有被害妄想症的女孩，误以为看似不良少年其实是个老好人的铃木想霸占了她,......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/303" rel="bookmark" title="Permanent Link: 【QB】日文听力测试...   2011.04.25">【QB】日文听力测试</a>: 一些下载地址  可能没有字幕。日文听力测试 图片可能存在尺度问题，就不放了。。。   ......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/39501" rel="bookmark" title="Permanent Link: [鈴木みら乃] RIN×SEN＋Ran→Sem Cross Mix 第2话（1-2）...   2013.09.5">[鈴木みら乃] RIN×SEN＋Ran→Sem Cross Mix 第2话（1-2）</a>:  鈴木みら乃公司游戏改编的动画，这个就是上次那个黑铜学园杯具女教师救男友，不过还是被男友背叛的，不......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/34392" rel="bookmark" title="Permanent Link: [WHITE BEAR]STARLESS IV 圣少女 (1-4)...   2013.05.7">[WHITE BEAR]STARLESS IV 圣少女 (1-4)</a>:  聖少女氏の描く倒錯世界『STARLESS』 ついに最終巻！重口味的动画，这次倒还好。之前的各种训......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/3968" rel="bookmark" title="Permanent Link: 凉宫春日的3D同人游戏...   2011.09.21">凉宫春日的3D同人游戏</a>:  画质相当不错呵呵，就是不给你们看。。液液液~~~     封面很恶劣  凉宫春日的......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/3185" rel="bookmark" title="Permanent Link: [日常角色歌][110810]日常のキャラクターソング その6 水上麻衣（CV：富樫美鈴)「麻衣の涙の阿弥陀如来」...   2011.08.23">[日常角色歌][110810]日常のキャラクターソング その6 水上麻衣（CV：富樫美鈴)「麻衣の涙の阿弥陀如来」</a>:  曲目リスト   1. 麻衣の涙の阿弥陀如来  2. 麻衣のカカカタ☆カタオモイ-梵 3.......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/20038" rel="bookmark" title="Permanent Link: [琉璃神社汉化](武内一真)ラブカラ love the collar(COMIC HotMilk 2012年9月号)...   2012.08.10">[琉璃神社汉化](武内一真)ラブカラ love the collar(COMIC HotMilk 2012年9月号)</a>:  男主喜欢大型犬，然后女主就去弄了一个项圈。。。然后就是大家喜闻乐见的。。     [琉......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/23151" rel="bookmark" title="Permanent Link:  またにてぃもんすたぁず！～深窓の真祖とえっちでアブナイ真相追求！～ 游戏+CG包...   2012.10.25"> またにてぃもんすたぁず！～深窓の真祖とえっちでアブナイ真相追求！～ 游戏+CG包</a>:  今天通了的18X撸做。是一个短游戏来的。我会告诉你我是冲着猫耳妹去的吗(＞﹏＜)    ......  </li>
+<li>   <a href="http://www.hacg.me/wordpress/7157" rel="bookmark" title="Permanent Link: [ピンクパイナップル]霧谷伯爵家の六姉妹 (1-2)...   2011.12.25">[ピンクパイナップル]霧谷伯爵家の六姉妹 (1-2)</a>:  新堂エル・ティーアイネット／ピンクパイナップル 他们的风格就是这样了。。比如之前的TSF物语。......  </li>
+</ul>
+</aside><aside id="text-26" class="widget widget_text">			<div class="textwidget"><a href="http://item.taobao.com/item.htm?id=18720877431" target="_blank"><img src="http://1-ps.googleusercontent.com/x/www.hacg.me/gd2.alicdn.com/bao/uploaded/i2/13247028145171427/xT1Db1UFd4fXXXXXXXX_,21,210-item_pic.jpg_310x310.jpg.pagespeed.ic.oCrJlSb0yR.jpg" alt="本间芽衣子"/></a>
+<a href="http://item.taobao.com/item.htm?id=18720877431" target="_blank"><p style="text-align: center;">本间芽衣子 面码 泳装手办 未闻花名</p></a></div>
+		</aside><!-- Wordpress Popular Posts Plugin v2.3.5 [W] [monthly] [views] [regular] -->
+<aside id="wpp-3" class="widget popular-posts">
+<h3 class="widget-title">点击榜</h3><ul>
+<li><a href="http://www.hacg.me/wordpress/32350" title="【TMA/CMP】合集 COSQ-001到029 [持续更新]" class="wpp-post-title">【TMA/CMP】合集 COSQ-001到029 [持续更新]</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/36763" title="【TMA/AKB EXpotion】HITMA合集 AKB-001到050 [持续更新] CosPlay系列" class="wpp-post-title">【TMA/AKB EXpotion】HITMA合集 AKB-001到050 [持续更新] CosPlay系列</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39602" title="[私立さくらんぼ小学校] 子作り練習授業 Love&#8217;s Right セックスしないと即死刑" class="wpp-post-title">[私立さくらんぼ小学校] 子作り練習授業 Love&#8217;s Right セックスしないと即死刑</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39642" title="无□动漫老番合集" class="wpp-post-title">无□动漫老番合集</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39694" title="[セイバーフィッシュ(saberfish)] カラダを売る制服女子ナマハメ中出し To Love同人游戏 本体+全CG" class="wpp-post-title">[セイバーフィッシュ(saberfish)] カラダを売る制服女子ナマハメ中出し To Love同人游戏 本体+全CG</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39501" title="[鈴木みら乃] RIN×SEN＋Ran→Sem Cross Mix 第2话（1-2）" class="wpp-post-title">[鈴木みら乃] RIN×SEN＋Ran→Sem Cross Mix 第2话（1-2）</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39750" title="[PoRO] 鬼父 1 全5集 720P 收藏版 中文字幕" class="wpp-post-title">[PoRO] 鬼父 1 全5集 720P 收藏版 中文字幕</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40100" title="俺妹 同人游戏 新垣绫濑 我的妹妹不可能那么可爱" class="wpp-post-title">俺妹 同人游戏 新垣绫濑 我的妹妹不可能那么可爱</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/39737" title="[ナイトホーク] 卡在墙里不能动了 2 壁にはまってうごけない! 2" class="wpp-post-title">[ナイトホーク] 卡在墙里不能动了 2 壁にはまってうごけない! 2</a> <span class="post-stats"></span></li>
+<li><a href="http://www.hacg.me/wordpress/40186" title="[PoRO] ヌキどきッ！ ～天使と悪魔の搾精バトル～ （1-2）" class="wpp-post-title">[PoRO] ヌキどきッ！ ～天使と悪魔の搾精バトル～ （1-2）</a> <span class="post-stats"></span></li>
+
+</ul>
+</aside>
+<!-- End Wordpress Popular Posts Plugin v2.3.5 -->
+<aside id="text-27" class="widget widget_text">			<div class="textwidget"><a href="http://item.taobao.com/item.htm?id=20278970921" target="_blank"><img src="http://1-ps.googleusercontent.com/x/www.hacg.me/img01.taobaocdn.com/bao/uploaded/i3/10393040408020310/xT1QrSJFohfXXXXXXXX_,21,210-item_pic.jpg_310x310.jpg.pagespeed.ic.QjrnWLiCOR.jpg" alt="兔雅 冬被被芯"/></a>
+<a href="http://item.taobao.com/item.htm?id=20278970921" target="_blank"><p style="text-align: center;">兔雅 冬被被芯 学生被 保暖特惠</p></a></div>
+		</aside><aside id="tag_cloud-3" class="widget widget_tag_cloud"><h3 class="widget-title">H只是浮云</h3><div class="tagcloud"><a href='http://www.hacg.me/wordpress/tag/3d' class='tag-link-33' title='35个话题' style='font-size: 14.0540540541pt;'>3D</a>
+<a href='http://www.hacg.me/wordpress/tag/adv' class='tag-link-208' title='34个话题' style='font-size: 13.8018018018pt;'>ADV</a>
+<a href='http://www.hacg.me/wordpress/tag/c80' class='tag-link-146' title='22个话题' style='font-size: 11.5315315315pt;'>C80</a>
+<a href='http://www.hacg.me/wordpress/tag/c81' class='tag-link-275' title='25个话题' style='font-size: 12.1621621622pt;'>C81</a>
+<a href='http://www.hacg.me/wordpress/tag/c82' class='tag-link-458' title='28个话题' style='font-size: 12.7927927928pt;'>C82</a>
+<a href='http://www.hacg.me/wordpress/tag/c83' class='tag-link-610' title='26个话题' style='font-size: 12.4144144144pt;'>C83</a>
+<a href='http://www.hacg.me/wordpress/tag/c84' class='tag-link-1015' title='30个话题' style='font-size: 13.1711711712pt;'>C84</a>
+<a href='http://www.hacg.me/wordpress/tag/comic1%e2%98%866' class='tag-link-381' title='12个话题' style='font-size: 8.37837837838pt;'>COMIC1☆6</a>
+<a href='http://www.hacg.me/wordpress/tag/cosplay' class='tag-link-158' title='39个话题' style='font-size: 14.5585585586pt;'>cosplay</a>
+<a href='http://www.hacg.me/wordpress/tag/erogame-2' class='tag-link-8' title='34个话题' style='font-size: 13.8018018018pt;'>galgame</a>
+<a href='http://www.hacg.me/wordpress/tag/h' class='tag-link-54' title='12个话题' style='font-size: 8.37837837838pt;'>H</a>
+<a href='http://www.hacg.me/wordpress/tag/loli' class='tag-link-73' title='22个话题' style='font-size: 11.5315315315pt;'>loli</a>
+<a href='http://www.hacg.me/wordpress/tag/miku' class='tag-link-264' title='13个话题' style='font-size: 8.88288288288pt;'>miku</a>
+<a href='http://www.hacg.me/wordpress/tag/ntr' class='tag-link-92' title='24个话题' style='font-size: 12.036036036pt;'>NTR</a>
+<a href='http://www.hacg.me/wordpress/tag/op-2' class='tag-link-68' title='28个话题' style='font-size: 12.7927927928pt;'>OP</a>
+<a href='http://www.hacg.me/wordpress/tag/poro' class='tag-link-39' title='26个话题' style='font-size: 12.4144144144pt;'>PoRO</a>
+<a href='http://www.hacg.me/wordpress/tag/tma' class='tag-link-49' title='15个话题' style='font-size: 9.51351351351pt;'>TMA</a>
+<a href='http://www.hacg.me/wordpress/tag/to-love' class='tag-link-108' title='21个话题' style='font-size: 11.2792792793pt;'>to love</a>
+<a href='http://www.hacg.me/wordpress/tag/yooo' class='tag-link-143' title='11个话题' style='font-size: 8pt;'>YOOO</a>
+<a href='http://www.hacg.me/wordpress/tag/%e3%83%94%e3%83%b3%e3%82%af%e3%83%91%e3%82%a4%e3%83%8a%e3%83%83%e3%83%97%e3%83%ab' class='tag-link-500' title='16个话题' style='font-size: 9.89189189189pt;'>ピンクパイナップル</a>
+<a href='http://www.hacg.me/wordpress/tag/%e4%b8%9c%e6%96%b9' class='tag-link-15' title='16个话题' style='font-size: 9.89189189189pt;'>东方</a>
+<a href='http://www.hacg.me/wordpress/tag/%e4%b8%9c%e6%96%b9project' class='tag-link-53' title='44个话题' style='font-size: 15.1891891892pt;'>东方Project</a>
+<a href='http://www.hacg.me/wordpress/tag/%e4%bc%aa%e5%a8%98' class='tag-link-45' title='36个话题' style='font-size: 14.1801801802pt;'>伪娘</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%88%80%e5%89%91%e7%a5%9e%e5%9f%9f' class='tag-link-459' title='13个话题' style='font-size: 8.88288288288pt;'>刀剑神域</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%88%9d%e5%9b%9e' class='tag-link-802' title='12个话题' style='font-size: 8.37837837838pt;'>初回</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%8f%b6%e5%ad%90' class='tag-link-728' title='36个话题' style='font-size: 14.1801801802pt;'>叶子</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%90%88%e9%9b%86' class='tag-link-382' title='15个话题' style='font-size: 9.51351351351pt;'>合集</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%90%8c%e4%ba%ba' class='tag-link-34' title='17个话题' style='font-size: 10.2702702703pt;'>同人</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%90%8c%e4%ba%ba%e5%bf%97' class='tag-link-47' title='48个话题' style='font-size: 15.6936936937pt;'>同人志</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%90%8c%e4%ba%ba%e6%b8%b8%e6%88%8f' class='tag-link-195' title='20个话题' style='font-size: 11.027027027pt;'>同人游戏</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%a3%81%e7%ba%b8' class='tag-link-104' title='28个话题' style='font-size: 12.7927927928pt;'>壁纸</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%a6%b9%e6%8e%a7' class='tag-link-93' title='35个话题' style='font-size: 14.0540540541pt;'>妹控</a>
+<a href='http://www.hacg.me/wordpress/tag/%e5%ad%a6%e5%9b%ad' class='tag-link-237' title='20个话题' style='font-size: 11.027027027pt;'>学园</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%81%8b%e7%88%b1' class='tag-link-238' title='28个话题' style='font-size: 12.7927927928pt;'>恋爱</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%88%91%e7%9a%84%e5%a6%b9%e5%a6%b9%e4%b8%8d%e5%8f%af%e8%83%bd%e9%82%a3%e4%b9%88%e5%8f%af%e7%88%b1' class='tag-link-206' title='13个话题' style='font-size: 8.88288288288pt;'>我的妹妹不可能那么可爱</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%88%91%e7%9a%84%e6%9c%8b%e5%8f%8b%e5%be%88%e5%b0%91' class='tag-link-194' title='18个话题' style='font-size: 10.5225225225pt;'>我的朋友很少</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%97%a0%e6%8d%9f' class='tag-link-702' title='43个话题' style='font-size: 15.0630630631pt;'>无损</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%9d%b1%e6%96%b9' class='tag-link-167' title='18个话题' style='font-size: 10.5225225225pt;'>東方</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%b1%89%e5%8c%96' class='tag-link-62' title='20个话题' style='font-size: 11.027027027pt;'>汉化</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%b1%89%e5%8c%96%e6%b8%b8%e6%88%8f' class='tag-link-631' title='15个话题' style='font-size: 9.51351351351pt;'>汉化游戏</a>
+<a href='http://www.hacg.me/wordpress/tag/%e6%b1%89%e5%8c%96%e7%a1%ac%e7%9b%98%e7%89%88' class='tag-link-673' title='12个话题' style='font-size: 8.37837837838pt;'>汉化硬盘版</a>
+<a href='http://www.hacg.me/wordpress/tag/%e7%8c%8e%e5%a5%87' class='tag-link-110' title='20个话题' style='font-size: 11.027027027pt;'>猎奇</a>
+<a href='http://www.hacg.me/wordpress/tag/hacgme' class='tag-link-27' title='154个话题' style='font-size: 22pt;'>琉璃神社汉化</a>
+<a href='http://www.hacg.me/wordpress/tag/%e7%a9%ba%e6%b0%97%e7%b3%bb' class='tag-link-234' title='27个话题' style='font-size: 12.6666666667pt;'>空気系</a>
+<a href='http://www.hacg.me/wordpress/tag/%e9%ad%94%e6%b3%95%e5%b0%91%e5%a5%b3%e5%b0%8f%e5%9c%86' class='tag-link-36' title='13个话题' style='font-size: 8.88288288288pt;'>魔法少女小圆</a></div>
+</aside><aside id="linkcat-2" class="widget widget_links"><h3 class="widget-title">传送阵</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.hgamecn.com/" title="游戏中文介绍" target="_blank">Hgamecn</a></li>
+<li><a href="http://www.hyyo.net" target="_blank">HY-ACG社区</a></li>
+<li><a href="http://moemoe.us/" target="_blank">moemoe弹幕网</a></li>
+<li><a href="http://www.hacg.me/" rel="friend" title="一点都不工口" target="_blank">★琉璃神社★</a></li>
+<li><a href="http://bbs.rpgsky.net/" rel="nofollow" target="_blank">幻想天空</a></li>
+<li><a href="http://jiecao.cc" rel="nofollow" target="_blank">节操.cc</a></li>
+<li><a href="http://moes.me/" target="_blank">萌众</a></li>
+<li><a href="http://wiki.moegirl.org" rel="nofollow" title="萌娘百科，万物皆可萌的百科全书" target="_blank">萌娘百科</a></li>
+<li><a href="http://oxgood.com/" rel="nofollow" target="_blank">萝莉萌图网</a></li>
+<li><a href="http://bbs.soul-plus.net" title="同人志发布站" target="_blank">魂+ Soul Plus</a></li>
+
+	</ul>
+</aside>
+<aside id="text-18" class="widget widget_text"><h3 class="widget-title">一些推荐文章</h3>			<div class="textwidget"><li><a href="http://www.hacg.me/wordpress/3334" title="关于解决游戏的一些软件">游戏乱码解决软件 NTLEA 0.92<br/>
+</a></li>
+<li><a href="http://www.hacg.me/wordpress/2943" title="今天你撸管了吗？对的起良心啊。">【猥琐调查】今天你撸管了吗？</a></li>
+<li><a href=# onClick="javascript:window.open('http://chat.hacg.me','','width=530,height=520,toolbar=no, status=no, menubar=no, resizable=no, scrollbars=no');return false;">匿名聊天室</a></li>
+<li><a href="http://www.hacg.me/wordpress/dmail" title="">友情链接交换</a></li>
+<p>每天更新 欢迎日常</p>
+</div>
+		</aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">文章归档</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">选择月份</option> 	<option value='http://www.hacg.me/wordpress/date/2013/10'> 2013年十月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/09'> 2013年九月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/08'> 2013年八月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/07'> 2013年七月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/06'> 2013年六月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/05'> 2013年五月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/04'> 2013年四月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/03'> 2013年三月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/02'> 2013年二月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2013/01'> 2013年一月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/12'> 2012年十二月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/11'> 2012年十一月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/10'> 2012年十月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/09'> 2012年九月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/08'> 2012年八月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/07'> 2012年七月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/06'> 2012年六月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/05'> 2012年五月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/04'> 2012年四月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/03'> 2012年三月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/02'> 2012年二月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2012/01'> 2012年一月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/12'> 2011年十二月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/11'> 2011年十一月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/10'> 2011年十月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/09'> 2011年九月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/08'> 2011年八月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/07'> 2011年七月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/06'> 2011年六月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/05'> 2011年五月 </option>
+	<option value='http://www.hacg.me/wordpress/date/2011/04'> 2011年四月 </option>
+ </select>
+</aside><aside id="text-24" class="widget widget_text"><h3 class="widget-title">神社低价特供区域 欢迎选购</h3>			<div class="textwidget"><a href="http://3dacg.taobao.com/" target="_blank"><img src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2013/06/xDSC07303.jpg.pagespeed.ic.PEeuJFjUUq.jpg" alt="五更琉璃"/></a>
+<a href="http://3dacg.taobao.com/" target="_blank"><p style="text-align: center;">神社特惠： 黑猫泳装 1/7手办 好评发售中</p></a>
+
+</div>
+		</aside><aside id="polls-widget-2" class="widget widget_polls-widget"><h3 class="widget-title">小投票</h3><div id="polls-3" class="wp-polls">
+	<form id="polls_form_3" class="wp-polls-form" action="/wordpress/polls" method="post">
+		<p style="display: none;"><input type="hidden" id="poll_3_nonce" name="wp-polls-nonce" value="d9d7df5d38"/></p>
+		<p style="display: none;"><input type="hidden" name="poll_id" value="3"/></p>
+		<p style="display: none;"><input type="hidden" id="poll_multiple_ans_3" name="poll_multiple_ans_3" value="3"/></p>
+		<p style="text-align: center;"><strong>你是妹控吗？</strong></p><div id="polls-3-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+		<li><input type="checkbox" id="poll-answer-10" name="poll_3" value="10"/> <label for="poll-answer-10">我是妹控！</label></li>
+		<li><input type="checkbox" id="poll-answer-11" name="poll_3" value="11"/> <label for="poll-answer-11">我是萝莉控！</label></li>
+		<li><input type="checkbox" id="poll-answer-12" name="poll_3" value="12"/> <label for="poll-answer-12">我是御姐控！</label></li>
+		<li><input type="checkbox" id="poll-answer-13" name="poll_3" value="13"/> <label for="poll-answer-13">欧巴桑控！</label></li>
+		<li><input type="checkbox" id="poll-answer-14" name="poll_3" value="14"/> <label for="poll-answer-14">人妻控！</label></li>
+		<li><input type="checkbox" id="poll-answer-15" name="poll_3" value="15"/> <label for="poll-answer-15">我是伪娘控！</label></li>
+		</ul><p style="text-align: center;"><input type="button" name="vote" value="   投票   " class="Buttons" onclick="poll_vote(3);"/></p><p style="text-align: center;"><a href="#ViewPollResults" onclick="poll_result(3); return false;" title="查看投票结果">查看结果</a></p></div>
+	</form>
+</div>
+<div id="polls-3-loading" class="wp-polls-loading"><img src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-polls/images/loading.gif.pagespeed.ce.lC2P4JLBxH.gif" width="16" height="16" alt="载入中 ..." title="载入中 ..." class="wp-polls-image"/>&nbsp;载入中 ...</div>
+</aside>		</div><!-- #secondary .widget-area -->
+
+
+
+	</div><!-- #main -->
+
+
+
+	<footer id="colophon" role="contentinfo">
+
+
+
+			
+<div id="supplementary" class="two">
+		<div id="first" class="widget-area" role="complementary">
+		<aside id="text-8" class="widget widget_text">			<div class="textwidget">联系合作：misaki@hacg.me<br>
+少上点网，多点运动；好好学习，天天向上<br>
+<script id="_wauvtb">var _wau=_wau||[];_wau.push(["small","6koqvqcmh1p9","vtb"]);(function(){var s=document.createElement("script");s.async=true;s.src="http://widgets.amung.us/small.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<!-- BEGIN Tynt Script -->
+<script type="text/javascript">if(document.location.protocol=='http:'){ var Tynt=Tynt||[];Tynt.push('apNazuSgOr4RQlacwqm_6l'); (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();}</script>
+<!-- END Tynt Script -->
+
+
+
+
+</div>
+		</aside>	</div><!-- #first .widget-area -->
+	
+		<div id="second" class="widget-area" role="complementary">
+		<aside id="text-11" class="widget widget_text">			<div class="textwidget"><p>本站不提供任何上传下载服务，所有内容均来自分享站点所提供的公开引用资源。 如果有版权内容，请通知作者删除。</p>
+<p>本站不支持 IE6 浏览器 如果网页显示不正常，请升级到 IE8 及以上<br/>
+推荐使用 IE10、Firefox、Chrome 等专业浏览器</p>
+</div>
+		</aside>	</div><!-- #second .widget-area -->
+	
+	</div><!-- #supplementary -->
+
+
+			<div id="site-generator">
+
+				
+				<a href="http://www.hacg.me/" title="欢迎光临 琉璃神社" rel="generator">Power by HACG.ME </a>   Copyright &copy; 2011-2013 琉璃神社 All Rights Reserved <a href="/wordpress/sitemap.xml" title="sitemap">Site</a><a href="/wordpress/sitemap_baidu.xml" title="sitemap">map</a> <a href="/wordpress/sitemap.html" title="txt">txt</a>
+
+			</div>
+
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+
+
+<p style="margin:0;padding:0;height:1px;overflow:hidden;">
+    <script type="text/javascript">var wumiiSitePrefix="http://www.hacg.me/wordpress";var wumiiEnableCustomPos=false;var wumiiParams="&num=12&mode=3&displayInFeed=0&version=1.0.5.6&pf=WordPress3.6";var wumiiCategories=[];</script><script type="text/javascript" src="http://1-ps.googleusercontent.com/x/www.hacg.me/widget.wumii.cn/ext/relatedItemsWidget.pagespeed.jm.17Zr7hTe_N.js"></script><a href="http://www.wumii.com/widget/relatedItems" style="border:0;"><img src="http://1-ps.googleusercontent.com/x/www.hacg.me/static.wumii.cn/images/xpixel.png.pagespeed.ic.kQVQy07gLN.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;"/></a>
+</p><script type='text/javascript'>var pollsL10n={"ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","text_wait":"\u4f60\u7684\u8bf7\u6c42\u6b63\u5728\u6267\u884c\u4e2d\uff0c\u8bf7\u7a0d\u7b49...","text_valid":"\u8bf7\u9009\u62e9\u6709\u6548\u7684\u6295\u7968\u9009\u9879","text_multiple":"\u6700\u591a\u5141\u8bb8\u9009\u62e9\u591a\u5c11\u9879\uff1a","show_loading":"1","show_fading":"1"};</script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-polls/polls-js.js,qver=2.63.pagespeed.jm.gEuFdU9zw-.js'></script>
+<script type='text/javascript'>var viewsCacheL10n={"admin_ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","post_id":"35058"};</script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-postviews/postviews-cache.js,qver=1.64.pagespeed.ce.75iePw27CH.js'></script>
+
+
+<script pagespeed_no_defer="">(function(){var e=window,f=Math,g="round",h="performance",k="&rit_script=",r="&rit_link=",y="&rit_img=",z="&rit_css=",A="&nttfb=",B="&nfd=",C="&ndt=",D="&nct=",E="&nbt=",F="&mfd=",G="&attfb=",H="&afd=",I="&adt=",J="&act=",K="&abt=",L="";e.pagespeed=e.pagespeed||{};var M=e.pagespeed;
+M.getResourceTimingData=function(){if(e[h]&&(e[h].getEntries||e[h].webkitGetEntries)){for(var s=0,t=0,l=0,u=0,m=0,v=0,n=0,w=0,p=0,x=0,q=0,c={},d=e[h].getEntries?e[h].getEntries():e[h].webkitGetEntries(),b=0;b<d.length;b++){var a=d[b].duration;0<a&&(s+=a,++l,t=f.max(t,a));a=d[b].connectEnd-d[b].connectStart;0<a&&(v+=a,++n);a=d[b].domainLookupEnd-d[b].domainLookupStart;0<a&&(u+=a,++m);a=d[b].initiatorType;c[a]?++c[a]:c[a]=1;a=d[b].requestStart-d[b].fetchStart;0<a&&(x+=a,++q);a=d[b].responseStart-d[b].requestStart;
+0<a&&(w+=a,++p)}return H+(l?f[g](s/l):0)+B+l+F+f[g](t)+J+(n?f[g](v/n):0)+D+n+I+(m?f[g](u/m):0)+C+m+K+(q?f[g](x/q):0)+E+q+G+(p?f[g](w/p):0)+A+p+(c.css?z+c.css:L)+(c.link?r+c.link:L)+(c.script?k+c.script:L)+(c.img?y+c.img:L)}return L};M.getResourceTimingData=M.getResourceTimingData;})();
+(function(){var c=encodeURIComponent,f=window,h="performance",k="unload:",l="on",m="load:",n="load",p="ets=",q="beforeunload",r="EventStart",s="?",t="=",u="&url=",v="&ttfb=",w="&req_start=",x="&ref=",y="&r",z="&nt=",A="&nrp=",B="&nav=",C="&ifr=1",D="&ifr=0",E="&htmlAt=",F="&fp=",G="&dwld=",H="&dom_c=",I="&dns=",J="&connect=",K="&ccul=",L="&ccrl=",M="&ccos=",N="&ccis=",O="&cces=",P="&b_csi=",Q="&",R="";f.pagespeed=f.pagespeed||{};var S=f.pagespeed,T=function(a,d,b,e){this.d=a;this.a=d;this.b=b;this.e=e};S.beaconUrl=R;
+T.prototype.c=function(){var a=this.d,d=f.mod_pagespeed_start,b=Number(new Date)-d,a=a+(-1==a.indexOf(s)?s:Q),a=a+p+(this.a==n?m:k),a=a+b;if(this.a!=q||!f.mod_pagespeed_loaded){a+=y+this.a+t;if(f[h]){var b=f[h].timing,e=b.navigationStart,g=b.requestStart,a=a+(b[this.a+r]-e),a=a+(B+(b.fetchStart-e)),a=a+(I+(b.domainLookupEnd-b.domainLookupStart)),a=a+(J+(b.connectEnd-b.connectStart)),a=a+(w+(g-e)),a=a+(v+(b.responseStart-g)),a=a+(G+(b.responseEnd-b.responseStart)),a=a+(H+(b.domContentLoadedEventStart-
+e));f[h].navigation&&(a+=z+f[h].navigation.type);e=-1;b.msFirstPaint?e=b.msFirstPaint:f.chrome&&f.chrome.loadTimes&&(e=Math.floor(1E3*f.chrome.loadTimes().firstPaintTime));e-=g;0<=e&&(a+=F+e)}else a+=b;S.getResourceTimingData&&f.parent==f&&(a+=S.getResourceTimingData());a+=f.parent!=f?C:D;this.a==n&&(f.mod_pagespeed_loaded=!0,(b=f.mod_pagespeed_num_resources_prefetched)&&(a+=A+b),(b=f.mod_pagespeed_prefetch_start)&&(a+=E+(d-b)));S.panelLoader&&(d=S.panelLoader.getCsiTimingsString(),d!=R&&(a+=P+d));
+S.criticalCss&&(d=S.criticalCss,a+=N+d.total_critical_inlined_size+O+d.total_original_external_size+M+d.total_overhead_size+L+d.num_replaced_links+K+d.num_unreplaced_links);this.b!=R&&(a+=this.b);document.referrer&&(a+=x+c(document.referrer));a+=u+c(this.e);S.beaconUrl=a;(new Image).src=a}};S.f=function(a,d,b,e){var g=new T(a,d,b,e);f.addEventListener?f.addEventListener(d,function(){g.c()},!1):f.attachEvent(l+d,function(){g.c()})};S.addInstrumentationInit=S.f;})();
+
+pagespeed.addInstrumentationInit('http://1-ps.googleusercontent.com/beacon?org=110_1_cn', 'load', '&s_ttfb=1194&id=1381037278080004', 'http://www.hacg.me/wordpress/polls');</script></body>
+
+</html><noscript class="psa_add_styles"><link rel="stylesheet" type="text/css" media="all" href="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/A.style.css.pagespeed.cf._O-48NMOCT.css"/><link rel='stylesheet' id='toggle-box-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/toggle-box/A.toggle-box.css,qver=3.6.pagespeed.cf.DhLkY4wNnF.css' type='text/css' media='all'/><link rel='stylesheet' id='wordpress-popular-posts-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wordpress-popular-posts/style/A.wpp.css,qver=3.6.pagespeed.cf.Hrb4URPBfl.css' type='text/css' media='all'/><link rel='stylesheet' id='sidebar-login-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/css/A.sidebar-login.css,qver=2.5.3.pagespeed.cf.1GVNKD2wm1.css' type='text/css' media='all'/><link rel='stylesheet' id='wp-polls-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-polls/A.polls-css.css,qver=2.63.pagespeed.cf.F31xf72mYL.css' type='text/css' media='all'/><link rel='stylesheet' id='dark-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/colors/A.dark.css.pagespeed.cf.vfxqkyvtzb.css' type='text/css' media='all'/><link rel="stylesheet" href="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/A.highslide.css.pagespeed.cf.FgSLfAtt8A.css" type="text/css"/><style type='text/css'>.playerHolder{width:860px;height:450px;position:absolute;z-index:0}.placeHolder{width:860px;height:450px;visibility:hidden;border:0 none}</style><link rel="stylesheet" href="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-page-numbers/panther/A.wp-page-numbers.css.pagespeed.cf.Oo90JUBc2E.css" type="text/css" media="screen"/><style type="text/css">.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background:#1c2949;border:1px solid #696565}</style><style>a,#site-title a:focus,#site-title a:hover,#site-title a:active,.entry-title a:hover,.entry-title a:focus,.entry-title a:active,.widget_twentyeleven_ephemera .comments-link a:hover,section.recent-posts .other-recent-posts a[rel="bookmark"]:hover,section.recent-posts .other-recent-posts .comments-link a:hover,.format-image footer.entry-meta a:hover,#site-generator a:hover{color:#4399ee}section.recent-posts .other-recent-posts .comments-link a:hover{border-color:#4399ee}article.feature-image.small .entry-summary p a:hover,.entry-header .comments-link a:hover,.entry-header .comments-link a:focus,.entry-header .comments-link a:active,.feature-slider a.active{background-color:#4399ee}</style><style type="text/css" id="custom-background-css">body.custom-background{background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2012/01/xcamouflage.png.pagespeed.ic.TUZkU2GHBT.png);background-repeat:repeat;background-position:top left;background-attachment:scroll}</style></noscript><script pagespeed_no_defer="">var stylesAdded=false;var addAllStyles=function(){if(stylesAdded)return;stylesAdded=true;var div=document.createElement("div");var styleText="";var styleElements=document.getElementsByClassName("psa_add_styles");for(var i=0;i<styleElements.length;++i){styleText+=styleElements[i].textContent||styleElements[i].innerHTML||styleElements[i].data||"";}div.innerHTML=styleText;document.body.appendChild(div);};if(window.addEventListener){document.addEventListener("DOMContentLoaded",addAllStyles,false);window.addEventListener("load",addAllStyles,false);}else if(window.attachEvent){window.attachEvent("onload",addAllStyles);}else{window.onload=addAllStyles;}window['pagespeed']=window['pagespeed']||{};window['pagespeed']['criticalCss']={'total_critical_inlined_size':35436,'total_original_external_size':64818,'total_overhead_size':36809,'num_replaced_links':8,'num_unreplaced_links':0};</script>

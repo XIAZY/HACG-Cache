@@ -1,0 +1,1154 @@
+﻿<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Android平台的Galgame游戏打包下载 | 琉璃神社 ★ HACG.me</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/style.css" />
+<link rel="pingback" href="http://www.hacg.me/wordpress/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; Feed" href="http://www.hacg.me/wordpress/feed" />
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; 评论Feed" href="http://www.hacg.me/wordpress/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; Android平台的Galgame游戏打包下载评论Feed" href="http://www.hacg.me/wordpress/2388/feed" />
+<link rel='stylesheet' id='toggle-box-css'  href='http://www.hacg.me/wordpress/wp-content/plugins/toggle-box/toggle-box.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sidebar-login-css'  href='http://www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/css/sidebar-login.css?ver=2.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-polls-css'  href='http://www.hacg.me/wordpress/wp-content/plugins/wp-polls/polls-css.css?ver=2.63' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-postratings-css'  href='http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/postratings-css.css?ver=1.63' type='text/css' media='all' />
+<link rel='stylesheet' id='dark-css'  href='http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/colors/dark.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/toggle-box/js/toggle-box.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/js/blockui.min.js?ver=2.57'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sidebar_login_params = {"ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","force_ssl_login":"0","force_ssl_admin":"0","is_ssl":"0","i18n_username_required":"\u8bf7\u8f93\u5165\u60a8\u7684\u7528\u6237\u540d","i18n_password_required":"\u8bf7\u8f93\u5165\u60a8\u7684\u5bc6\u7801","error_class":"sidebar_login_error"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/js/sidebar-login.min.js?ver=2.6.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.hacg.me/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.hacg.me/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='IZUMO 古老的GALGAME' href='http://www.hacg.me/wordpress/2384' />
+<link rel='next' title='feng社 天空三部曲' href='http://www.hacg.me/wordpress/2411' />
+<meta name="generator" content="WordPress 3.9.1" />
+<link rel='canonical' href='http://www.hacg.me/wordpress/2388' />
+<link rel='shortlink' href='http://www.hacg.me/wordpress/?p=2388' />
+<meta name='robots' content='noindex,follow' />
+
+<link rel="stylesheet" href="http://www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/highslide.css" type="text/css" />
+<script type="text/javascript" src="http://www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/highslide-with-html.packed.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    hs.graphicsDir = "http://www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/";
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.addSlideshow({
+        interval: 5000,
+        repeat: true,
+        useControls: true,
+        fixedControls: "fit",
+        overlayOptions: {
+            opacity: 0.75,
+            position: "bottom center",
+            hideOnMouseOut: true
+
+        }
+
+    });
+});
+</script>
+	<style type='text/css'>
+.playerHolder
+{
+    width:860px;
+    height:450px;
+    position:absolute;
+    z-index:0;
+}
+.placeHolder
+{
+    width:860px;
+    height:450px;
+    visibility: hidden;
+    border: 0 none;
+}
+</style><script type="text/javascript" src="http://www.hacg.me/wordpress/wp-content/plugins/mukioplayer-for-wordpress/static/mukio-sect.js"></script><script type="text/javascript" src="http://www.hacg.me/wordpress/wp-content/plugins/mukioplayer-for-wordpress/static/mukio-prompt.js"></script><link rel="stylesheet" href="http://www.hacg.me/wordpress/wp-content/plugins/wp-page-numbers/panther/wp-page-numbers.css" type="text/css" media="screen" /><style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background: #1C2949;
+	border: 1px solid #696565;
+}
+</style>
+	<style>
+		/* Link color */
+		a,
+		#site-title a:focus,
+		#site-title a:hover,
+		#site-title a:active,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-title a:active,
+		.widget_twentyeleven_ephemera .comments-link a:hover,
+		section.recent-posts .other-recent-posts a[rel="bookmark"]:hover,
+		section.recent-posts .other-recent-posts .comments-link a:hover,
+		.format-image footer.entry-meta a:hover,
+		#site-generator a:hover {
+			color: #4399ee;
+		}
+		section.recent-posts .other-recent-posts .comments-link a:hover {
+			border-color: #4399ee;
+		}
+		article.feature-image.small .entry-summary p a:hover,
+		.entry-header .comments-link a:hover,
+		.entry-header .comments-link a:focus,
+		.entry-header .comments-link a:active,
+		.feature-slider a.active {
+			background-color: #4399ee;
+		}
+	</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('http://www.hacg.me/wordpress/wp-content/uploads/2012/01/camouflage.png'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+</style>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22787990-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="single single-post postid-2388 single-format-standard custom-background singular two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="http://www.hacg.me/wordpress/" title="琉璃神社 ★ HACG.me" rel="home">琉璃神社 ★ HACG.me</a></span></h1>
+				<h2 id="site-description">分享同人动漫的快乐 ★ http://www.HACG.me</h2>
+			</hgroup>
+
+						<a href="http://www.hacg.me/wordpress/">
+									<img src="http://www.hacg.me/wordpress/wp-content/uploads/2014/07/logo140708.jpg" width="1024" height="350" alt="" />
+							</a>
+			
+								<form method="get" id="searchform" action="http://www.hacg.me/wordpress/">
+		<label for="s" class="assistive-text">搜索</label>
+		<input type="text" class="field" name="s" id="s" placeholder="搜索" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="搜索" />
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">主菜单</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="跳至主内容区域">跳至主内容区域</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="跳至副内容区域">跳至副内容区域</a></div>
+								<div class="menu-%e5%b8%b8%e8%a7%84%e8%8f%9c%e5%8d%95-container"><ul id="menu-%e5%b8%b8%e8%a7%84%e8%8f%9c%e5%8d%95" class="menu"><li id="menu-item-3652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3652"><a href="http://www.hacg.me/wordpress/">最新投稿</a></li>
+<li id="menu-item-3647" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3647"><a href="http://www.hacg.me/wordpress/category/age">文章</a></li>
+<li id="menu-item-3648" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3648"><a href="http://www.hacg.me/wordpress/category/anime">动画</a></li>
+<li id="menu-item-3649" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3649"><a href="http://www.hacg.me/wordpress/category/comic">漫画</a></li>
+<li id="menu-item-3650" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3650"><a href="http://www.hacg.me/wordpress/category/erogame">游戏</a></li>
+<li id="menu-item-3651" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3651"><a href="http://www.hacg.me/wordpress/category/op">音乐</a></li>
+<li id="menu-item-31007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31007"><a href="http://www.hacg.me/wordpress/category/rou">在线</a></li>
+<li id="menu-item-3654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3654"><a href="http://www.hacg.me/wordpress/sm">使用说明</a></li>
+<li id="menu-item-4541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4541"><a href="http://www.hacg.me/bb">讨论区</a></li>
+</ul></div>			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					<nav id="nav-single">
+						<h3 class="assistive-text">文章导航</h3>
+第80,128 次围观
+			
+<!-- #nav-single -->
+</nav>
+<article id="post-2388" class="post-2388 post type-post status-publish format-standard hentry category-erogame tag-android tag-erogame-2">
+	<header class="entry-header">
+		<h1 class="entry-title">Android平台的Galgame游戏打包下载</h1>
+
+				<div class="entry-meta">
+			<span class="sep">发表于 </span><a href="http://www.hacg.me/wordpress/2388" title="12:09" rel="bookmark"><time class="entry-date" datetime="2011-07-19T12:09:39+00:00" pubdate>2011 年 7 月 19 日</time></a><span class="by-author"> <span class="sep"> 由 </span> <span class="author vcard"><a class="url fn n" href="http://www.hacg.me/wordpress/author/misaka" title="查看所有由 HACG 琉璃神社 发布的文章" rel="author">HACG 琉璃神社</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><img class="aligncenter size-full wp-image-2392" title="ons" src="http://www.hacg.me/wordpress/wp-content/uploads/2011/07/ons.jpg" alt="" width="600" height="360" /></p>
+<p>经过一些研究发现，目前android系统很牛逼，本人亲自测试成功，放出教程。。<br />
+这个是本人手机上运行eden*的截图。。<br />
+本文已经更新，点击该链接查看：<br />
+<a href="http://www.hacg.me/wordpress/37785">http://www.hacg.me/wordpress/37785</a></p>
+<p><span id="more-2388"></span></p>
+<p>首先第1部：下载 ONS</p>
+<p>下载地址（download）：<br />
+<a href="http://115.com/file/dn9l3vwt#" target="_blank">点我</a> （JP） 玩日文版请下载这个<br />
+<a href="http://115.com/file/e6rfejl3#" target="_blank">点我</a> （GBK） 中文版的下载这个</p>
+<p>支持Android2.X版本，1.6版请下载旧版ONS</p>
+<p>安装完成之后</p>
+<p>请打开储存卡 在根目录新建 ONS 文件夹</p>
+<p>然后下载把下载的 文件解压到ONS里面</p>
+<p>具体应该是</p>
+<p>/ONS/eden/<br />
+/ONS/EF/</p>
+<p>就是说在ONS文件夹里面，每一个文件夹就就是一个游戏</p>
+<p><img class="aligncenter size-full wp-image-2396" title="ons2" src="http://www.hacg.me/wordpress/wp-content/uploads/2011/07/ons2.jpg" alt="" width="480" height="800" /></p>
+<p>点击ONS启动后就可以看见这些游戏了。。。</p>
+<p>=======================</p>
+<p>感谢：huoyanyan为android galgame 移植的大力付出</p>
+<p>如果需要一些最新的ROM可以去他的BLOG里面找。。。</p>
+<p>PS：Android galgame研究组建立，专门研究Android GAL移植相关内容，并专司移植工作。有兴趣请留意：</p>
+<p>http://okhuoyanyan.blog.163.com/blog/static/13421599820111170142614/</p>
+<p>PS: Android galgame Research Group has been set up to study about conversion of GAL games to Android platform, as well as performing actual conversion. For those who are interested, visit:</p>
+<p>http://okhuoyanyan.blog.163.com/blog/static/13421599820111170142614/</p>
+<p>===================</p>
+<p><strong>最新成果</strong></p>
+<p>浊翼的尤斯蒂娅 汉化版 for android beta!</p>
+<p><span><span><span style="color: #ff00ff; font-family: Arial, sans-serif;">本体下载（download）：</span></span></span></p>
+<div>
+<div>
+<div><span style="color: #0000ff;">eustia-test0.03.7z(脚本/script):<a href="http://u.115.com/file/bh5f79cr" target="_blank">点我</a>              </span></div>
+<div><span style="color: #0000ff;">default.ttf(字体/founts):<a href="http://u.115.com/file/bh59vk8p" target="_blank">点我</a>                          </span></div>
+<div><span style="color: #0000ff;">video.rar(视频/video):<a href="http://u.115.com/file/bh59vbg3" target="_blank">点我</a>                            </span></div>
+<div><span style="color: #0000ff;">arc.nsa(图像/picture):<a href="http://u.115.com/file/clnqbw5s" target="_blank">点我</a>                              </span></div>
+<div><span style="color: #0000ff;">arc1.nsa(声音/music):<a href="http://u.115.com/file/bh59o9fv" target="_blank">点我</a>                          </span></div>
+<div><span style="color: #0000ff;">arc2.nsa(语音/voice):<a href="http://u.115.com/file/aq3wleuk" target="_blank">点我</a>  </span><span style="color: #99a4b0;">   </span></div>
+<div></div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>把上面所有文件下载后再ONS文件夹新建一个目录然后丢进去就好了。。</p>
+<div><span style="color: #3366ff;">补丁说明：</span></div>
+<div><span style="color: #3366ff;">1.只做了很少的一部分系统;标题画面中的continue目前临时对应的是quick load功能。</span></div>
+<div><span style="color: #3366ff;">2.默认关闭跳章节功能，如需开启请将90.txt中的numalias DEBUG_MODE_EX后头的0改成1。另外请注意开启跳章节时会跳过章节中的选择项(如果有的话)，故请小心;</span></div>
+<div></div>
+<div></div>
+<div></div>
+<div><span style="color: #3366ff;"><br />
+</span></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div><span style="color: #3366ff;"><img class="alignnone" title="浊翼的尤斯蒂娅 汉化版" src="http://i.min.us/iesWvi.jpg" alt="浊翼的尤斯蒂娅 汉化版" width="750" height="450" /></span></div>
+<div></div>
+<div></div>
+<div></div>
+<div><span style="color: #3366ff;"><br />
+</span></div>
+<p><img class="alignnone" title="浊翼的尤斯蒂娅 汉化版" src="http://i.min.us/iesY3q.jpg" alt="浊翼的尤斯蒂娅 汉化版" width="750" height="450" /></p>
+<p>&nbsp;</p>
+<p><img class="alignnone" title="浊翼的尤斯蒂娅 汉化版" src="http://i.min.us/icbyv0.jpg" alt="浊翼的尤斯蒂娅 汉化版" width="750" height="450" /></p>
+<p>&nbsp;</p>
+<p><img class="alignnone" title="浊翼的尤斯蒂娅 汉化版" src="http://i.min.us/iesPWK.jpg" alt="浊翼的尤斯蒂娅 汉化版" width="750" height="450" /></p>
+<p>&nbsp;</p>
+<p>===================<br />
+一些老游戏的ROM下载 for android 基本全是已经汉化的。。</p>
+<pre>1.遥仰凰华
+游戏本体：http://u.115.com/file/t3dacc12f5
+
+2.少女爱上姐姐
+游戏本体：http://u.115.com/file/t3da6079a0
+
+3.夜明前的琉璃色
+游戏本体：http://u.115.com/file/t35f317af
+
+4.ef - the first tale 前篇
+游戏本体：http://u.115.com/file/t3559ab2e1
+
+5.ef - the latter tale 后篇
+
+游戏本体：http://u.115.com/file/t3193b50d2
+
+5.车轮之国、向日葵的少女
+游戏本体：http://u.115.com/file/t3b1f4cf4d
+
+6.Killer Queen
+下载地址：http://u.115.com/file/t3158469d5
+
+7.海猫鸣泣之时（EP1-6）（EP1-4修改版）
+下载地址：http://u.115.com/file/t360405196
+
+8.G弦上的魔王
+下载地址：http://u.115.com/file/t3669f54ce
+无绿线版下载地址（感谢研究组成员backchaos）
+
+http://u.115.com/file/t1cef39630
+
+9.沙耶之歌 
+下载地址：http://u.115.com/file/t35d121974
+
+10.铃音之歌;初音之声
+
+下载地址：
+
+http://u.115.com/file/t370860609
+
+11.   未来の歌と、つながるヒトミ
+
+下载地址：
+
+http://u.115.com/file/t1f425f889://
+
+补丁：
+
+http://u.115.com/file/t192e4c754
+
+12.青鸟の虚像
+本体下载地址：http://u.115.com/file/f01768d9de
+
+13.EDEN
+本体下载地址：http://u.115.com/file/f0b76258df
+
+14.朱-AKA-
+本体下载地址：http://u.115.com/file/t11ac7cea2
+
+Mudgao整理  来源 http://tieba.baidu.com/f?kz=1024476644</pre>
+<p><img src="http://i.min.us/icbYEg.jpg" alt="耗电量" /><br />
+玩了一个多小时的耗电量
+<pre><a style="text-decoration:none" href="http://www.hacg.me/wordpress/2388#"><span style="color: #888888;">Android平台的Galgame游戏打包下载</span></a>
+<a style="text-decoration:none" href="http://www.hacg.me/wordpress/2388#"><span style="color: #888888;">来源：琉璃神社  http://www.hacg.me/wordpress/2388</span></a></pre>
+			</div><!-- .entry-content -->
+<div class="entry-header">
+<h3><strong>请为这个作品打分：《Android平台的Galgame游戏打包下载》</strong></h3>
+    <div id="post-ratings-2388" class="post-ratings" itemscope itemtype="http://schema.org/Article" data-nonce="b5f2981891"><img id="rating_2388_1" src="http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/images/stars_dark/rating_on.gif" alt="1 分" title="1 分" onmouseover="current_rating(2388, 1, '1 分');" onmouseout="ratings_off(4.4, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2388_2" src="http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/images/stars_dark/rating_on.gif" alt="2 分" title="2 分" onmouseover="current_rating(2388, 2, '2 分');" onmouseout="ratings_off(4.4, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2388_3" src="http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/images/stars_dark/rating_on.gif" alt="3 分" title="3 分" onmouseover="current_rating(2388, 3, '3 分');" onmouseout="ratings_off(4.4, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2388_4" src="http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/images/stars_dark/rating_on.gif" alt="4 分" title="4 分" onmouseover="current_rating(2388, 4, '4 分');" onmouseout="ratings_off(4.4, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2388_5" src="http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/images/stars_dark/rating_half.gif" alt="5 分" title="5 分" onmouseover="current_rating(2388, 5, '5 分');" onmouseout="ratings_off(4.4, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /> (<strong>5</strong> 人评价, 平均分: <strong>4.40</strong> / 5)<br /><span class="post-ratings-text" id="ratings_2388_text"></span></div>
+<div id="post-ratings-2388-loading"  class="post-ratings-loading"><img src="http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/images/loading.gif" width="16" height="16" alt="正在加载....请稍候.... ..." title="正在加载....请稍候.... ..." class="post-ratings-image" />&nbsp;正在加载....请稍候.... ...</div>
+</div>
+<div class="same_cat_posts">
+    <h3><strong>您可能也喜欢：</strong></h3>
+<ul class="same_cat_posts_ul">
+    <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/3437" title="另类AVG，海茶社最新3D大作&#8230;放課後かすたむ☆たいむ ～Customize Lovers～">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/wMPoN.jpg&h=114&w=114&zc=1&q=90" alt="另类AVG，海茶社最新3D大作&#8230;放課後かすたむ☆たいむ ～Customize Lovers～" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/3437" title="另类AVG，海茶社最新3D大作&#8230;放課後かすたむ☆たいむ ～Customize Lovers～">
+    另类AVG，海茶社最新3D大作&#8230;放課後かすたむ☆たいむ ～Customize Lovers～</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/38862" title="又到了喜闻乐见的GAL推荐时间">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://img.tsccdn.com/di-3UW7.jpg&h=114&w=114&zc=1&q=90" alt="又到了喜闻乐见的GAL推荐时间" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/38862" title="又到了喜闻乐见的GAL推荐时间">
+    又到了喜闻乐见的GAL推荐时间</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/9642" title="[同人游戏]わがままおっぱいパラダイス">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/yx44H.jpg&h=114&w=114&zc=1&q=90" alt="[同人游戏]わがままおっぱいパラダイス" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/9642" title="[同人游戏]わがままおっぱいパラダイス">
+    [同人游戏]わがままおっぱいパラダイス</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/49691" title="[DE＠R] 恋愛（らぶ）リベンジ">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/syc88Od.jpg&h=114&w=114&zc=1&q=90" alt="[DE＠R] 恋愛（らぶ）リベンジ" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/49691" title="[DE＠R] 恋愛（らぶ）リベンジ">
+    [DE＠R] 恋愛（らぶ）リベンジ</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/40885" title="[PULLTOP] ココロ＠ファンクション！ 本体+全CG包+特典">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/gZ7Lj1D.jpg&h=114&w=114&zc=1&q=90" alt="[PULLTOP] ココロ＠ファンクション！ 本体+全CG包+特典" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/40885" title="[PULLTOP] ココロ＠ファンクション！ 本体+全CG包+特典">
+    [PULLTOP] ココロ＠ファンクション！ 本体+全CG包+特典</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/38455" title="[WHITESOFT]ギャングスタ・リパブリカ">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://img.tsccdn.com/di-UIPM.jpg&h=114&w=114&zc=1&q=90" alt="[WHITESOFT]ギャングスタ・リパブリカ" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/38455" title="[WHITESOFT]ギャングスタ・リパブリカ">
+    [WHITESOFT]ギャングスタ・リパブリカ</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/3906" title="危険日狙って!?孕ませ王国  游戏本体 全CG提取包 通关存档">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/u6REO.jpg&h=114&w=114&zc=1&q=90" alt="危険日狙って!?孕ませ王国  游戏本体 全CG提取包 通关存档" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/3906" title="危険日狙って!?孕ませ王国  游戏本体 全CG提取包 通关存档">
+    危険日狙って!?孕ませ王国  游戏本体 全CG提取包 通关存档</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/31686" title="[フロントウイング]魔界天使ジブリール 1-4 Galgame 游戏合集">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/GwKRA9Q.jpg&h=114&w=114&zc=1&q=90" alt="[フロントウイング]魔界天使ジブリール 1-4 Galgame 游戏合集" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/31686" title="[フロントウイング]魔界天使ジブリール 1-4 Galgame 游戏合集">
+    [フロントウイング]魔界天使ジブリール 1-4 Galgame 游戏合集</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/48906" title="GalGame 翻译器 Visual Novel Reader (VNR)">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/bIASEw5l.jpg&h=114&w=114&zc=1&q=90" alt="GalGame 翻译器 Visual Novel Reader (VNR)" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/48906" title="GalGame 翻译器 Visual Novel Reader (VNR)">
+    GalGame 翻译器 Visual Novel Reader (VNR)</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/2257" title="3D定制女仆（カスタムメイド3D）V1.05免安装 汉化 硬盘版[转帖]">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://www.hacg.me/wordpress/wp-content/uploads/2011/07/3dnow.jpg&h=114&w=114&zc=1&q=90" alt="3D定制女仆（カスタムメイド3D）V1.05免安装 汉化 硬盘版[转帖]" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/2257" title="3D定制女仆（カスタムメイド3D）V1.05免安装 汉化 硬盘版[转帖]">
+    3D定制女仆（カスタムメイド3D）V1.05免安装 汉化 硬盘版[转帖]</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/2305" title="【推荐】邪恶大富翁 硬盘版">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://www.hacg.me/wordpress/wp-content/uploads/2011/07/ss.jpg&h=114&w=114&zc=1&q=90" alt="【推荐】邪恶大富翁 硬盘版" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/2305" title="【推荐】邪恶大富翁 硬盘版">
+    【推荐】邪恶大富翁 硬盘版</a></p>
+    </li>
+ 
+        <li>
+             <a class="same_cat_posts_img" href="http://www.hacg.me/wordpress/3615" title="[同人游戏]あの日見つけた花の名前は[Sage]">
+    <img src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/timthumb.php?src=http://imgur.tsccdn.com/bTgLS.jpg&h=114&w=114&zc=1&q=90" alt="[同人游戏]あの日見つけた花の名前は[Sage]" 
+    class="thumbnail"/></a>
+                  <p class="same_cat_posts_tittle"><a href="http://www.hacg.me/wordpress/3615" title="[同人游戏]あの日見つけた花の名前は[Sage]">
+    [同人游戏]あの日見つけた花の名前は[Sage]</a></p>
+    </li>
+ 
+    </ul>
+</div>
+	<footer class="entry-meta">
+		此条目由 <a href="http://www.hacg.me/wordpress/author/misaka">HACG 琉璃神社</a> 发表在 <a href="http://www.hacg.me/wordpress/category/erogame" title="查看游戏中的全部文章" rel="category tag">游戏</a> 分类目录，并贴了 <a href="http://www.hacg.me/wordpress/tag/android" rel="tag">android</a>、<a href="http://www.hacg.me/wordpress/tag/erogame-2" rel="tag">galgame</a> 标签。将<a href="http://www.hacg.me/wordpress/2388" title="链向 Android平台的Galgame游戏打包下载 的固定链接" rel="bookmark">固定链接</a>加入收藏夹。		
+				<div id="author-info">
+			<div id="author-avatar">
+				<img alt='' src='http://gravatar.duoshuo.com/avatar/17e8ac7b4cea9204bf35bacf3beecc19?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' />			</div><!-- #author-avatar -->
+			<div id="author-description">
+				<h2>关于 HACG 琉璃神社</h2>
+				工口物什么的我是不会发的。。。				<div id="author-link">
+					<a href="http://www.hacg.me/wordpress/author/misaka" rel="author">
+						查看所有由 HACG 琉璃神社 发表的文章 <span class="meta-nav">&rarr;</span>					</a>
+				</div><!-- #author-link	-->
+			</div><!-- #author-description -->
+		</div><!-- #entry-author-info -->
+			</footer><!-- .entry-meta -->
+</article><!-- #post-2388 -->
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			《<span>Android平台的Galgame游戏打包下载</span>》上有 32 条评论		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment byuser comment-author-admin even thread-even depth-1" id="li-comment-594">
+		<article id="comment-594" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/ac2668bb905471cd47934f7627983958?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">H什么的最讨厌了</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-594"><time pubdate datetime="2011-07-19T12:43:38+00:00">2011 年 7 月 19 日12:43</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>收藏備用啊。。。。。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=594#respond' onclick='return addComment.moveForm("comment-594", "594", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-cubed odd alt thread-odd thread-alt depth-1" id="li-comment-595">
+		<article id="comment-595" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/8f3333902fd690f8d3ca5afb3a5aad95?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Cubed</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-595"><time pubdate datetime="2011-07-19T17:19:53+00:00">2011 年 7 月 19 日17:19</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>话说上面那些115都是安卓的？</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=595#respond' onclick='return addComment.moveForm("comment-595", "595", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-598">
+		<article id="comment-598" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/8492f713c5b4a6f1ead5d7886490622e?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">炮姐的肚兜</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-598"><time pubdate datetime="2011-07-19T19:53:22+00:00">2011 年 7 月 19 日19:53</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>全部都是android的ROM</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=598#respond' onclick='return addComment.moveForm("comment-598", "598", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-animer odd alt thread-even depth-1" id="li-comment-599">
+		<article id="comment-599" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/11ecb747b00226288eeeaad17ca95257?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Animer</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-599"><time pubdate datetime="2011-07-19T20:21:33+00:00">2011 年 7 月 19 日20:21</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>还在悲剧使用SB机的路过</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=599#respond' onclick='return addComment.moveForm("comment-599", "599", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-600">
+		<article id="comment-600" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/713eb4f3b2512978a21fc416ee699b1e?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">南瓜</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-600"><time pubdate datetime="2011-07-20T11:10:09+00:00">2011 年 7 月 20 日11:10</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>无辰哥。。。纯情大师群观光团前来膜拜</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=600#respond' onclick='return addComment.moveForm("comment-600", "600", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-601">
+		<article id="comment-601" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/713eb4f3b2512978a21fc416ee699b1e?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">南瓜</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-601"><time pubdate datetime="2011-07-20T11:13:32+00:00">2011 年 7 月 20 日11:13</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>无辰大神最近群里都隐匿了啊，洒家好想你啊</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=601#respond' onclick='return addComment.moveForm("comment-601", "601", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-lilizi001 even thread-odd thread-alt depth-1" id="li-comment-614">
+		<article id="comment-614" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/869f5554d9a9fb85f44b3b836b129379?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">lilizi001</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-614"><time pubdate datetime="2011-07-21T14:54:09+00:00">2011 年 7 月 21 日14:54</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>有没有       连接方式 ）    和～白濁まみれの放課後～ 上巻 処女喪失  动画下载</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=614#respond' onclick='return addComment.moveForm("comment-614", "614", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nurari odd alt depth-2" id="li-comment-624">
+		<article id="comment-624" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/9f31e3d5f090b3dbae195353ea4dadc5?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">nurari</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-624"><time pubdate datetime="2011-07-22T01:43:40+00:00">2011 年 7 月 22 日01:43</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>magnet:?xt=urn:btih:22E305EDA37B9597201C77A06461CAFB3D26D8EA</p>
+<p>磁力链接神马的=. =</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=624#respond' onclick='return addComment.moveForm("comment-624", "624", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-lilizi001 even depth-3" id="li-comment-636">
+		<article id="comment-636" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/869f5554d9a9fb85f44b3b836b129379?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">lilizi001</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-636"><time pubdate datetime="2011-07-23T10:57:28+00:00">2011 年 7 月 23 日10:57</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>鏈接方式呢？</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=636#respond' onclick='return addComment.moveForm("comment-636", "636", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nurari odd alt depth-4" id="li-comment-670">
+		<article id="comment-670" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/9f31e3d5f090b3dbae195353ea4dadc5?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">nurari</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-670"><time pubdate datetime="2011-07-26T16:01:06+00:00">2011 年 7 月 26 日16:01</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>把上面的那一堆代码复制进迅雷的新建任务里面即可= =</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=670#respond' onclick='return addComment.moveForm("comment-670", "670", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-lilizi001 even depth-5" id="li-comment-683">
+		<article id="comment-683" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/869f5554d9a9fb85f44b3b836b129379?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">lilizi001</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-683"><time pubdate datetime="2011-07-27T09:22:13+00:00">2011 年 7 月 27 日09:22</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>连接方式也是一部H啊 是兄控篇</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-622">
+		<article id="comment-622" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/8cde1bf3f383ce9c7a0dd2daa9b57939?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">nurari</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-622"><time pubdate datetime="2011-07-22T00:59:13+00:00">2011 年 7 月 22 日00:59</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>android 的GALgame移植神马的果断值得研究=w=</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=622#respond' onclick='return addComment.moveForm("comment-622", "622", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-638">
+		<article id="comment-638" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/b977dec87f799dd77b0ff9def7bf733b?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">我爷是李刚</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-638"><time pubdate datetime="2011-07-23T22:32:21+00:00">2011 年 7 月 23 日22:32</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>怎么可能- -|||   Android系统的确是牛，可是G1手机就运行无力了（ORZ）</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=638#respond' onclick='return addComment.moveForm("comment-638", "638", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-ztiantianl odd alt thread-even depth-1" id="li-comment-666">
+		<article id="comment-666" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/45d90e75625c0120adc72c62ef5b7f34?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.hacg.me/wordpress/members/ztiantianl/' rel='external nofollow' class='url'>ztiantianl</a></span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-666"><time pubdate datetime="2011-07-26T14:45:53+00:00">2011 年 7 月 26 日14:45</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>很牛是很牛，G3表示运行还是有些卡的。。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=666#respond' onclick='return addComment.moveForm("comment-666", "666", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-2931">
+		<article id="comment-2931" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/a6a0376f983cf9fd64df73aac60e649a?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">汐林</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-2931"><time pubdate datetime="2011-10-07T12:56:49+00:00">2011 年 10 月 7 日12:56</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>大哥。。。。资源到期了。。。求续。。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=2931#respond' onclick='return addComment.moveForm("comment-2931", "2931", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-3073">
+		<article id="comment-3073" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/a597f034bd77c5a0f2c6cb6459d129ad?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">sceic</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-3073"><time pubdate datetime="2011-10-10T09:34:12+00:00">2011 年 10 月 10 日09:34</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>已经玩上好几天了，和PC版95%相似~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=3073#respond' onclick='return addComment.moveForm("comment-3073", "3073", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-noctis even thread-odd thread-alt depth-1" id="li-comment-3120">
+		<article id="comment-3120" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/3135fbe402b1bf92cdab868cf45845e5?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Noctis</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-3120"><time pubdate datetime="2011-10-11T00:32:38+00:00">2011 年 10 月 11 日00:32</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>那个。。。ONS过期了。。。求续期 或者新地址。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=3120#respond' onclick='return addComment.moveForm("comment-3120", "3120", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin odd alt depth-2" id="li-comment-3121">
+		<article id="comment-3121" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/ac2668bb905471cd47934f7627983958?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.hacg.me/wordpress' rel='external nofollow' class='url'>多啦H萌</a></span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-3121"><time pubdate datetime="2011-10-11T01:11:18+00:00">2011 年 10 月 11 日01:11</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>OK,续期完成</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=3121#respond' onclick='return addComment.moveForm("comment-3121", "3121", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3343">
+		<article id="comment-3343" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/2e90f604e5f6274086dc8de498c7e60c?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">erofox</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-3343"><time pubdate datetime="2011-10-13T22:27:53+00:00">2011 年 10 月 13 日22:27</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>海猫EP1开头不久就弹出的问题解决了么&#8230;</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=3343#respond' onclick='return addComment.moveForm("comment-3343", "3343", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-lqxxx123 odd alt thread-odd thread-alt depth-1" id="li-comment-4488">
+		<article id="comment-4488" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/ed2bf7acc75c4b8a3f7562042e37663d?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">王国之心</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-4488"><time pubdate datetime="2011-11-01T16:28:47+00:00">2011 年 11 月 1 日16:28</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>求续期。刚入手HTC，安卓内存太低了。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=4488#respond' onclick='return addComment.moveForm("comment-4488", "4488", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-denxing even thread-even depth-1" id="li-comment-10782">
+		<article id="comment-10782" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/0a9b160f4fb5c21bc0f652ae0276ff6f?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">denxing</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-10782"><time pubdate datetime="2012-03-01T19:08:08+00:00">2012 年 3 月 1 日19:08</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>玩起了，爽啊!</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=10782#respond' onclick='return addComment.moveForm("comment-10782", "10782", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-15101">
+		<article id="comment-15101" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/3489d603034fc05c3d72cace4e493542?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">银电</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-15101"><time pubdate datetime="2012-05-08T14:36:44+00:00">2012 年 5 月 8 日14:36</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>为什么浊翼的尤斯蒂娅这个游戏我把所有文件都丢在ONS里的一个新建文件夹了但是还是玩不了呢？用ONS打开它就只是打开文件夹，然后就什么事都没有了。。。。其他游戏都是直接打开就直接能玩了。。。超奇怪。。不知我叙述清楚没。。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=15101#respond' onclick='return addComment.moveForm("comment-15101", "15101", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-125874">
+		<article id="comment-125874" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/e3532055de57e585c03a22a662ec6bc5?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">取名字神马的最讨厌了</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-125874"><time pubdate datetime="2014-05-25T14:01:15+00:00">2014 年 5 月 25 日14:01</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>我也是，不知道为什么</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=125874#respond' onclick='return addComment.moveForm("comment-125874", "125874", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-deathlord odd alt thread-even depth-1" id="li-comment-25800">
+		<article id="comment-25800" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/9f90da1db14795d4aabc2aa30acd4afc?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">DeathLord</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-25800"><time pubdate datetime="2012-10-03T23:31:28+00:00">2012 年 10 月 3 日23:31</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>那啥- -游戏的ROM只能用于Android么- -iOS的ONS能用么。。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=25800#respond' onclick='return addComment.moveForm("comment-25800", "25800", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-110521">
+		<article id="comment-110521" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/1fc6437bafecd9c157731d6fcbadbfd5?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">QQ</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-110521"><time pubdate datetime="2014-02-09T19:14:01+00:00">2014 年 2 月 9 日19:14</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>请将arc1（1）文件名中“（1）”删掉（以此类推）</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=110521#respond' onclick='return addComment.moveForm("comment-110521", "110521", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-340161288-1 odd alt thread-odd thread-alt depth-1" id="li-comment-25883">
+		<article id="comment-25883" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/6b954281d7ad29c064049f2c421630ea?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">幻想乡的鬼</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-25883"><time pubdate datetime="2012-10-05T09:35:20+00:00">2012 年 10 月 5 日09:35</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>115关闭大众分享了怎么办？？？？？</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=25883#respond' onclick='return addComment.moveForm("comment-25883", "25883", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-340161288-1 even thread-even depth-1" id="li-comment-25903">
+		<article id="comment-25903" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/6b954281d7ad29c064049f2c421630ea?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">幻想乡的鬼</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-25903"><time pubdate datetime="2012-10-05T14:37:18+00:00">2012 年 10 月 5 日14:37</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>脏翅膀115下不了啊！！！！！！求解决</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=25903#respond' onclick='return addComment.moveForm("comment-25903", "25903", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-323we odd alt thread-odd thread-alt depth-1" id="li-comment-25993">
+		<article id="comment-25993" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/d73efd6b380f69bc2de5af0c0833f1ea?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">323we</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-25993"><time pubdate datetime="2012-10-06T20:07:52+00:00">2012 年 10 月 6 日20:07</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>用来玩eden</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=25993#respond' onclick='return addComment.moveForm("comment-25993", "25993", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-27814">
+		<article id="comment-27814" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/207f3b39c59f0d3d5f814497765614d9?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">324234234</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-27814"><time pubdate datetime="2012-10-20T23:49:24+00:00">2012 年 10 月 20 日23:49</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>脏翅膀求续传~~~~~~~~~~~~~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=27814#respond' onclick='return addComment.moveForm("comment-27814", "27814", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-40201">
+		<article id="comment-40201" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/6e7f62b4b8c9b16fa9138a390e90f935?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">LL</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-40201"><time pubdate datetime="2013-02-24T22:33:02+00:00">2013 年 2 月 24 日22:33</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>有人會把陽射弄到手機上嗎&#8230;.YOUTUBE看到有人完美運行&#8230;</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=40201#respond' onclick='return addComment.moveForm("comment-40201", "40201", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-68793">
+		<article id="comment-68793" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/648a274c5a69ee4080ab3e487440c973?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">神在的星期天</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-68793"><time pubdate datetime="2013-07-20T15:54:30+00:00">2013 年 7 月 20 日15:54</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>能麻烦你核对一下游戏吗？ 少女爱上姐姐/爱上姐姐的少女 在第一个选项过后很快就不能玩了。会先黑屏接着自动退出来。怎么回事？</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=68793#respond' onclick='return addComment.moveForm("comment-68793", "68793", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-96095">
+		<article id="comment-96095" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://gravatar.duoshuo.com/avatar/b4c957e1d577d0a71ad804b37c77f431?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">LL</span> 在 <a href="http://www.hacg.me/wordpress/2388/comment-page-1#comment-96095"><time pubdate datetime="2013-11-22T15:12:34+00:00">2013 年 11 月 22 日15:12</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>为何[feng]あかね色に染まる坂.rar(1.3GB)</p>
+<p>会秒退&#8230;为何，求解&#8230;</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/2388?replytocom=96095#respond' onclick='return addComment.moveForm("comment-96095", "96095", "respond", "2388")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">向<a href="#comment-636">lilizi001</a>进行回复 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/2388#respond">取消回复</a></small></h3>
+									<form action="http://www.hacg.me/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">电子邮件地址不会被公开。 必填项已用<span class="required">*</span>标注</p>							<p class="comment-form-author"><label for="author">姓名 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">电子邮件 <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+												<p class="comment-form-comment"><label for="comment">评论</label> <textarea id="comment" name="comment-9aa0ccbc01739542986305befd" cols="45" rows="8" aria-required="true"></textarea><textarea name="comment" rows="1" cols="1" style="display:none"></textarea></p><input type="hidden" name="comment-replaced" value="true" />						<p class="form-allowed-tags">您可以使用这些<abbr title="HyperText Markup Language">HTML</abbr>标签和属性： <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="发表评论" />
+							<input type='hidden' name='comment_post_ID' value='2388' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='636' />
+						</p>
+						<p style="display:none;"><input type="text" name="nxts" value="1407355063" /><input type="text" name="nxts_signed" value="69b11eaf2281752b3bd6b24f3ebe898e6edfa6dd" /><input type="text" name="942c6c6a352463068986cd86404d26f7" value="" /><input type="text" name="0fdb558211420f8e94461a148c96bb" value="635f75c2a9349a63962d" /></p>					</form>
+							</div><!-- #respond -->
+			
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+
+
+	</div><!-- #main -->
+
+
+
+	<footer id="colophon" role="contentinfo">
+
+
+
+			
+<div id="supplementary" class="two">
+		<div id="first" class="widget-area" role="complementary">
+		<aside id="text-8" class="widget widget_text">			<div class="textwidget"><p>联系合作：misaki@hacg.me<br />
+少上点网，多点运动；好好学习，天天向上。</p>
+<p><script src="/js/my.js" type="text/javascript"></script></p>
+</div>
+		</aside>	</div><!-- #first .widget-area -->
+	
+		<div id="second" class="widget-area" role="complementary">
+		<aside id="text-11" class="widget widget_text">			<div class="textwidget"><p>本站不提供任何上传下载服务，所有内容均来自分享站点所提供的公开引用资源。 如果有版权内容，请通知作者删除。</p>
+<p>本站不支持 IE8 浏览器 如果网页显示不正常，请升级到 IE9 及以上<br />
+推荐使用 IE11、Firefox、Chrome 等专业浏览器</p>
+</div>
+		</aside>	</div><!-- #second .widget-area -->
+	
+	</div><!-- #supplementary -->
+
+
+			<div id="site-generator">
+
+				
+				<a href="http://www.hacg.me/" title="欢迎光临 琉璃神社" rel="generator">Power by HACG.ME </a>   Copyright &copy; 2011-2014 琉璃神社 All Rights Reserved <a href="/wordpress/sitemap.xml" title="sitemap">Site</a><a href="/wordpress/sitemap_baidu.xml" title="sitemap">map</a> <a href="/wordpress/sitemap.html" title="txt">txt</a>
+
+			</div>
+
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-includes/js/comment-reply.min.js?ver=3.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","text_wait":"\u4f60\u7684\u8bf7\u6c42\u6b63\u5728\u6267\u884c\u4e2d\uff0c\u8bf7\u7a0d\u7b49...","text_valid":"\u8bf7\u9009\u62e9\u6709\u6548\u7684\u6295\u7968\u9009\u9879","text_multiple":"\u6700\u591a\u5141\u8bb8\u9009\u62e9\u591a\u5c11\u9879\uff1a","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/wp-polls/polls-js.js?ver=2.63'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"http:\/\/www.hacg.me\/wordpress\/wp-content\/plugins\/wp-postratings","ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","text_wait":"\u5bf9\u4e0d\u8d77,\u540c\u4e00\u65f6\u95f4\u5185\u53ea\u80fd\u8bc4\u4ef7\u4e00\u7bc7\u6587\u7ae0..","image":"stars_dark","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src=ratingsL10n.plugin_url+"/images/"+ratingsL10n.image+"/rating_over."+ratingsL10n.image_ext;;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/wp-postratings/postratings-js.js?ver=1.63'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","post_id":"2388"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.hacg.me/wordpress/wp-content/plugins/wp-postviews/postviews-cache.js?ver=1.67'></script>
+</body>
+
+</html>

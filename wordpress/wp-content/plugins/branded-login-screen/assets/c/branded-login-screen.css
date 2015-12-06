@@ -1,0 +1,226 @@
+html, body.login, #backstretch {
+	background:transparent;
+}
+
+body.login {
+
+
+}
+
+.login form {
+	margin:0;
+}
+
+
+div#login {
+	//position: absolute;
+	width: 340px;
+	height:365px;
+	margin: auto;
+	position: fixed;
+    	//top: 0;
+}
+
+p.ver {
+	color: #bbb;
+	position: relative;
+	top:0;
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	font-size: 8px;
+	margin- top: 20px;
+	text-transform: uppercase;
+}
+
+p.ver a {
+	color: #fff;
+	text-decoration:none;
+}
+
+p.ver a:hover, p.ver a:active  {
+	color: #549cbe;
+}
+
+p#activation-p { display:none; }
+
+.login #pass-strength-result { width: 278px; }
+
+#login_error, .login .message {
+	margin: 0 0 16px 0;
+}
+
+form#registerform p.submit { margin-top: -3px;}
+form#loginform p.submit, form#lostpasswordform p.submit  { margin: 13px 0 10px 0;padding-bottom:20px;}
+
+.login h1 a {
+	overflow:hidden;
+	font:0/0 a;
+	padding: 0 0 5px 0;
+	margin:auto;
+	width: 340px;
+	height:87px;
+}
+
+.login #nav, .login #backtoblog {
+	float:right;
+}
+
+.login #nav {
+	padding: 0;
+	font-size: 0.9em;
+
+}
+
+p.capsOn {
+	display: none;
+	color: #bbb;
+	position: relative;
+	top:0;
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	font-size: 8px;
+	margin-top: 15px;
+	text-transform: uppercase;
+}
+
+
+.login label, .forgetmenot label, .login form .forgetmenot label {color:#fff;font-size:9px;text-transform:uppercase;letter-spacing:1px;}
+input[type="checkbox"] {vertical-align:-4px;}
+
+p.forgetmenot, p.confirmationemail { margin: 10px 0 0 0; }
+
+.login label, .forgetmenot label, .login form .forgetmenot label {font-size:9px;text-transform:uppercase;letter- spacing:1px;}
+
+p.message, p.register, p#reg_passmail { display:none; }
+
+.hideme { display:none; }
+.showme { display:block; }
+
+p.description { color: white; }
+
+form p, form h2 {color:#fff;}
+
+h2 { font-size:1.4em;font-weight:bold;}
+
+.login form .input, .login input[type="text"] { margin-bottom: 8px!important; }
+
+.login form { padding: 26px 24px 20px; }
+
+#loginform,#registerform,#lostpasswordform,#resetpassform{
+	box-shadow:none;
+	background-color:rgba(0,0,0,0.75) !important;
+	position:relative;
+	overflow:hidden;
+	border:1px solid #333;
+}
+
+.error p{background:#8A1F11;color:#fff;padding:1em;}
+.error, .message, .login #login_error{
+	color:#fff;
+	background-color:transparent;
+	background-color:rgba(204,34,52,0.90)!important; 
+	border:1px solid #011923;
+}
+
+#login #login_error a{color:#fff!important;border- bottom:1px solid #fff;}
+
+.status_big { font-size:18px; font-weight:bold; }
+
+@media all and (max-width: 360px), (max-height: 465px){
+
+	.login h1 a { width: 260px; margin: 0 0 0px 0; height: 87px !important;}
+	
+	/* align form top-center */  
+	div#login { 
+	right: 0; 
+	bottom: 0;
+	left: 0; 
+	padding: 0; 
+	width: 260px;
+	height:365px;
+	margin: auto;
+	position: absolute;
+	}
+
+	div#login {height:265px;}
+	.login #pass-strength-result { width: 200px; }
+}
+
+
+@media all and (max-width: 730px) and (min-width: 361px) {
+
+	/* align form top-center for smaller screens */  
+	div#login { 
+	right: 0; 
+	bottom: 0;
+	left: 0; 
+	padding: 0; 
+	margin: auto;
+	position: absolute;
+
+	}
+
+	.login #pass-strength-result { width: 200px; }
+}
+
+@media only all and (max-width: 640px) and (max-height: 426px) {
+	body {		
+	//	background-size:		640px 426px;
+	//	-moz-background-size:		640px 426px;
+	//	-webkit-background-size:	640px 426px;
+	}
+
+
+
+}
+
+/*
+	The next 2 definitions are for support in iOS devices.
+ 	Since they don't recoginze the 'cover' keyword for background-size
+ 	we need to simulate it with percentages and orientation
+*/
+
+@media only screen and (orientation: portrait) and (device-width: 320px), (device-width: 768px) {
+	body.login {
+		-webkit-background-size: auto 100%;
+	}
+}
+
+@media only screen and (orientation: landscape) and (device-width: 320px), (device-width: 768px) {
+	body.login {
+		-webkit-background-size: 100% auto;
+	}
+}
+
+/* The following styles only get used when background-size isn't supported */
+
+img#expando { 
+	display:	none;
+	position:	absolute; 
+	z-index:	1;
+	 
+	-ms-interpolation-mode: bicubic; 
+} 
+
+.wide img#expando, 
+.tall img#expando { 
+	display: 	block; 
+} 
+
+.wide img#expando { 
+	height: 	auto;
+	width: 		100%; 
+} 
+
+.tall img#expando { 
+	height:		100%;
+	width:		auto; 
+}
+
+
+#login.floating {
+    position: fixed;
+    top: 0;
+}

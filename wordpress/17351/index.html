@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>CDN 网络故障 | 琉璃神社 ★ HACG.me</title>
+<script type='text/javascript'>window.mod_pagespeed_start = Number(new Date());</script><link rel="profile" href="http://gmpg.org/xfn/11"/>
+<style media="all">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0px;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0px;outline:0px;padding:0px;vertical-align:baseline}:focus{outline:0px}body{background-color:#fff;line-height:1;background-position:initial initial;background-repeat:initial initial}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0px}caption,th,td{font-weight:normal;text-align:left}blockquote::before,blockquote::after,q::before,q::after{content:''}a img{border:0px}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{padding:0px 2em}#page{margin:2em auto;max-width:1024px}#branding hgroup{margin:0px 7.6%}#access div{margin:0px 7.6%}#primary{float:left;margin:0px -26.4% 0px 0px;width:100%}#content{margin:0px 34% 0px 7.6%;width:58.4%}.singular #primary{margin:0px}.singular #content,.left-sidebar.singular #content{margin:0px 7.6%;position:relative;width:auto}.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title{margin:0px auto;width:80%}body,input,textarea{color:#373737;font-style:normal;font-variant:normal;font-size:15px;font-family:'Microsoft YaHei','Helvetica Neue,Helvetica',Arial,sans-serif;font-weight:300;line-height:1.625}body{background-color:#e2e2e2;background-position:initial initial;background-repeat:initial initial}#page{background-color:#fff;background-position:initial initial;background-repeat:initial initial}h1,h2,h3,h4,h5,h6{clear:both}p{margin-bottom:1.625em}ul,ol{margin:0px 0px 1.625em 2.5em}ul{list-style:square}ol{list-style-type:decimal}ul ul,ol ol,ul ol,ol ul{margin-bottom:0px}pre{background-color:#f4f4f4;font-style:normal;font-variant:normal;font-weight:normal;font-size:13px;font-family:'Courier 10 Pitch',Courier,monospace;line-height:1.5;margin-bottom:1.625em;overflow:auto;padding:.75em 1.625em;background-position:initial initial;background-repeat:initial initial}code,kbd{font-style:normal;font-variant:normal;font-weight:normal;font-size:13px;line-height:normal;font-family:'Microsoft YaHei',Monaco,Consolas,'Andale Mono','DejaVu Sans Mono',monospace}abbr,acronym,dfn{border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#666;cursor:help}input[type="text"],input[type="password"],textarea{background-color:#fafafa;-webkit-box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;border:1px solid #ddd;color:#888;background-position:initial initial;background-repeat:initial initial}input[type="text"]:focus,textarea:focus{color:#373737}textarea{padding-left:3px;width:98%}input[type="text"]{padding:3px}input#s{background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/search.png.pagespeed.ce._NOXi6gf0_.png);border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;font-size:14px;height:22px;line-height:1.2em;padding:4px 10px 4px 28px;background-position:5px 6px;background-repeat:no-repeat no-repeat}input#searchsubmit{display:none}a{color:#1982d1;text-decoration:none}a:focus,a:active,a:hover{text-decoration:underline}.assistive-text{clip:rect(1px 1px 1px 1px);position:absolute!important}#access a.assistive-text:active,#access a.assistive-text:focus{background-color:#eee;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;color:#1982d1;font-size:12px;position:absolute;text-decoration:underline;top:0px;left:7.6%;clip:auto!important;background-position:initial initial;background-repeat:initial initial}#branding{border-top-width:2px;border-top-style:solid;border-top-color:#bbb;padding-bottom:10px;position:relative;z-index:9999}#site-title{margin-right:270px;padding:3.65625em 0px 0px}#site-title a{color:#111;font-size:30px;font-weight:bold;line-height:36px;text-decoration:none}#site-title a:hover,#site-title a:focus,#site-title a:active{color:#1982d1}#site-description{color:#7a7a7a;font-size:14px;margin:0px 270px 3.65625em 0px}#branding img{height:auto;margin-bottom:-7px;width:100%}#access{background-image:-webkit-linear-gradient(top,#252525,#0a0a0a);-webkit-box-shadow:rgba(0,0,0,.4) 0px 1px 2px;box-shadow:rgba(0,0,0,.4) 0px 1px 2px;clear:both;display:block;float:left;margin:0px auto 6px;width:100%;background-position:initial initial;background-repeat:initial initial}#access ul{font-size:13px;list-style:none;margin:0px 0px 0px -.8125em;padding-left:0px}#access li{float:left;position:relative}#access a{color:#eee;display:block;line-height:3.333em;padding:0px 1.2125em;text-decoration:none}#access li:hover>a,#access ul ul:hover>a,#access a:focus{background-color:#efefef;background-position:initial initial;background-repeat:initial initial}#access li:hover>a,#access a:focus{background-image:-webkit-linear-gradient(top,#f9f9f9,#e5e5e5);color:#373737;background-position:initial initial;background-repeat:initial initial}#access ul li:hover>ul{display:block}#branding #searchform{position:absolute;top:3.8em;right:7.6%;text-align:right}#branding #s{float:right;-webkit-transition: width 400ms ease, background;width:72px}#branding #s:focus{background-color:#f9f9f9;width:196px}#branding #searchsubmit{display:none}#branding .only-search #s,#branding .only-search #s:focus{width:85%}#branding .only-search #s:focus{background-color:#bbb}#main{clear:both;padding:1.625em 0px 0px}.hentry,.no-results{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;margin:0px 0px 1.625em;padding:0px 0px 1.625em;position:relative}.hentry:last-child,.no-results{border-bottom-style:none}.entry-title,.entry-header .entry-meta{padding-right:76px}.entry-title{clear:both;color:#222;font-size:26px;font-weight:bold;line-height:1.5em;padding-bottom:.3em;padding-top:15px}.entry-title,.entry-title a{color:#222;text-decoration:none}.entry-title a:hover,.entry-title a:focus,.entry-title a:active{color:#1982d1}.entry-meta{color:#666;clear:both;font-size:12px;line-height:18px}.entry-meta a{font-weight:bold}.entry-content,.entry-summary{padding:1.625em 0px 0px}.page-link a:hover{background-color:#888;color:#fff;font-weight:bold;background-position:initial initial;background-repeat:initial initial}.entry-meta .edit-link a:hover,.commentlist .edit-link a:hover{background-color:#888;color:#fff;background-position:initial initial;background-repeat:initial initial}.entry-content img,.comment-content img,.widget img{max-width:97.5%}p img,.wp-caption{margin-top:.4em}.wp-caption .wp-caption-text::before{color:#666;content:—;font-size:14px;font-style:normal;font-weight:bold;margin-right:5px;position:absolute;left:10px;top:7px}a:focus img[class*="align"],a:hover img[class*="align"],a:active img[class*="align"],a:focus img[class*="wp-image-"],a:hover img[class*="wp-image-"],a:active img[class*="wp-image-"],#content .gallery .gallery-icon a:focus img,#content .gallery .gallery-icon a:hover img,#content .gallery .gallery-icon a:active img{background-color:#000;border-color:#bbb;background-position:initial initial;background-repeat:initial initial}.wp-caption a:focus img,.wp-caption a:active img,.wp-caption a:hover img{background-color:#fff;border-color:#ddd;background-position:initial initial;background-repeat:initial initial}.post-password-required input[type="password"]:focus{background-color:#f7f7f7;background-position:initial initial;background-repeat:initial initial}#author-info{font-size:12px;overflow:hidden}.singular #author-info{background-color:#f9f9f9;border-top-width:1px;border-top-style:solid;border-top-color:#ddd;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;margin:2.2em -35.6% 0px -35.4%;padding:20px 35.4%;background-position:initial initial;background-repeat:initial initial}#author-avatar{float:left;margin-right:-78px}#author-avatar img{background-color:#fff;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-box-shadow:#bbb 0px 1px 2px;box-shadow:#bbb 0px 1px 2px;padding:3px;background-position:initial initial;background-repeat:initial initial}#author-description{float:left;margin-left:108px}#author-description h2{color:#000;font-size:15px;font-weight:bold;margin:5px 0px 10px}.entry-header .comments-link a:hover,.entry-header .comments-link a:focus,.entry-header .comments-link a:active{background-color:#1982d1;color:rgba(255,255,255,.8)}.singular .hentry{border-bottom-style:none;padding:4.875em 0px 0px;position:relative}.singular .entry-title{color:#000;font-size:36px;font-weight:bold;line-height:48px}.singular .entry-title,.singular .entry-header .entry-meta{padding-right:0px}.singular .entry-header .entry-meta{position:absolute;top:0px;left:0px}.indexed.format-image footer.entry-meta a:hover{color:#fff}.indexed.format-image .wp-caption .wp-caption-text::before{color:#444}.indexed.format-image a:hover img{opacity:.8}article.intro .edit-link a:hover,article.intro .edit-link a:focus,article.intro .edit-link a:active{background-color:#777;background-position:initial initial;background-repeat:initial initial}section.featured-post .attachment-small-feature:hover,section.featured-post .attachment-small-feature:focus,section.featured-post .attachment-small-feature:active{opacity:.8}article.feature-image.small .entry-summary p a:hover{background-color:#1982d1;color:rgba(255,255,255,.8);background-position:initial initial;background-repeat:initial initial}section.feature-image.large:hover .entry-title a,section.feature-image.large .entry-title:hover a{background-color:rgba(255,255,255,.8);color:#222;background-position:initial initial;background-repeat:initial initial}.featured-post .feature-text::after,.featured-post .feature-image.small::after{content:' ';background-image:-webkit-linear-gradient(top,rgba(255,255,255,0) 0%,#fff 100%);width:100%;height:45px;position:absolute;top:230px;background-position:initial initial;background-repeat:initial initial}.featured-post .feature-image.small::after{top:253px}section.recent-posts .other-recent-posts a[rel="bookmark"]::after{content:'-';color:transparent;font-size:11px}section.recent-posts .other-recent-posts a[rel="bookmark"]:hover{}section.recent-posts .other-recent-posts .comments-link a:hover{color:#1982d1;border-color:#1982d1}section.recent-posts .other-recent-posts li::after{clear:both;content:'.';display:block;height:0px;visibility:hidden}.image-attachment div.attachment a:focus img,.image-attachment div.attachment a:hover img,.image-attachment div.attachment a:active img{border-color:#ddd;background-color:#fff;background-position:initial initial;background-repeat:initial initial}#content nav{clear:both;overflow:hidden;padding:0px 0px 1.625em}#nav-single{float:right;position:relative;top:-.3em;text-align:right;z-index:1}.widget-area{font-size:12px}.widget{clear:both;margin:0px 0px 2.2em}.widget a:hover,.widget a:focus,.widget a:active{text-decoration:underline}.widget_search #searchsubmit:active{background-color:#1982d1;border-color:#0861a5;-webkit-box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;color:#bfddf3;background-position:initial initial;background-repeat:initial initial}section.ephemera .entry-title .comments-link a:hover,.widget_twentyeleven_ephemera .entry-title .comments-link a:hover{}#comments-title{color:#666;font-size:10px;font-weight:500;line-height:2.6em;padding:0px 0px 2.6em;text-transform:uppercase}.commentlist{list-style:none;margin:0px auto;width:68.9%}.commentlist>li.comment{background-color:#f6f6f6;border:1px solid #ddd;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;margin:0px 0px 1.625em;padding:1.625em;position:relative;background-position:initial initial;background-repeat:initial initial}.commentlist .children{list-style:none;margin:0px}.commentlist .children li.comment{background-color:#fff;border-left-width:1px;border-left-style:solid;border-left-color:#ddd;border-top-left-radius:0px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:0px;margin:1.625em 0px 0px;padding:1.625em;position:relative;background-position:initial initial;background-repeat:initial initial}.commentlist .children li.comment .fn{display:block}.comment-meta .fn{font-style:normal}.comment-meta{color:#666;font-size:12px;line-height:2.2em}.commentlist .children li.comment .comment-meta{line-height:1.625em;margin-left:50px}.commentlist .children li.comment .comment-content{margin:1.625em 0px 0px}.comment-meta a{font-weight:bold}.comment-meta a:focus,.comment-meta a:active,.comment-meta a:hover{}.commentlist .avatar{border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-box-shadow:#ccc 0px 1px 2px;box-shadow:#ccc 0px 1px 2px;left:-102px;padding:0px;position:absolute;top:0px}.commentlist>li::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow.png.pagespeed.ce.GYiRbvEAeQ.png);left:-21px;position:absolute}.commentlist>li.pingback::before{content:''}.commentlist .children .avatar{background-image:none;-webkit-box-shadow:none;box-shadow:none;left:2.2em;padding:0px;top:2.2em;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link{background-color:#eee;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;color:#666;display:inline-block;font-size:12px;padding:0px 8px;text-decoration:none;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link:hover,a.comment-reply-link:focus,a.comment-reply-link:active{background-color:#888;color:#fff;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link>span{display:inline-block;position:relative;top:-1px}.commentlist>li.bypostauthor{background-color:#ddd;border-color:#d3d3d3;background-position:initial initial;background-repeat:initial initial}.commentlist>li.bypostauthor .comment-meta{color:#575757}.commentlist>li.bypostauthor .comment-meta a:focus,.commentlist>li.bypostauthor .comment-meta a:active,.commentlist>li.bypostauthor .comment-meta a:hover{}.commentlist>li.bypostauthor::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-bypostauthor.png.pagespeed.ce.fAqRS5INfI.png)}.commentlist .children>li.bypostauthor{background-color:#ddd;border-color:#d3d3d3;background-position:initial initial;background-repeat:initial initial}#respond{background-color:#ddd;border:1px solid #d3d3d3;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;margin:0px auto 1.625em;padding:1.625em;position:relative;width:68.9%;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"],#respond textarea{background-color:#fff;border:4px solid #eee;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;-webkit-box-shadow:rgba(204,204,204,.952941) 0px 1px 3px inset;box-shadow:rgba(204,204,204,.952941) 0px 1px 3px inset;position:relative;padding:10px;text-indent:80px;background-position:initial initial;background-repeat:initial initial}#respond .comment-form-author,#respond .comment-form-email,#respond .comment-form-url,#respond .comment-form-comment{position:relative}#respond .comment-form-author label,#respond .comment-form-email label,#respond .comment-form-url label,#respond .comment-form-comment label{background-color:#eee;-webkit-box-shadow:rgba(204,204,204,.8) 1px 2px 2px;box-shadow:rgba(204,204,204,.8) 1px 2px 2px;color:#555;display:inline-block;font-size:13px;left:4px;min-width:60px;padding:4px 10px;position:relative;top:40px;z-index:1;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"]:focus,#respond textarea:focus{text-indent:0px;z-index:1}#respond textarea{resize:vertical;width:95%}#respond .comment-form-author .required,#respond .comment-form-email .required{color:#bd3500;font-size:22px;font-weight:bold;left:75%;position:absolute;top:45px;z-index:1}#respond .comment-notes,#respond .logged-in-as{font-size:13px}#respond p{margin:10px 0px}#respond .form-submit{float:right;margin:-20px 0px 10px}#respond input#submit{background-color:#222;border:none;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;color:#eee;cursor:pointer;font-size:15px;margin:20px 0px;padding:5px 42px 5px 22px;position:relative;left:30px;text-shadow:rgba(0,0,0,.298039) 0px -1px 0px;background-position:initial initial;background-repeat:initial initial}#respond input#submit:active{background-color:#1982d1;color:#bfddf3;background-position:initial initial;background-repeat:initial initial}#respond #cancel-comment-reply-link{color:#666;margin-left:10px;text-decoration:none}#respond .logged-in-as a:hover,#respond #cancel-comment-reply-link:hover{text-decoration:underline}#reply-title{color:#373737;font-size:24px;font-weight:bold;line-height:30px}#cancel-comment-reply-link{color:#888;display:block;font-size:10px;font-weight:normal;line-height:2.2em;letter-spacing:.05em;position:absolute;right:1.625em;text-decoration:none;text-transform:uppercase;top:1.1em}#cancel-comment-reply-link:focus,#cancel-comment-reply-link:active,#cancel-comment-reply-link:hover{color:#ff4b33}#respond label{line-height:2.2em}#respond input[type="text"]{display:block;height:24px;width:75%}#respond p{font-size:12px}p.comment-form-comment{margin:0px}.form-allowed-tags{display:none}#colophon{clear:both}#supplementary{border-top-width:1px;border-top-style:solid;border-top-color:#ddd;padding:1.625em 7.6%;overflow:hidden}#supplementary.two .widget-area{float:left;margin-right:3.7%;width:48.1%}#supplementary.two .widget-area+.widget-area{margin-right:0px}#site-generator{background-color:#f9f9f9;border-top-width:1px;border-top-style:solid;border-top-color:#ddd;color:#666;font-size:12px;line-height:2.2em;padding:2.2em .5em;text-align:center;background-position:initial initial;background-repeat:initial initial}#site-generator a{color:#555;font-weight:bold}@media (max-width:800px){#main #content{margin:0px 7.6%;width:auto}.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title{width:100%}.singular #author-info{margin:2.2em -8.8% 0px;padding:20px 8.8%}.commentlist{width:100%}.commentlist>li.comment,.commentlist .pingback{margin-left:102px;width:auto}#respond{width:auto}#colophon #supplementary .widget-area{float:none;margin-right:0px;width:auto}}@media (max-width:650px){body,input,textarea{font-size:13px}#site-title a{font-size:24px}#site-description{font-size:12px}#access ul{font-size:12px}.entry-title{font-size:21px}.singular .entry-title{font-size:28px}.entry-meta{font-size:12px}#site-title{padding:5.30625em 0px 0px}#site-title,#site-description{margin-right:0px}#branding #searchform{top:1.625em!important}#nav-single{display:block;position:static}.singular .hentry{padding:1.625em 0px 0px}.commentlist>li.comment,.commentlist>li.pingback{margin-left:0px!important}.commentlist .avatar{background-color:transparent;display:block;padding:0px;position:static;background-position:initial initial;background-repeat:initial initial}.commentlist .children .avatar{background-image:none;left:2.2em;padding:0px;position:absolute;top:2.2em;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"]{width:95%}#respond .comment-form-author .required,#respond .comment-form-email .required{left:95%}}@media only screen and (max-device-width:480px) and (min-device-width:320px){body{padding:0px}#page{margin-top:0px}#branding{border-top-style:none}}*::-moz-selection{background-color:#ff7283;color:#fff;background-position:initial initial;background-repeat:initial initial}::selection{background-color:#ff7283;color:#fff;background-position:initial initial;background-repeat:initial initial}</style>
+<link rel="pingback" href="http://www.hacg.me/wordpress/xmlrpc.php"/>
+<!--[if lt IE 9]>
+<script src="http://www.hacg.me/wordpress/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; Feed" href="http://www.hacg.me/wordpress/feed"/>
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; 评论Feed" href="http://www.hacg.me/wordpress/comments/feed"/>
+<link rel="alternate" type="application/rss+xml" title="琉璃神社 ★ HACG.me &raquo; CDN 网络故障评论Feed" href="http://www.hacg.me/wordpress/17351/feed"/>
+<style media="all"></style>
+<style media="all"></style>
+<style media="all"></style>
+<style media="all">.wp-polls ul li::before,.wp-polls-ans ul li::before,#sidebar ul ul li::before{content:''}.wp-polls-paging a,.wp-polls-paging a:link{padding:2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:visited{padding:2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}.wp-polls-paging a:hover{border:1px solid #000;color:#000;background-color:#fff}.wp-polls-paging a:active{padding:2px 4px;margin:2px;text-decoration:none;border:1px solid #06c;color:#06c;background-color:#fff}</style>
+<style media="all">body{background-color:#1d1d1d;color:#bbb;background-position:initial initial;background-repeat:initial initial}#page{background-color:#0f0f0f;background-position:initial initial;background-repeat:initial initial}pre{background-color:#0b0b0b;background-position:initial initial;background-repeat:initial initial}code,kbd{font-style:normal;font-variant:normal;font-weight:normal;font-size:13px;line-height:normal;font-family:Monaco,Consolas,'Andale Mono','DejaVu Sans Mono',monospace}abbr,acronym,dfn{border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#999}input[type="text"],.post-password-required input[type="password"],textarea{border:1px solid #222}input[type="text"]:focus,textarea:focus{}input#s{background-color:#ddd}a{}#branding{border-top-width:2px;border-top-style:solid;border-top-color:#0a0a0a}#site-title a{color:#eee}#site-title a:hover,#site-title a:focus,#site-title a:active{}#site-description{color:#858585}#branding #s{background-color:#ddd}#access{background-image:-webkit-linear-gradient(top,#383838,#272727);border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#222;background-position:initial initial;background-repeat:initial initial}.hentry{border-color:#222}.entry-title{color:#ddd}.entry-title,.entry-title a{color:#ddd}.entry-title a:hover,.entry-title a:focus,.entry-title a:active{}.entry-meta{color:#999}.page-link a:hover{background-color:#999;color:#000;background-position:initial initial;background-repeat:initial initial}.entry-meta .edit-link a:hover,.entry-meta .edit-link a:focus,.entry-meta .edit-link a:active{background-color:#999;color:#000;background-position:initial initial;background-repeat:initial initial}.wp-caption .wp-caption-text::before{color:#999}a:focus img[class*="wp-image-"],a:hover img[class*="wp-image-"],a:active img[class*="wp-image-"]{background-color:#2c2c2c;border-color:#444;background-position:initial initial;background-repeat:initial initial}.wp-caption a:focus img,.wp-caption a:active img,.wp-caption a:hover img{background-color:#0f0f0f;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}.post-password-required input[type="password"]:focus{background-color:#fff;background-position:initial initial;background-repeat:initial initial}.singular #author-info{background-color:#060606;border-color:#222;background-position:initial initial;background-repeat:initial initial}#author-avatar img{background-color:#000;-webkit-box-shadow:#444 0px 1px 2px;box-shadow:#444 0px 1px 2px;background-position:initial initial;background-repeat:initial initial}#author-description h2{color:#fff}.singular .entry-title{color:#fff}.indexed.format-image .entry-meta .edit-link a:hover{color:#fff}article.intro .edit-link a:hover{background-color:#888;background-position:initial initial;background-repeat:initial initial}section.featured-post .attachment-small-feature:hover{border-color:#777}article.feature-image.small .entry-summary p a:hover{color:#40220c}section.feature-image.large:hover .entry-title a,section.feature-image.large .entry-title:hover a{background-color:rgba(255,255,255,.8);color:#000;background-position:initial initial;background-repeat:initial initial}.featured-post .feature-text::after,.featured-post .feature-image.small::after{background-image:-webkit-linear-gradient(top,rgba(0,0,0,0) 0%,#000 100%);background-position:initial initial;background-repeat:initial initial}section.recent-posts .other-recent-posts a[rel="bookmark"]:hover{}section.recent-posts .other-recent-posts .comments-link a:hover{}.image-attachment div.attachment a:focus img,.image-attachment div.attachment a:hover img,.image-attachment div.attachment a:active img{border-color:#2c2c2c;background-color:#0f0f0f;background-position:initial initial;background-repeat:initial initial}.widget_search #searchsubmit:active{-webkit-box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;box-shadow:rgba(0,0,0,.0980392) 0px 1px 1px inset;color:#40220c}#comments-title{color:#bbb}.commentlist>li.comment{background-color:#090909;border-color:#222;background-position:initial initial;background-repeat:initial initial}.commentlist .children li.comment{background-color:#000;border-color:#222;background-position:initial initial;background-repeat:initial initial}.comment-meta{color:#999}.commentlist .avatar{-webkit-box-shadow:#222 0px 1px 2px;box-shadow:#222 0px 1px 2px}a.comment-reply-link{background-color:#242424;color:#bbb;background-position:initial initial;background-repeat:initial initial}li.bypostauthor a.comment-reply-link{background-color:#111;background-position:initial initial;background-repeat:initial initial}a.comment-reply-link:hover,a.comment-reply-link:focus,a.comment-reply-link:active,li.bypostauthor a.comment-reply-link:hover,li.bypostauthor a.comment-reply-link:focus,li.bypostauthor a.comment-reply-link:active{background-color:#999;color:#000;background-position:initial initial;background-repeat:initial initial}.commentlist>li::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-dark.png.pagespeed.ce.2UrxEL26I8.png)}.rtl .commentlist>li::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-dark-rtl.png.pagespeed.ce.XBTRMpLuQ3.png)}.commentlist>li.bypostauthor{background-color:#222;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}.commentlist>li.bypostauthor::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-bypostauthor-dark.png.pagespeed.ce.rdnKOjTI1O.png)}.rtl .commentlist>li.bypostauthor::before{content:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/images/comment-arrow-bypostauthor-dark-rtl.png.pagespeed.ce.4xfhenD-4k.png)}.commentlist .children>li.bypostauthor{background-color:#222;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}.commentlist>li.bypostauthor .comment-meta{color:#a8a8a8}#respond{background-color:#222;border-color:#2c2c2c;background-position:initial initial;background-repeat:initial initial}#respond input[type="text"],#respond textarea{background-color:#000;border:4px solid #111;-webkit-box-shadow:rgba(51,51,51,.952941) 0px 1px 3px inset;box-shadow:rgba(51,51,51,.952941) 0px 1px 3px inset;color:#bbb;background-position:initial initial;background-repeat:initial initial}#respond .comment-form-author label,#respond .comment-form-email label,#respond .comment-form-url label,#respond .comment-form-comment label{background-color:#111;-webkit-box-shadow:rgba(51,51,51,.8) 1px 2px 2px;box-shadow:rgba(51,51,51,.8) 1px 1px 2px;color:#aaa;background-position:initial initial;background-repeat:initial initial}#respond .comment-form-author .required,#respond .comment-form-email .required{color:#42caff}#respond input#submit{background-color:#ddd;-webkit-box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;box-shadow:rgba(0,0,0,.298039) 0px 1px 2px;color:#111;text-shadow:rgba(0,0,0,.298039) 0px -1px 0px;background-position:initial initial;background-repeat:initial initial}#respond input#submit:active{color:#40220c}#respond #cancel-comment-reply-link{color:#999}#reply-title{color:#ccc}#cancel-comment-reply-link{color:#777}#cancel-comment-reply-link:focus,#cancel-comment-reply-link:active,#cancel-comment-reply-link:hover{color:#00b4cc}#supplementary{border-color:#222}#site-generator{background-color:#060606;border-color:#000;background-position:initial initial;background-repeat:initial initial}</style>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-includes/js/jquery/jquery.js,qver=1.10.2.pagespeed.jm.IA0LeBJnom.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-includes/js/jquery/jquery-migrate.min.js,qver=1.2.1.pagespeed.jm.LVTOO3Z2GS.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/toggle-box/js/toggle-box.js,qver=3.6.pagespeed.jm.FgQZyX_VQa.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-includes/js/comment-reply.min.js,qver=3.6.pagespeed.ce.YYW5hq-CGg.js'></script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/js/blockui.min.js,qver=2.57.pagespeed.jm._hOHYs2wN2.js'></script>
+<script type='text/javascript'>var sidebar_login_params={"ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","force_ssl_login":"0","force_ssl_admin":"0","is_ssl":"0","i18n_username_required":"\u8bf7\u8f93\u5165\u60a8\u7684\u7528\u6237\u540d","i18n_password_required":"\u8bf7\u8f93\u5165\u60a8\u7684\u5bc6\u7801","error_class":"sidebar_login_error"};</script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/js/sidebar-login.min.js,qver=2.5.3.pagespeed.ce.StZ6hyqvWs.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.hacg.me/wordpress/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.hacg.me/wordpress/wp-includes/wlwmanifest.xml"/> 
+<meta name="generator" content="WordPress 3.6"/>
+<link rel='canonical' href='http://www.hacg.me/wordpress/17351'/>
+<link rel='shortlink' href='http://www.hacg.me/wordpress/?p=17351'/>
+
+<style>.highslide-wrapper a:hover{text-decoration:underline}.highslide-loading{display:block;color:#000;font-size:8pt;font-family:sans-serif;font-weight:bold;text-decoration:none;padding:2px 2px 2px 22px;border:1px solid #000;background-color:#fff;background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/loader.white.gif.pagespeed.ce.8q8GDxytvJ.gif);background-position:3px 1px;background-repeat:no-repeat no-repeat}a.highslide-credits:hover,a.highslide-credits:hover i{color:#fff;background-color:gray}.highslide-loading{display:block;color:#000;font-size:8pt;font-family:sans-serif;font-weight:bold;text-decoration:none;padding:2px 2px 2px 22px;border:1px solid #000;background-color:#fff;background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/loader.white.gif.pagespeed.ce.8q8GDxytvJ.gif);background-position:3px 1px;background-repeat:no-repeat no-repeat}a.highslide-credits:hover,a.highslide-credits:hover i{color:#fff;background-color:gray}.highslide-wrapper .highslide-header a:hover{color:#000}.highslide-container div{font-family:微软雅黑,Verdana,Helvetica}.highslide-wrapper a:hover{text-decoration:underline}.highslide-loading{display:block;color:#000;font-size:12px;font-weight:700;text-decoration:none;border:1px solid #000;background-color:#fff;background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/loader.white.gif.pagespeed.ce.8q8GDxytvJ.gif);padding:2px 2px 2px 22px;background-position:3px 1px;background-repeat:no-repeat no-repeat}a.highslide-credits:hover,a.highslide-credits:hover i{color:#fff;background-color:gray}.highslide-wrapper .highslide-header a:hover{color:#000}.highslide-controls .highslide-previous a:hover{background-position:0px -30px}.highslide-controls .highslide-play a:hover{background-position:-30px -30px}.highslide-controls .highslide-pause a:hover{background-position:-60px -30px}.highslide-controls .highslide-next a:hover{background-position:-90px -30px}.highslide-controls .highslide-move a:hover{background-position:-120px -30px}.highslide-controls .highslide-full-expand a:hover{background-position:-150px -30px}.highslide-controls .highslide-close a:hover{background-position:-180px -30px}</style>
+<script type="text/javascript" src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/highslide-with-html.packed.js.pagespeed.jm.QyPti4DuC7.js"></script>
+<script type="text/javascript">jQuery(document).ready(function($){hs.graphicsDir="http://www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/graphics/";hs.outlineType="rounded-white";hs.dimmingOpacity=0.8;hs.outlineWhileAnimating=true;hs.showCredits=false;hs.captionEval="this.thumb.alt";hs.numberPosition="caption";hs.align="center";hs.transitions=["expand","crossfade"];hs.addSlideshow({interval:5000,repeat:true,useControls:true,fixedControls:"fit",overlayOptions:{opacity:0.75,position:"bottom center",hideOnMouseOut:true}});});</script>
+	<style type='text/css'>.playerHolder{width:860px;height:450px;position:absolute;z-index:0}.placeHolder{width:860px;height:450px;visibility:hidden;border:0 none}</style><script type="text/javascript" src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/mukioplayer-for-wordpress/static/mukio-sect.js.pagespeed.jm.h1gFUQ7Tum.js"></script><script type="text/javascript" src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/mukioplayer-for-wordpress/static/mukio-prompt.js.pagespeed.jm.UvvjQru4hs.js"></script><style media="screen">#wp_page_numbers li a:hover{text-decoration:underline}#wp_page_numbers li.active_page a:hover{color:#fff}</style><style type="text/css">.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background:#1c2949;border:1px solid #696565}</style>
+	<style>a,#site-title a:focus,#site-title a:hover,#site-title a:active,.entry-title a:hover,.entry-title a:focus,.entry-title a:active,.widget_twentyeleven_ephemera .comments-link a:hover,section.recent-posts .other-recent-posts a[rel="bookmark"]:hover,section.recent-posts .other-recent-posts .comments-link a:hover,.format-image footer.entry-meta a:hover,#site-generator a:hover{color:#4399ee}section.recent-posts .other-recent-posts .comments-link a:hover{border-color:#4399ee}article.feature-image.small .entry-summary p a:hover,.entry-header .comments-link a:hover,.entry-header .comments-link a:focus,.entry-header .comments-link a:active,.feature-slider a.active{background-color:#4399ee}</style>
+<style type="text/css" id="custom-background-css">body.custom-background{background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2012/01/xcamouflage.png.pagespeed.ic.TUZkU2GHBT.png);background-repeat:repeat;background-position:top left;background-attachment:scroll}</style>
+
+
+
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-22787990-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+</head>
+
+<body class="single single-post postid-17351 single-format-standard custom-background singular two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="http://www.hacg.me/wordpress/" title="琉璃神社 ★ HACG.me" rel="home">琉璃神社 ★ HACG.me</a></span></h1>
+				<h2 id="site-description">分享同人动漫的快乐 ★ http://www.HACG.me</h2>
+			</hgroup>
+
+						<a href="http://www.hacg.me/wordpress/">
+									<img src="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2013/08/1024x350xlogo130803-2.jpg.pagespeed.ic.h1cqU4uXJ3.jpg" width="1024" height="350" alt=""/>
+							</a>
+			
+								<form method="get" id="searchform" action="http://www.hacg.me/wordpress/">
+		<label for="s" class="assistive-text">搜索</label>
+		<input type="text" class="field" name="s" id="s" placeholder="搜索"/>
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="搜索"/>
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">主菜单</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="跳至主内容区域">跳至主内容区域</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="跳至副内容区域">跳至副内容区域</a></div>
+								<div class="menu-%e5%b8%b8%e8%a7%84%e8%8f%9c%e5%8d%95-container"><ul id="menu-%e5%b8%b8%e8%a7%84%e8%8f%9c%e5%8d%95" class="menu"><li id="menu-item-3652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3652"><a href="http://www.hacg.me/wordpress/">最新投稿</a></li>
+<li id="menu-item-3647" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3647"><a href="http://www.hacg.me/wordpress/category/age">文章</a></li>
+<li id="menu-item-3648" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3648"><a href="http://www.hacg.me/wordpress/category/anime">动画</a></li>
+<li id="menu-item-3649" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3649"><a href="http://www.hacg.me/wordpress/category/comic">漫画</a></li>
+<li id="menu-item-3650" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3650"><a href="http://www.hacg.me/wordpress/category/erogame">游戏</a></li>
+<li id="menu-item-3651" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3651"><a href="http://www.hacg.me/wordpress/category/op">音乐</a></li>
+<li id="menu-item-31007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31007"><a href="http://www.hacg.me/wordpress/category/rou">在线</a></li>
+<li id="menu-item-3654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3654"><a href="http://www.hacg.me/wordpress/sm">使用说明</a></li>
+<li id="menu-item-4541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4541"><a href="http://www.hacg.me/bb">讨论区</a></li>
+</ul></div>			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					<nav id="nav-single">
+						<h3 class="assistive-text">文章导航</h3>
+第1,371 次围观
+			
+<!-- #nav-single -->
+</nav>
+<article id="post-17351" class="post-17351 post type-post status-publish format-standard hentry category-age">
+	<header class="entry-header">
+		<h1 class="entry-title">CDN 网络故障</h1>
+
+				<div class="entry-meta">
+			<span class="sep">发表于 </span><a href="http://www.hacg.me/wordpress/17351" title="14:57" rel="bookmark"><time class="entry-date" datetime="2012-07-19T14:57:17+00:00" pubdate>2012 年 7 月 19 日</time></a><span class="by-author"> <span class="sep"> 由 </span> <span class="author vcard"><a class="url fn n" href="http://www.hacg.me/wordpress/author/admin" title="查看所有由 多啦H萌 发布的文章" rel="author">多啦H萌</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><img src="http://i.imgur.com/qjxRF.jpg" alt=""/><br/>
+好像这2天国内的GFW升级了似的，一下子，国外的网站都打不开了。。诶，真悲剧了。。也许过几天就好了。。总之这几天速度会很慢了。。。如果真不行，只能换服务器了。。
+<pre><a style="text-decoration:none" href="http://www.hacg.me/wordpress/17351#"><span style="color: #888888;">CDN 网络故障</span></a>
+<a style="text-decoration:none" href="http://www.hacg.me/wordpress/17351#"><span style="color: #888888;">来源：琉璃神社  http://www.hacg.me/wordpress/17351</span></a></pre>
+<div class="wumii-hook">
+    <input type="hidden" name="wurl" value="http://www.hacg.me/wordpress/17351"/><br/>
+    <input type="hidden" name="wtitle" value="CDN 网络故障"/><br/>
+    <input type="hidden" name="wpic" value=""/>
+</div>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		此条目是由 <a href="http://www.hacg.me/wordpress/author/admin">多啦H萌</a> 发表在 <a href="http://www.hacg.me/wordpress/category/age" title="查看文章中的全部文章" rel="category tag">文章</a> 分类目录的。将<a href="http://www.hacg.me/wordpress/17351" title="链向 CDN 网络故障 的固定链接" rel="bookmark">固定链接</a>加入收藏夹。		
+				<div id="author-info">
+			<div id="author-avatar">
+				<img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/0.gravatar.com/avatar/68x68xac2668bb905471cd47934f7627983958,qs=68,ad=wavatar,ar=G.pagespeed.ic.8Y_W-FM3pn.jpg' class='avatar avatar-68 photo' height='68' width='68'/>			</div><!-- #author-avatar -->
+			<div id="author-description">
+				<h2>关于 多啦H萌</h2>
+				我认为回贴是很重要的，请不要水，让后来的人可以参考你的留言。
+【琉璃神社汉化组】新人招募 想参与漫画汉化工作的请留言，或者发邮件，或者论坛短消息！				<div id="author-link">
+					<a href="http://www.hacg.me/wordpress/author/admin" rel="author">
+						查看所有由 多啦H萌 发表的文章 <span class="meta-nav">&rarr;</span>					</a>
+				</div><!-- #author-link	-->
+			</div><!-- #author-description -->
+		</div><!-- #entry-author-info -->
+			</footer><!-- .entry-meta -->
+</article><!-- #post-17351 -->
+
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			《<span>CDN 网络故障</span>》上有 20 条评论		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment byuser comment-author-unknown_type even thread-even depth-1" id="li-comment-20662">
+		<article id="comment-20662" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/c755fba15573516322d33cd57d407283?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">unknown_type</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20662"><time pubdate datetime="2012-07-19T15:16:21+00:00">2012 年 7 月 19 日15:16</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>我觉得既然是在镇子上,还是学一点翻WALL的技能&#8230;.<br/>
+觉得麻烦的直接用某轮子的工具.不过不推荐用&#8230;毕竟带有郑智色彩..说不定<br/>
+还收集你上网信息&#8230;<br/>
+花钱买工具不实际&#8230;穷人一个,本着能省就省的原则,有这钱不如买手办,游戏.<br/>
+我提供一个关键词吧&#8230;有需要的同学搜索一下就能找到了&#8230;goagent</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20662#respond' onclick='return addComment.moveForm("comment-20662", "20662", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-lierkang2 odd alt thread-odd thread-alt depth-1" id="li-comment-20663">
+		<article id="comment-20663" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/8664079ebf3247add0aa7ee5a7b6f0c6?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">lierkang2</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20663"><time pubdate datetime="2012-07-19T15:24:39+00:00">2012 年 7 月 19 日15:24</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>表示没问题哦 就是昨天还是前天早上傲娇了下 现在不挂代理都能上了 速度也不错</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20663#respond' onclick='return addComment.moveForm("comment-20663", "20663", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-ssdsl even thread-even depth-1" id="li-comment-20667">
+		<article id="comment-20667" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/d116e48fc52aedfda6df40c392ba104f?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">ssdsl</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20667"><time pubdate datetime="2012-07-19T15:46:52+00:00">2012 年 7 月 19 日15:46</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>网通的表示各种悲剧。。。。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20667#respond' onclick='return addComment.moveForm("comment-20667", "20667", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-meltdown odd alt thread-odd thread-alt depth-1" id="li-comment-20672">
+		<article id="comment-20672" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/3b873fde9a468b42a28751e07e1c0785?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">Vampire</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20672"><time pubdate datetime="2012-07-19T17:39:14+00:00">2012 年 7 月 19 日17:39</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>H大，我要封面图片~~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20672#respond' onclick='return addComment.moveForm("comment-20672", "20672", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-20681">
+		<article id="comment-20681" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/71699fc2dc64d4ee21940e1bbb3c9492?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39'/><span class="fn"><a rel='external nofollow' class='url'>F娘</a></span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20681"><time pubdate datetime="2012-07-19T19:33:57+00:00">2012 年 7 月 19 日19:33</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>P站ID:28721243</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20681#respond' onclick='return addComment.moveForm("comment-20681", "20681", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-meltdown odd alt depth-3" id="li-comment-20698">
+		<article id="comment-20698" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/3b873fde9a468b42a28751e07e1c0785?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39'/><span class="fn">Vampire</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20698"><time pubdate datetime="2012-07-19T22:57:27+00:00">2012 年 7 月 19 日22:57</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>大神啊，感激不尽~~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20698#respond' onclick='return addComment.moveForm("comment-20698", "20698", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-20677">
+		<article id="comment-20677" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1-ps.googleusercontent.com/x/www.hacg.me/1.gravatar.com/avatar/68x68x1ca6fa6240f6ebaa960a222c31f83ab4,qs=68,ad=wavatar,ar=G.pagespeed.ic.6DEu4Wz3fp.jpg' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">宝三爷</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20677"><time pubdate datetime="2012-07-19T18:39:48+00:00">2012 年 7 月 19 日18:39</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>翻墙才能进来的哭</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20677#respond' onclick='return addComment.moveForm("comment-20677", "20677", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-jtyuan odd alt thread-odd thread-alt depth-1" id="li-comment-20683">
+		<article id="comment-20683" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/480ad4961c7509dceb5e9f95e0f03774?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">jtyuan</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20683"><time pubdate datetime="2012-07-19T19:40:07+00:00">2012 年 7 月 19 日19:40</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>原来如此啊&#8230;这两天澄空,QQ邮箱都上得痛苦啊&#8230;</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20683#respond' onclick='return addComment.moveForm("comment-20683", "20683", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-ai457144037 even thread-even depth-1" id="li-comment-20685">
+		<article id="comment-20685" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/5686186542a68f9a4cd9bcd24eb7208c?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn"><a rel='external nofollow' class='url'>夏神之眼</a></span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20685"><time pubdate datetime="2012-07-19T20:46:21+00:00">2012 年 7 月 19 日20:46</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>一直无压力。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20685#respond' onclick='return addComment.moveForm("comment-20685", "20685", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-miaogemi odd alt thread-odd thread-alt depth-1" id="li-comment-20693">
+		<article id="comment-20693" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/a0361ce9d6d402c796b5667d4b6d7316?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">蔝</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20693"><time pubdate datetime="2012-07-19T22:27:21+00:00">2012 年 7 月 19 日22:27</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>比起以前只是有一点点打开延迟 速度还不错</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20693#respond' onclick='return addComment.moveForm("comment-20693", "20693", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-20697">
+		<article id="comment-20697" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/adfd80a63c5c1c2616550304e9945900?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">钱真少</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20697"><time pubdate datetime="2012-07-19T22:48:25+00:00">2012 年 7 月 19 日22:48</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>不用换了。有GAE护航<br/>
+p.s.我貌似找到了h萌的G+了<br/>
+大家看是不是<br/>
+https://plus.google.com/117515788332491515413/posts</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20697#respond' onclick='return addComment.moveForm("comment-20697", "20697", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-omokimi odd alt thread-odd thread-alt depth-1" id="li-comment-20713">
+		<article id="comment-20713" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/8f66d03a992ce917f494e650f67b7b82?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">omokimi</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20713"><time pubdate datetime="2012-07-20T07:50:36+00:00">2012 年 7 月 20 日07:50</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>求h大经常去的国外网站。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20713#respond' onclick='return addComment.moveForm("comment-20713", "20713", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-narcissus even thread-even depth-1" id="li-comment-20714">
+		<article id="comment-20714" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/11e6683734bbf079cc3105e0bb3f1d59?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">NarcissusAlice</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20714"><time pubdate datetime="2012-07-20T07:54:08+00:00">2012 年 7 月 20 日07:54</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>昨天神社完全上不去  今天终于上来了~~~<br/>
+话说GFW还真是惹人厌呢</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20714#respond' onclick='return addComment.moveForm("comment-20714", "20714", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-cjycdm odd alt thread-odd thread-alt depth-1" id="li-comment-20716">
+		<article id="comment-20716" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/34b5e45ea65fac30edba4acd0bdee7ee?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">Zcelan`Garrus</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20716"><time pubdate datetime="2012-07-20T08:32:43+00:00">2012 年 7 月 20 日08:32</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>我平时浏览外国网站都是用翻wall的，无论什么都是~</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20716#respond' onclick='return addComment.moveForm("comment-20716", "20716", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-afk01 even thread-even depth-1" id="li-comment-20719">
+		<article id="comment-20719" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/c73e4404340293bd9113b83af00742d6?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">ブルーム</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20719"><time pubdate datetime="2012-07-20T09:12:45+00:00">2012 年 7 月 20 日09:12</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>goagent挺好用，速度也说得过去</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20719#respond' onclick='return addComment.moveForm("comment-20719", "20719", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-key odd alt depth-2" id="li-comment-20747">
+		<article id="comment-20747" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/c35b14ade1b392525f3946ab78419ab3?s=39&amp;d=wavatar&amp;r=G' class='avatar avatar-39 photo' height='39' width='39'/><span class="fn">Key</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20747"><time pubdate datetime="2012-07-20T17:16:56+00:00">2012 年 7 月 20 日17:16</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>+1</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20747#respond' onclick='return addComment.moveForm("comment-20747", "20747", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-ztiantianl even thread-odd thread-alt depth-1" id="li-comment-20761">
+		<article id="comment-20761" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/45d90e75625c0120adc72c62ef5b7f34?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn"><a rel='external nofollow' class='url'>ztiantianl</a></span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20761"><time pubdate datetime="2012-07-20T22:42:46+00:00">2012 年 7 月 20 日22:42</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>到现在终于能上来了！</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20761#respond' onclick='return addComment.moveForm("comment-20761", "20761", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-qwaszxre odd alt thread-even depth-1" id="li-comment-20770">
+		<article id="comment-20770" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/73a1dea8c5fb700f9aa29de303abe73a?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">ме灬淚瞳ˊ°</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20770"><time pubdate datetime="2012-07-21T00:19:06+00:00">2012 年 7 月 21 日00:19</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>H萌辛苦了&#8230;.~&gt; &lt;</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20770#respond' onclick='return addComment.moveForm("comment-20770", "20770", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-feixuenet even thread-odd thread-alt depth-1" id="li-comment-20823">
+		<article id="comment-20823" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/29cc7f657d3d8473a7b37a7beb65dd23?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">feixuenet</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20823"><time pubdate datetime="2012-07-21T20:55:07+00:00">2012 年 7 月 21 日20:55</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>一路支持下来！翻墙这玩意不犯法。</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20823#respond' onclick='return addComment.moveForm("comment-20823", "20823", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-wd939296562 odd alt thread-even depth-1" id="li-comment-20853">
+		<article id="comment-20853" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/797a07ee22812151e8501d225220ad24?s=68&amp;d=wavatar&amp;r=G' class='avatar avatar-68 photo' height='68' width='68'/><span class="fn">zt</span> 在 <a href="http://www.hacg.me/wordpress/17351/comment-page-1#comment-20853"><time pubdate datetime="2012-07-22T11:46:17+00:00">2012 年 7 月 22 日11:46</time></a> <span class="says">说道：</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>这两天网络质量你确实不咋地</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/wordpress/17351?replytocom=20853#respond' onclick='return addComment.moveForm("comment-20853", "20853", "respond", "17351")'>回复 <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">发表评论 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/17351#respond" style="display:none;">取消回复</a></small></h3>
+									<form action="http://www.hacg.me/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">电子邮件地址不会被公开。 必填项已用<span class="required">*</span>标注</p>							<p class="comment-form-author"><label for="author">姓名 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true'/></p>
+<p class="comment-form-email"><label for="email">电子邮件 <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required='true'/></p>
+												<p class="comment-form-comment"><label for="comment">评论</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">您可以使用这些<abbr title="HyperText Markup Language">HTML</abbr>标签和属性： <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="发表评论"/>
+							<input type='hidden' name='comment_post_ID' value='17351' id='comment_post_ID'/>
+<input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cfc693edf4"/></p>					</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+
+
+	</div><!-- #main -->
+
+
+
+	<footer id="colophon" role="contentinfo">
+
+
+
+			
+<div id="supplementary" class="two">
+		<div id="first" class="widget-area" role="complementary">
+		<aside id="text-8" class="widget widget_text">			<div class="textwidget">联系合作：misaki@hacg.me<br>
+少上点网，多点运动；好好学习，天天向上<br>
+<script id="_wauvtb">var _wau=_wau||[];_wau.push(["small","6koqvqcmh1p9","vtb"]);(function(){var s=document.createElement("script");s.async=true;s.src="http://widgets.amung.us/small.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<!-- BEGIN Tynt Script -->
+<script type="text/javascript">if(document.location.protocol=='http:'){ var Tynt=Tynt||[];Tynt.push('apNazuSgOr4RQlacwqm_6l'); (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();}</script>
+<!-- END Tynt Script -->
+
+
+
+
+</div>
+		</aside>	</div><!-- #first .widget-area -->
+	
+		<div id="second" class="widget-area" role="complementary">
+		<aside id="text-11" class="widget widget_text">			<div class="textwidget"><p>本站不提供任何上传下载服务，所有内容均来自分享站点所提供的公开引用资源。 如果有版权内容，请通知作者删除。</p>
+<p>本站不支持 IE6 浏览器 如果网页显示不正常，请升级到 IE8 及以上<br/>
+推荐使用 IE10、Firefox、Chrome 等专业浏览器</p>
+</div>
+		</aside>	</div><!-- #second .widget-area -->
+	
+	</div><!-- #supplementary -->
+
+
+			<div id="site-generator">
+
+				
+				<a href="http://www.hacg.me/" title="欢迎光临 琉璃神社" rel="generator">Power by HACG.ME </a>   Copyright &copy; 2011-2013 琉璃神社 All Rights Reserved <a href="/wordpress/sitemap.xml" title="sitemap">Site</a><a href="/wordpress/sitemap_baidu.xml" title="sitemap">map</a> <a href="/wordpress/sitemap.html" title="txt">txt</a>
+
+			</div>
+
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+
+
+<p style="margin:0;padding:0;height:1px;overflow:hidden;">
+    <script type="text/javascript">var wumiiSitePrefix="http://www.hacg.me/wordpress";var wumiiEnableCustomPos=false;var wumiiParams="&num=12&mode=3&displayInFeed=0&version=1.0.5.6&pf=WordPress3.6";var wumiiCategories=["\u6587\u7ae0"];</script><script type="text/javascript" src="http://1-ps.googleusercontent.com/x/www.hacg.me/widget.wumii.cn/ext/relatedItemsWidget.pagespeed.jm.17Zr7hTe_N.js"></script><a href="http://www.wumii.com/widget/relatedItems" style="border:0;"><img src="http://1-ps.googleusercontent.com/x/www.hacg.me/static.wumii.cn/images/xpixel.png.pagespeed.ic.kQVQy07gLN.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;"/></a>
+</p><script type='text/javascript'>var pollsL10n={"ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","text_wait":"\u4f60\u7684\u8bf7\u6c42\u6b63\u5728\u6267\u884c\u4e2d\uff0c\u8bf7\u7a0d\u7b49...","text_valid":"\u8bf7\u9009\u62e9\u6709\u6548\u7684\u6295\u7968\u9009\u9879","text_multiple":"\u6700\u591a\u5141\u8bb8\u9009\u62e9\u591a\u5c11\u9879\uff1a","show_loading":"1","show_fading":"1"};</script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-polls/polls-js.js,qver=2.63.pagespeed.jm.gEuFdU9zw-.js'></script>
+<script type='text/javascript'>var viewsCacheL10n={"admin_ajax_url":"http:\/\/www.hacg.me\/wordpress\/wp-admin\/admin-ajax.php","post_id":"17351"};</script>
+<script type='text/javascript' src='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-postviews/postviews-cache.js,qver=1.64.pagespeed.ce.75iePw27CH.js'></script>
+
+
+<script pagespeed_no_defer="">(function(){var e=window,f=Math,g="round",h="performance",k="&rit_script=",r="&rit_link=",y="&rit_img=",z="&rit_css=",A="&nttfb=",B="&nfd=",C="&ndt=",D="&nct=",E="&nbt=",F="&mfd=",G="&attfb=",H="&afd=",I="&adt=",J="&act=",K="&abt=",L="";e.pagespeed=e.pagespeed||{};var M=e.pagespeed;
+M.getResourceTimingData=function(){if(e[h]&&(e[h].getEntries||e[h].webkitGetEntries)){for(var s=0,t=0,l=0,u=0,m=0,v=0,n=0,w=0,p=0,x=0,q=0,c={},d=e[h].getEntries?e[h].getEntries():e[h].webkitGetEntries(),b=0;b<d.length;b++){var a=d[b].duration;0<a&&(s+=a,++l,t=f.max(t,a));a=d[b].connectEnd-d[b].connectStart;0<a&&(v+=a,++n);a=d[b].domainLookupEnd-d[b].domainLookupStart;0<a&&(u+=a,++m);a=d[b].initiatorType;c[a]?++c[a]:c[a]=1;a=d[b].requestStart-d[b].fetchStart;0<a&&(x+=a,++q);a=d[b].responseStart-d[b].requestStart;
+0<a&&(w+=a,++p)}return H+(l?f[g](s/l):0)+B+l+F+f[g](t)+J+(n?f[g](v/n):0)+D+n+I+(m?f[g](u/m):0)+C+m+K+(q?f[g](x/q):0)+E+q+G+(p?f[g](w/p):0)+A+p+(c.css?z+c.css:L)+(c.link?r+c.link:L)+(c.script?k+c.script:L)+(c.img?y+c.img:L)}return L};M.getResourceTimingData=M.getResourceTimingData;})();
+(function(){var c=encodeURIComponent,f=window,h="performance",k="unload:",l="on",m="load:",n="load",p="ets=",q="beforeunload",r="EventStart",s="?",t="=",u="&url=",v="&ttfb=",w="&req_start=",x="&ref=",y="&r",z="&nt=",A="&nrp=",B="&nav=",C="&ifr=1",D="&ifr=0",E="&htmlAt=",F="&fp=",G="&dwld=",H="&dom_c=",I="&dns=",J="&connect=",K="&ccul=",L="&ccrl=",M="&ccos=",N="&ccis=",O="&cces=",P="&b_csi=",Q="&",R="";f.pagespeed=f.pagespeed||{};var S=f.pagespeed,T=function(a,d,b,e){this.d=a;this.a=d;this.b=b;this.e=e};S.beaconUrl=R;
+T.prototype.c=function(){var a=this.d,d=f.mod_pagespeed_start,b=Number(new Date)-d,a=a+(-1==a.indexOf(s)?s:Q),a=a+p+(this.a==n?m:k),a=a+b;if(this.a!=q||!f.mod_pagespeed_loaded){a+=y+this.a+t;if(f[h]){var b=f[h].timing,e=b.navigationStart,g=b.requestStart,a=a+(b[this.a+r]-e),a=a+(B+(b.fetchStart-e)),a=a+(I+(b.domainLookupEnd-b.domainLookupStart)),a=a+(J+(b.connectEnd-b.connectStart)),a=a+(w+(g-e)),a=a+(v+(b.responseStart-g)),a=a+(G+(b.responseEnd-b.responseStart)),a=a+(H+(b.domContentLoadedEventStart-
+e));f[h].navigation&&(a+=z+f[h].navigation.type);e=-1;b.msFirstPaint?e=b.msFirstPaint:f.chrome&&f.chrome.loadTimes&&(e=Math.floor(1E3*f.chrome.loadTimes().firstPaintTime));e-=g;0<=e&&(a+=F+e)}else a+=b;S.getResourceTimingData&&f.parent==f&&(a+=S.getResourceTimingData());a+=f.parent!=f?C:D;this.a==n&&(f.mod_pagespeed_loaded=!0,(b=f.mod_pagespeed_num_resources_prefetched)&&(a+=A+b),(b=f.mod_pagespeed_prefetch_start)&&(a+=E+(d-b)));S.panelLoader&&(d=S.panelLoader.getCsiTimingsString(),d!=R&&(a+=P+d));
+S.criticalCss&&(d=S.criticalCss,a+=N+d.total_critical_inlined_size+O+d.total_original_external_size+M+d.total_overhead_size+L+d.num_replaced_links+K+d.num_unreplaced_links);this.b!=R&&(a+=this.b);document.referrer&&(a+=x+c(document.referrer));a+=u+c(this.e);S.beaconUrl=a;(new Image).src=a}};S.f=function(a,d,b,e){var g=new T(a,d,b,e);f.addEventListener?f.addEventListener(d,function(){g.c()},!1):f.attachEvent(l+d,function(){g.c()})};S.addInstrumentationInit=S.f;})();
+
+pagespeed.addInstrumentationInit('http://1-ps.googleusercontent.com/beacon?org=110_1_cn', 'load', '&s_ttfb=1697&id=1381055949061391', 'http://www.hacg.me/wordpress/17351');</script></body>
+
+</html><noscript class="psa_add_styles"><link rel="stylesheet" type="text/css" media="all" href="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/A.style.css.pagespeed.cf.NEuEpqDLI-.css"/><link rel='stylesheet' id='toggle-box-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/toggle-box/A.toggle-box.css,qver=3.6.pagespeed.cf.Ij6SlLA_BH.css' type='text/css' media='all'/><link rel='stylesheet' id='wordpress-popular-posts-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wordpress-popular-posts/style/A.wpp.css,qver=3.6.pagespeed.cf.Hrb4URPBfl.css' type='text/css' media='all'/><link rel='stylesheet' id='sidebar-login-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/sidebar-login/assets/css/A.sidebar-login.css,qver=2.5.3.pagespeed.cf.1GVNKD2wm1.css' type='text/css' media='all'/><link rel='stylesheet' id='wp-polls-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-polls/A.polls-css.css,qver=2.63.pagespeed.cf.F31xf72mYL.css' type='text/css' media='all'/><link rel='stylesheet' id='dark-css' href='http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/themes/twentyeleven/colors/A.dark.css.pagespeed.cf.vfxqkyvtzb.css' type='text/css' media='all'/><link rel="stylesheet" href="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/auto-highslide/highslide/A.highslide.css.pagespeed.cf.FgSLfAtt8A.css" type="text/css"/><style type='text/css'>.playerHolder{width:860px;height:450px;position:absolute;z-index:0}.placeHolder{width:860px;height:450px;visibility:hidden;border:0 none}</style><link rel="stylesheet" href="http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/plugins/wp-page-numbers/panther/A.wp-page-numbers.css.pagespeed.cf.Oo90JUBc2E.css" type="text/css" media="screen"/><style type="text/css">.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background:#1c2949;border:1px solid #696565}</style><style>a,#site-title a:focus,#site-title a:hover,#site-title a:active,.entry-title a:hover,.entry-title a:focus,.entry-title a:active,.widget_twentyeleven_ephemera .comments-link a:hover,section.recent-posts .other-recent-posts a[rel="bookmark"]:hover,section.recent-posts .other-recent-posts .comments-link a:hover,.format-image footer.entry-meta a:hover,#site-generator a:hover{color:#4399ee}section.recent-posts .other-recent-posts .comments-link a:hover{border-color:#4399ee}article.feature-image.small .entry-summary p a:hover,.entry-header .comments-link a:hover,.entry-header .comments-link a:focus,.entry-header .comments-link a:active,.feature-slider a.active{background-color:#4399ee}</style><style type="text/css" id="custom-background-css">body.custom-background{background-image:url(http://1-ps.googleusercontent.com/h/www.hacg.me/wordpress/wp-content/uploads/2012/01/xcamouflage.png.pagespeed.ic.TUZkU2GHBT.png);background-repeat:repeat;background-position:top left;background-attachment:scroll}</style></noscript><script pagespeed_no_defer="">var stylesAdded=false;var addAllStyles=function(){if(stylesAdded)return;stylesAdded=true;var div=document.createElement("div");var styleText="";var styleElements=document.getElementsByClassName("psa_add_styles");for(var i=0;i<styleElements.length;++i){styleText+=styleElements[i].textContent||styleElements[i].innerHTML||styleElements[i].data||"";}div.innerHTML=styleText;document.body.appendChild(div);};if(window.addEventListener){document.addEventListener("DOMContentLoaded",addAllStyles,false);window.addEventListener("load",addAllStyles,false);}else if(window.attachEvent){window.attachEvent("onload",addAllStyles);}else{window.onload=addAllStyles;}window['pagespeed']=window['pagespeed']||{};window['pagespeed']['criticalCss']={'total_critical_inlined_size':35937,'total_original_external_size':64818,'total_overhead_size':37310,'num_replaced_links':8,'num_unreplaced_links':0};</script>

@@ -1,0 +1,17 @@
+jQuery(document).ready(function( $ ) {
+
+	$('#backtoblog a').prop('title','返回主页');
+
+	$('form#loginform').prepend('<h2>输入您的登录凭证。</h2><br class="clear">');
+	$('form#lostpasswordform').prepend('<h2>输入所需的信息,你将通过电子邮件收到新密码.</h2><br class="clear">');
+	$('form#resetpassform').prepend('<h2>在下面输入您的新密码.</h2><br class="clear">');
+
+	$('form#registerform').prepend('<h2>密码将通过电子邮件发送给您</h2><br class="clear">');
+	$('form').prepend('<p class="ver"><a href="http://www.hacg.me">琉璃神社是一个分享同人作品的社团</a></p>');
+
+	//TODO: make the alert boxes look prettier. :)
+
+	$("p.reset-pass:contains('Enter your new password below')").hide();
+
+	$("p.reset-pass:contains('Your password has been reset')").show().addClass('backtologin').removeClass('message').removeClass('reset-pass');
+});

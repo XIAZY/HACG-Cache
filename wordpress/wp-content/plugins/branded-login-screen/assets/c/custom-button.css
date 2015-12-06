@@ -1,0 +1,127 @@
+
+/* primary form submit button */
+
+.wp-core-ui .button-primary{
+	background-color:#a61f30;
+	background-image:linear-gradient(to bottom,#a61f30,#a61f30);
+	border-color:#a61f30;
+	border-bottom-color:#a61f30;
+	box-shadow:inset 0 1px 0 rgba(166,31,48,0.5);
+	color:#fff;
+	text-decoration:none;
+	text-shadow:0 1px 0 rgba(0,0,0,0.1);
+}
+.wp-core-ui .button-primary.hover,.wp-core-ui .button-primary:hover,.wp-core-ui .button-primary.focus,.wp-core-ui .button-primary:focus{
+	background-color:#af3544;
+	background-image:linear-gradient(to bottom,#d52e43,#d52e43);
+	border-color:#d52e43;
+	box-shadow:inset 0 1px 0 rgba(213,46,67,0.6);
+	color:#fff;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.3);
+}
+.wp-core-ui .button-primary.focus,.wp-core-ui .button-primary:focus{
+	border-color:#a61f30;
+	box-shadow:inset 0 1px 0 rgba(166,31,48,0.6),1px 1px 2px rgba(0,0,0,0.4);
+}
+.wp-core-ui .button-primary.active,.wp-core-ui .button-primary.active:hover,.wp-core-ui .button-primary.active:focus,.wp-core-ui .button-primary:active{
+	background:#851926;
+	background-image:linear-gradient(to bottom,#851926,#851926);
+	border-color:#851926 #851926 #851926 #851926;
+	color:rgba(255,255,255,0.95);
+	box-shadow:inset 0 1px 0 rgba(0,0,0,0.1);
+	text-shadow:0 1px 0 rgba(0,0,0,0.1);
+}
+.wp-core-ui .button-primary[disabled],.wp-core-ui .button-primary:disabled,.wp-core-ui .button-primary-disabled{
+	color:#94cde7!important;
+	background:#298cba!important;
+	border-color:#1b607f!important;
+	box-shadow:none!important;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.1)!important;
+	cursor:default;
+}
+
+
+/* buttons below login form */
+
+.login #nav a,.login #backtoblog a
+{
+	background-color:rgba(166,31,48,1.0)!important;
+	border:medium none!important;
+	border-radius:3px 3px 3px 3px!important;
+	box-shadow:0 0 30px 0 rgba(0,0,0,0.15) inset!important;
+	color:#fff!important;
+	text-decoration:none;
+	text-shadow:none;
+}
+
+.login #nav a:hover,.login #backtoblog a:hover
+{
+	background-color:rgba(213,46,67,1.0)!important;
+	color:#fff!important;
+	text-decoration:none;
+}
+
+.login #nav a:active,.login #backtoblog a:active
+{
+	background-color:rgba(133,25,38,1.0)!important;
+	color:#fff!important;
+	text-decoration:none;
+}
+
+
+#nav,#backtoblog
+{
+	color:#fff;
+	float:right;
+	font-size:.917em;
+	margin:4em 0 2em;
+	padding:0;
+	text-align:right;
+	text-shadow:none;
+}
+
+#nav a,#backtoblog a
+{
+	padding:4px 12px;
+}
+
+#nav, #backtoblog {font-size:.917em;text-align:right;text-shadow:none;margin:4em 0 2em 0;padding:0;color:#fff;float:right;}
+
+#nav, #backtoblog {font-size:.917em;text-align:right;text-shadow:none;margin:4em 0 2em 0;padding:0;color:#fff;float:right;}
+
+#backtoblog
+{
+	display:none;
+}
+
+.backtologin
+{
+	background-color:rgba(178,34,52,0.75)!important;
+	font-size:16px;
+	font-weight:700;
+	margin:0;
+	padding:10px 0;
+	text-align:center;
+}
+
+p.backtologin a
+{
+	color:#c00;
+}
+
+p.backtologin a:hover
+{
+	color:red;
+}
+
+.login #nav,.login #backtoblog
+{
+	font-size:.9em;
+	padding:0;
+}
+
+.login #backtoblog
+{
+	float:left;
+
+}
